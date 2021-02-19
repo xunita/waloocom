@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.logo-color {
+  color: #282828 !important;
+}
+.bglogo-color {
+  background-color: #282828 !important;
+}
+.d-spec {
+  min-width: min-content !important;
+}
+.color-4a {
+  color: #4a4a4a;
+}
+.color-bg {
+  color: #e6e6e6;
+}
+.bg-e6e6e6 {
+  background-color: #f0efef6b;
+}
+.b612 {
+  font-family: 'B612', Arial, Helvetica, sans-serif;
+}
