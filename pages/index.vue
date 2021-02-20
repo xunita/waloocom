@@ -282,7 +282,7 @@
       </div>
       <div
         v-show="scroll > 728"
-        class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-12"
+        class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-16 pt-5"
       >
         <button
           class="button bg-white rounded-full shadow h-11 w-11-full no-outlines outline-none gotop"
