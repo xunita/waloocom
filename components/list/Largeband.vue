@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-full h-40">
+  <div class="bg-white w-full h-24">
     <div class="flex align-center space-x-2 vertical-center w-fit m-0-auto">
       <figure class="image is-40x40 rounded-full relative">
         <img
@@ -8,7 +8,7 @@
           alt="Placeholder image"
         />
       </figure>
-      <span class="size-13 font-semibold">{{ name }}</span>
+      <span class="size-125 font-semibold">{{ name }}</span>
     </div>
   </div>
 </template>

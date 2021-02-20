@@ -9,7 +9,7 @@
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div class="w-fit absolute top-0 left-0 py-08">
         <span
-          class="px-2 py-08 block  btn-004e66s color-004e66 font-semibold size-12"
+          class="px-2 py-08 block btn-004e66s color-004e66 font-semibold size-12"
           >72% OFF</span
         >
       </div>

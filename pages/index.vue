@@ -27,11 +27,6 @@
                   <div class="h-full relative"><Adscateg /></div>
                 </div>
               </div>
-              <div class="flex space-x-5">
-                <div v-for="(name, i) in brand" :key="i" class="w-full">
-                  <Brand :name="name" />
-                </div>
-              </div>
               <div>
                 <div
                   class="bg-white px-4 pt-3 flex align-center justify-between flex align-center justify-between"
@@ -58,10 +53,20 @@
                 </div>
                 <Adspetit />
               </div>
-              <div class="flex space-x-3">
-                <div v-for="(name, i) in brands" :key="i" class="w-full">
-                  <Categorie :name="name" />
-                </div>
+              <div class="w-full">
+                <Largeband />
+              </div>
+              <div class="w-full">
+                <Twoband />
+              </div>
+              <div class="w-full">
+                <Squaresix />
+              </div>
+              <div class="w-full">
+                <Square />
+              </div>
+              <div class="w-full">
+                <Two />
               </div>
               <div>
                 <div
@@ -303,7 +308,9 @@
 </template>
 
 <script>
+import Square from '~/components/list/Square.vue'
 export default {
+  components: { Square },
   data() {
     return {
       width: 99999,

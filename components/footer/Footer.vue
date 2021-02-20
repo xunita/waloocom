@@ -7,7 +7,7 @@
             >Subscribe to our Newsletter</span
           >
           <span class="text-white block size-125 mt-1"
-            >Subscribe to not miss new products and the best offers from
+            >Keep me updated on new products and the best offers from
             Waloo.</span
           >
           <div class="mt-2 putmax h-10 flex align-center space-x-2">
