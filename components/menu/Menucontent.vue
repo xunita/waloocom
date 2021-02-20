@@ -1,8 +1,6 @@
 <template>
   <div class="py-15 relative">
-    <div
-      class="flex align-center justify-between rounded-tl rounded-tr px-6 py-1 border-b"
-    >
+    <div class="flex align-center justify-between px-6 py-1 border-b">
       <h4 class="font-semibold size-14">Shop by category</h4>
     </div>
     <div class="w180ee border-b py-15">

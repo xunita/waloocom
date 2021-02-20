@@ -1,16 +1,12 @@
 <template>
   <div
     id="listcateg"
-    class="h-full bg-white listfull flex-shrink absolute min-w-full border-l rounded-tr rounded-br top-0 z-20"
+    class="h-full bg-white listfull flex-shrink absolute min-w-full top-0 z-20"
     @mouseleave="outlisting"
     @mouseover="inlisting"
   >
-    <figure v-show="size <= 1366" class="image rounded-tr h-16 w-full">
-      <img
-        class="h-16 w-full rounded-tr"
-        src="/computer.jpg"
-        alt="Placeholder image"
-      />
+    <figure v-show="size <= 1366" class="image h-16 w-full">
+      <img class="h-16 w-full" src="/computer.jpg" alt="Placeholder image" />
     </figure>
     <div class="w-full flex">
       <div
@@ -30,15 +26,8 @@
           <Itemlist class="border-l pl-5" />
         </div>
       </div>
-      <figure
-        v-show="size > 1366"
-        class="image rounded-tr rounded-br h449 w180t"
-      >
-        <img
-          class="h-full w180t rounded-tr rounded-br"
-          src="/r.jpg"
-          alt="Placeholder image"
-        />
+      <figure v-show="size > 1366" class="image h449 w180t">
+        <img class="h-full w180t" src="/r.jpg" alt="Placeholder image" />
       </figure>
     </div>
   </div>

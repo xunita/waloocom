@@ -1,5 +1,5 @@
 <template>
-  <div class="py-1 relative w-full">
+  <div class="py-2 relative w-full">
     <div class="w180t">
       <a
         v-for="(item, i) in lang"

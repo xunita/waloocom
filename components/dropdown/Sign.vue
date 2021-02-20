@@ -10,7 +10,7 @@
           <div
             aria-haspopup="true"
             aria-controls="dropdown-menu"
-            class="button is-lights py-2 px-3 rounded flex align-center space-x-1 clickable select-none border-r h-10"
+            class="button is-lights py-2 px-3 flex align-center space-x-1 clickable select-none border-r h-10"
             @click="
               {
                 focused = !focused
@@ -41,7 +41,7 @@
       <div id="dropdown-menu" class="dropdown-menu w180s walele" role="menu">
         <div class="dropdown-content bg-white border">
           <a class="block w-fit m-0-auto"
-            ><button class="btn-004e66 px-20 py-1 rounded text-white size-14">
+            ><button class="btn-004e66 rounded px-20 py-1 text-white size-14">
               Sign in
             </button></a
           >

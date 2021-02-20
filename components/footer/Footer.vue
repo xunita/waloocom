@@ -1,14 +1,7 @@
 <template>
   <div class="header py-5 bglogo-color">
     <div>
-      <nav
-        class="flex w-full align-center justify-between border-b pb-5"
-        :class="{
-          'px-6': size <= 1097,
-          'px-12': size > 1097 && size < 1500,
-          'px-6 ': size >= 1500,
-        }"
-      >
+      <nav class="flex w-full align-center justify-between border-b pb-5">
         <div class="w-full">
           <span class="text-white block font-semibold size-15"
             >Subscribe to our Newsletter</span
@@ -19,13 +12,13 @@
           >
           <div class="mt-2 putmax h-10 flex align-center space-x-2">
             <input
-              class="w-full h-10 rounded size-16 outline-none px-2 bg-white font-normal"
+              class="w-full rounded h-10 size-16 outline-none px-2 bg-white font-normal"
               type="text"
               placeholder="Email adress"
             />
             <span class="h-full w-full"
               ><button
-                class="btn-004e66 h-full w-ful flex align-center no-outlines space-x-2 px-12 rounded text-white"
+                class="btn-004e66 rounded h-full w-ful flex align-center no-outlines space-x-2 px-12 text-white"
               >
                 <span class="size-12 block font-medium">Subscribe</span>
               </button></span
@@ -54,14 +47,7 @@
           </div>
         </div>
       </nav>
-      <nav
-        class="flex align-center mt-3 justify-around"
-        :class="{
-          'px-6': size <= 1097,
-          'px-12': size > 1097 && size < 1500,
-          'px-6 ': size >= 1500,
-        }"
-      >
+      <nav class="flex align-center mt-3 justify-around">
         <div v-for="i in 6" :key="i">
           <span class="block size-18 text-white font-semibold py-2"
             >About Waloo</span

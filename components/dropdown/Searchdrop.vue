@@ -17,7 +17,9 @@
               }
             "
           >
-            <span class="size-125 font-semibold block w-fit">{{ item }}</span>
+            <span class="size-125 font-semibold color-363636f block w-fit">{{
+              item
+            }}</span>
             <svg
               class="w-4 h-4 color-363636 relative top-01x"
               fill="currentColor"

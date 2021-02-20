@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-color-008489 h-full w-full relative rounded">
+  <div class="bg-004e66 h-full w-full relative">
     <slider>
-      <figure class="image rounded h-full w-full">
+      <figure class="image h-full w-full">
         <img
-          class="h-full w-full rounded"
+          class="h-full w-full"
           src="/t.jpg"
           alt="Placeholder image"
         /></figure

@@ -10,7 +10,7 @@
           <div
             aria-haspopup="true"
             aria-controls="dropdown-menu"
-            class="rounded w-full select-none"
+            class="w-full select-none"
             @click="
               {
                 focused = !focused

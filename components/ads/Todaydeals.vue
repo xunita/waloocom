@@ -3,7 +3,7 @@
     <div
       class="color-363636f relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
     >
-      <h4 class="font-semibold size-125 text-white">Top categories</h4>
+      <h4 class="font-semibold size-125 text-white">Today's deals</h4>
       <button
         class="z-10 absolute right-0 bg-black-trs p-1 rounded-full no-outlines outline-none mr-1"
       >

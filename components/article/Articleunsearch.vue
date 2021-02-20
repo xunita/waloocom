@@ -9,7 +9,7 @@
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div class="w-fit absolute top-0 left-0 py-08">
         <span
-          class="px-2 py-08 block rounded-br btn-004e66s color-004e66 font-semibold size-12"
+          class="px-2 py-08 block  btn-004e66s color-004e66 font-semibold size-12"
           >72% OFF</span
         >
       </div>
@@ -51,7 +51,7 @@
       </div>
       <span class="w-fit m-0-auto relative top-1x"
         ><button
-          class="btn-004e66 flex align-center space-x-2 px-8 py-1 rounded text-white"
+          class="btn-004e66 flex align-center space-x-2 px-8 py-1 text-white"
         >
           <span class="size-13 font-medium">Add to cart</span>
           <svg

@@ -1,16 +1,12 @@
 <template>
   <div
     id="listcateg"
-    class="h-full bg-white lbig absolute border-l rounded-tr rounded-br top-0 z-20 overflow-y-auto overflow-x-auto asider scrollnonemoz"
+    class="h-full bg-white lbig absolute border-l top-0 z-20 overflow-y-auto overflow-x-auto asider scrollnonemoz"
     @mouseleave="outlistingbig"
     @mouseover="inlistingbig"
   >
-    <figure class="image rounded-tr h-32x w-full">
-      <img
-        class="h-32x w-full rounded-tr"
-        src="/computer.jpg"
-        alt="Placeholder image"
-      />
+    <figure class="image h-32x w-full">
+      <img class="h-32x w-full" src="/computer.jpg" alt="Placeholder image" />
     </figure>
     <div class="w-full py-4 px-6">
       <a class="clickable flex align-center justify-between pb-1 border-b">

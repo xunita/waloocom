@@ -1,33 +1,21 @@
 <template>
   <div class="h-full max1260 d-spec m-0-auto relative scroll-1400">
-    <Menu v-show="modaled" class="z-40 appearxh" />
+    <Menu v-show="modaled" class="z-40 appearxhx" />
     <Header
-      class="sticky d-spec top-0 z-30"
+      class="sticky d-spec px-5 top-0 z-30"
       :class="{
-        'px-6': size <= 1097,
-        'px-12': size > 1097 && size < 1500,
-        'mx-6 ': size >= 1500,
         'my-shadow': scroll > 37,
       }"
     />
     <div class="d-spec">
-      <Afterheader
-        class="d-spec"
-        :class="{
-          'px-6': size <= 1097,
-          'px-12': size > 1097 && size < 1500,
-          'mx-6 ': size >= 1500,
-        }"
-      />
+      <Afterheader class="d-spec px-5" />
       <div class="p-1">
         <div>
           <div
             class="mt-1"
             :class="{
-              'px-0': size <= 1097,
-              'px-6': size > 1097,
-              'mx-0': size >= 1500,
-              'mx-8 ': size < 1500,
+              'px-0': size > 1500,
+              'px-6': size <= 1500,
             }"
           >
             <div class="w-full flex flex-col space-y-3">
@@ -46,13 +34,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr flex align-center justify-between"
+                  class="bg-white px-4 pt-3 flex align-center justify-between flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Similar to your favorites list
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -77,13 +65,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Because you searched "Iphone"
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -103,13 +91,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     From the same category
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -129,7 +117,7 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">You may like</h4>
                 </div>
@@ -137,13 +125,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Recently viewed
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -163,13 +151,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Waloo recommendations
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -189,13 +177,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Waloo trending
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -215,13 +203,13 @@
               </div>
               <div>
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Waloo best deals
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -239,15 +227,15 @@
                 </div>
                 <Adspetit />
               </div>
-              <div class="bg-white rounded h-fit">
+              <div class="bg-white h-fit">
                 <div
-                  class="bg-white px-4 pt-3 flex align-center justify-between rounded-tl rounded-tr"
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
                     Waloo categories
                   </h4>
                   <button
-                    class="z-10 bg-black-trs p-1 h-8 w-8 rounded-full no-outlines outline-none"
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
                   >
                     <svg
                       class="w-6 h-6 color-363636f"
@@ -267,6 +255,9 @@
               </div>
               <div>
                 <Brandlogo />
+              </div>
+              <div>
+                <Walootour />
               </div>
               <div>
                 <Waloofo />
@@ -289,7 +280,7 @@
         class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-12"
       >
         <button
-          class="button bg-white shadow h-11 w-11 rounded-full no-outlines outline-none gotop"
+          class="button bg-white rounded-full shadow h-11 w-11-full no-outlines outline-none gotop"
           @click="scrolltop"
         >
           <svg
@@ -307,12 +298,7 @@
         </button>
       </div>
     </div>
-    <Footer
-      class="mt-16"
-      :class="{
-        'mx-6': size >= 1500,
-      }"
-    />
+    <Footer class="mt-16 px-5" />
   </div>
 </template>
 
@@ -375,12 +361,14 @@ export default {
     },
     large() {
       this.width = window.innerWidth
+      this.$store.commit('SET_RESIZE', window.innerWidth)
     },
     outlisting() {
       this.$store.commit('SET_LIST_MOD', false)
     },
     handleScroll() {
       this.scrollsize = window.scrollY
+      this.$store.commit('SET_SCROLL', window.scrollY)
     },
   },
 }

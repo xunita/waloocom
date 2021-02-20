@@ -1,5 +1,5 @@
 <template>
-  <div class="px-1 pt-2 pb-3 w-full bg-white rounded">
+  <div class="px-1 pt-2 pb-3 w-full bg-white">
     <div>
       <div class="logo-color relative flex flex-col px-5 pb-2 py-15">
         <h4 class="font-semibold pb-1">

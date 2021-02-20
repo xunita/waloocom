@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border flex align-center my-1 d-search rounded flex align-center w-full h-10"
+    class="border flex align-center my-1 d-search flex align-center w-full h-10"
     :class="{ 'shadow-sm': focused }"
     @mouseover="
       {
@@ -18,7 +18,7 @@
       @blur="manageblur"
     />
     <button
-      class="btn-004e66 btn-search flex align-center space-x-2 h-10 px-3 rounded-tr rounded-br"
+      class="btn-004e66 btn-search flex align-center space-x-2 h-10 px-3  "
     >
       <span class="w-fit h-fit"
         ><svg

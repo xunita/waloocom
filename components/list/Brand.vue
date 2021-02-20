@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white w-full h-16 rounded">
+  <div class="bg-white w-full h-16">
     <div class="flex align-center space-x-2 vertical-center w-fit m-0-auto">
       <figure class="image is-40x40 rounded-full relative">
         <img

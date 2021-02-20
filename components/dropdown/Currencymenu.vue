@@ -4,7 +4,7 @@
       <div class="dropdown-trigger">
         <client-only>
           <div
-            class="rounded w-fit select-none w-full pb-1"
+            class="w-fit select-none w-full pb-1"
             @click="
               {
                 focused = !focused

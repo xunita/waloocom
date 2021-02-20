@@ -19,7 +19,7 @@
       </button>
     </div>
     <div
-      class="bg-white h-full w-full flex align-center space-x-2 absolute overflow-x-auto xxx scrollnone rounded-bl rounded-br"
+      class="bg-white h-full w-full flex align-center space-x-2 absolute overflow-x-auto xxx scrollnone"
     >
       <Article v-for="i in 8" :key="i" />
     </div>

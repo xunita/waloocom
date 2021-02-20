@@ -10,7 +10,7 @@
           <div
             aria-haspopup="true"
             aria-controls="dropdown-menu"
-            class="flex align-center clickable button is-lights rounded w-fit select-none space-x-0"
+            class="flex align-center clickable button is-lights w-fit select-none space-x-0"
             @click="
               {
                 focused = !focused

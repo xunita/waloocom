@@ -4,7 +4,7 @@
       <div class="dropdown-trigger">
         <client-only>
           <div
-            class="flex py-15 align-center space-x-0 rounded clickable select-none"
+            class="flex py-15 align-center space-x-0 clickable select-none"
             @click="
               {
                 focused = !focused

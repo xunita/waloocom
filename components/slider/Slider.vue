@@ -28,7 +28,7 @@
         class="ads-dot clickable block bg-dot rounded-full border-none"
       ></span>
     </div>
-    <div class="bg-white h-full w-full absolute rounded"><slot></slot></div>
+    <div class="bg-white h-full w-full absolute"><slot></slot></div>
     <div class="h-full relative w-16 rightag z-10 right-0">
       <button
         class="button btn-004e66 shadow-sm ml-1 h-11 w-11 rounded-full no-outlines outline-none vertical-center z-10 gotop hvme hvme-right border-2 border-transparent"

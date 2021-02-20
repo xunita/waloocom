@@ -11,7 +11,7 @@
     <div class="flex flex-col px-4 mt-1">
       <div>
         <button
-          class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
+          class="bg-white px-3 py-01-full border flex align-center space-x-1 no-outlines outline-none"
         >
           <span class="size-12 font-semibold color-363636f">Jumia</span>
         </button>
@@ -22,7 +22,7 @@
       >
       <div class="w-full flex align-center justify-between py-08">
         <span
-          class="px-2 py-08 block rounded btn-004e66s color-004e66 font-semibold size-12"
+          class="px-2 py-08 block btn-004e66s color-004e66 font-semibold size-12"
           >72% OFF</span
         ><span class="size-13 color-363636f font-semibold twoline"
           >87 in stock</span
@@ -40,7 +40,7 @@
       </div>
       <span class="w-fit m-0-auto relative top-1x"
         ><button
-          class="btn-004e66 flex align-center space-x-2 px-8 py-1 rounded text-white"
+          class="btn-004e66 flex align-center space-x-2 px-8 py-1 text-white"
         >
           <span class="size-13 font-medium">Add to cart</span>
           <svg
