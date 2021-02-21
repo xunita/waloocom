@@ -14,32 +14,92 @@ export const state = () => ({
   listing: false,
   listingbig: false,
   afterlist: false,
+
   computer: {
-    computer: {
+    image: '/cover/compelect.jpg',
+    link: 'computers-electronics',
+    one: {
+      link: 'computers',
+      image: '/cover/compelect.jpg',
       name: 'Computers',
+      topbrand: ['Asus', 'HP', 'MSI', 'Apple', 'Dell'], // to update
       content: {
-        laptop: ['Notebooks', 'Notebooks', 'Ultrabooks', 'All-in-ones'],
-        desktop: [
-          'Computer desktop',
-          'Monitors',
-          'Computer components',
-          'All-in-ones',
-        ],
-        accessories: [
-          'Computer peripherals',
-          'Bags, Cases, Cover & Sleeves',
-          'Laptop & Desktop accessories',
-          'Storages devices',
-          'Printers & Scanners',
-        ],
+        list: {
+          lap: {
+            link: 'laptop',
+            image: '/cover/compelect.jpg',
+            name: 'Laptops',
+            content: [
+              'Laptops',
+              'Notebooks',
+              'Ultrabooks',
+              'Macbooks',
+              'All-In-Ones',
+            ],
+          },
+          desk: {
+            link: 'desktop',
+            image: '/cover/compelect.jpg',
+            name: 'Desktops',
+            content: [
+              'Computer Desktop',
+              'Monitors',
+              'Computer Components',
+              'All-In-Ones',
+            ],
+          },
+          accessories: {
+            image: '/cover/compelect.jpg',
+            link: 'pc-accessories',
+            name: 'Computers Accessories',
+            content: [
+              'Computer Peripherals',
+              'Bags, Cases, Cover & Sleeves',
+              'Storages Devices',
+              'Printers & Scanners',
+              'Other Accessories',
+            ],
+          },
+        },
       },
     },
-    electronic: {
+    two: {
+      image: '/cover/compelect.jpg',
+      link: 'electronics',
       name: 'Electronics',
+      topbrand: ['Samsung', 'Sony', 'Nikon', 'Philips'], // to update
       content: {
-        tv: {},
-        household: {},
-        accessories: {},
+        list: {
+          tv: {
+            image: '/cover/compelect.jpg',
+            link: 'tv',
+            name: 'TVs',
+            content: [
+              'Smart TVs',
+              '4K TVs',
+              'LED & OLED TVs',
+              'Curved TVs',
+              '32"-55" TVs',
+            ],
+          },
+          audiocamera: {
+            image: '/cover/compelect.jpg',
+            link: 'audio-camera',
+            name: 'Audio & Camera',
+            content: ['Loudspeaker & Headphones', 'Radio', 'Digital Cameras'],
+          },
+          accessories: {
+            image: '/cover/compelect.jpg',
+            link: 'electronics-accessories',
+            name: 'Electronics Accessories',
+            content: [
+              'TVs Accessories',
+              'Audio Accessories',
+              'Camera Accessories',
+              'DVDs',
+            ],
+          },
+        },
       },
     },
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="header py-5 bglogo-color">
     <div>
-      <nav class="flex w-full align-center justify-between border-b pb-5">
+      <nav class="flex w-full align-center justify-between border-b pb-5 px-5">
         <div class="w-full">
           <span class="text-white block font-semibold size-15"
             >Subscribe to our Newsletter</span
@@ -47,7 +47,7 @@
           </div>
         </div>
       </nav>
-      <nav class="flex align-center mt-3 justify-around">
+      <nav class="flex align-center mt-3 justify-around px-5">
         <div v-for="i in 6" :key="i">
           <span class="block size-18 text-white font-semibold py-2"
             >About Waloo</span

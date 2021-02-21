@@ -2,11 +2,11 @@
   <div class="d-spec relative border-t pt-1 bg-white">
     <div
       v-show="listing"
-      class="absolute left-0 px-8 mt-8 w-full z-20"
+      class="absolute mt-8 left-0 px-8 z-20"
       @mouseleave="outlisting"
       @mouseover="inlisting"
     >
-      <Afterlist />
+      <Afterlist :departement="computer" />
     </div>
     <div class="d-spec size-125 relative font-semibold color-363636f px-2">
       <nav>
@@ -53,6 +53,9 @@
 <script>
 export default {
   computed: {
+    computer() {
+      return this.$store.state.computer
+    },
     category() {
       return this.$store.state.categ
     },

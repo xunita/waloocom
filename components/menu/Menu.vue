@@ -30,7 +30,7 @@
         </button>
       </div>
       <div class="">
-        <Listingbig v-show="listing" />
+        <Listingbig v-show="listing" :departement="computer" />
       </div>
     </div>
   </div>
@@ -39,6 +39,9 @@
 <script>
 export default {
   computed: {
+    computer() {
+      return this.$store.state.computer
+    },
     listing() {
       return this.$store.state.listingbig === true
     },

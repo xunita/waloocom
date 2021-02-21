@@ -1,23 +1,56 @@
 <template>
-  <div class="list w-full flex space-y-2">
-    <a class="clickable py-1 border-b">
-      <h4 class="font-semibold color-004e66 size-13">
-        {{ list.computer.name }}
-      </h4>
-    </a>
-    <div class="flex flex-wrap pt-1">
-      <div v-for="i in 3" :key="i" class="column is-half">
-        <a class="clickable block w-fit">
-          <h4 class="font-semibold w-fit color-004e66 size-13">Desktop</h4>
+  <div class="w-full">
+    <div v-if="list === undefined" class="size-14 font-medium">Loading...</div>
+    <div v-else class="flex flex-wrap w-full">
+      <div
+        v-for="(item, i) in list.content.list"
+        :key="i"
+        class="column is-half"
+      >
+        <a class="clickable block w-full text-center" :href="item.link">
+          <img class="h-12 is-all" :src="item.image" alt="Placeholder image" />
+          <h4 class="font-semibold w-fit color-004e66 size-135 pt-1 pb-1">
+            {{ item.name }}
+          </h4>
         </a>
-        <div class="py-15 flex flex-col space-y-1">
+        <div class="flex flex-col w-full">
           <a
-            v-for="(item, j) in list.computer.content.desktop"
+            v-for="(content, j) in item.content"
             :key="j"
-            class="clickable oneline w-fit hover-004e66 mr-4"
+            :href="$linker.format(content)"
+            class="clickable oneline w-fit hover-004e66 py-01"
           >
-            <h4 class="size-13 logo-color makeme-004e66">
-              {{ item }}
+            <h4 class="size-125 logo-color makeme-004e66">
+              {{ content }}
+            </h4>
+          </a>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <a class="clickable block w-full" :href="list.link">
+          <h4
+            class="font-semibold block wordbreaking color-004e66 size-135 pt-1 pb-1 border-b"
+          >
+            Discover all the {{ list.name }} products
+          </h4>
+        </a>
+        <span class="block w-full text-center"
+          ><h4 class="font-semibold w-fit logo-color size-135 pt-1 pb-1">
+            {{ list.name }} top brand
+          </h4>
+        </span>
+        <div class="flex flex-col w-full">
+          <a
+            v-for="(content, j) in list.topbrand"
+            :key="j"
+            :href="$linker.format(content)"
+            class="clickable oneline w-fit hover-004e66 py-01"
+          >
+            <h4
+              class="size-125 logo-color makeme-004e66 block oneline wordbreaking"
+            >
+              {{ content }}
             </h4>
           </a>
         </div>
@@ -29,14 +62,14 @@
 <script>
 export default {
   props: {
-    size: {
-      type: Number,
-      default: 99999,
+    list: {
+      type: Object,
+      default: () => {},
     },
   },
   computed: {
-    list() {
-      return this.$store.state.computer
+    size() {
+      return this.$store.state.size
     },
   },
 }

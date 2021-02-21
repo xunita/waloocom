@@ -1,20 +1,14 @@
 <template>
   <div
-    class="h-full bg-color-white border-2 w-full px-8"
+    class="h-full bg-color-white border-2 px-8"
     @mouseleave="outlisting"
     @mouseover="inlisting"
   >
-    <div class="w-full flex">
-      <div class="w-full py-4">
-        <a class="clickable flex align-center justify-between pb-1 border-b">
-          <h4 class="font-semibold w-fit m-0-auto color-004e66 size-13">
-            Computers & Electronics
-          </h4>
-        </a>
-        <div class="flex space-x-10 pt-3 w-full m-0-auto">
-          <Itemlist />
-          <Itemlist class="border-l pl-5" />
-        </div>
+    <div class="w-full h-full">
+      <div class="flex space-x-10 py-3 w-full h-full">
+        <Itemlist class="w-full" :list="departement.one" />
+        <div class="w-2 border-r"></div>
+        <Itemlist class="w-full" :list="departement.two" />
       </div>
     </div>
   </div>
@@ -22,6 +16,12 @@
 
 <script>
 export default {
+  props: {
+    departement: {
+      type: Object,
+      default: () => {},
+    },
+  },
   methods: {
     outlisting() {
       this.$store.commit('SET_AFTERLIST_MOD', false)

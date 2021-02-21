@@ -474,6 +474,15 @@ input[type='search']::-webkit-search-cancel-button {
 .h2x320 {
   height: 420px;
 }
+.is-1 {
+  width: 8.33333%;
+}
+.is-half {
+  width: 50%;
+}
+.is-all {
+  width: 100%;
+}
 .w320 {
   width: 300px;
 }

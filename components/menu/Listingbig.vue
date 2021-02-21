@@ -5,18 +5,22 @@
     @mouseleave="outlistingbig"
     @mouseover="inlistingbig"
   >
-    <figure class="image h-32x w-full">
-      <img class="h-32x w-full" src="/computer.jpg" alt="Placeholder image" />
-    </figure>
-    <div class="w-full py-4 px-6">
-      <a class="clickable flex align-center justify-between pb-1 border-b">
-        <h4 class="font-semibold w-fit m-0-auto color-004e66 size-13">
+    <div class="w-full">
+      <a class="clickable pb-1">
+        <img
+          class="h-12 w-full"
+          :src="departement.image"
+          alt="Placeholder image"
+        />
+
+        <h4 class="font-semibold py-2 w-fit m-0-auto color-004e66 size-14">
           Computers & Electronics
         </h4>
       </a>
-      <div class="flex space-x-10 pt-3 w-full m-0-auto">
-        <Itemlist />
-        <Itemlist class="border-l pl-5" />
+      <div class="flex py-15 px-6 space-x-10 pt-3 w-full m-0-auto">
+        <Itemlist class="w-full" :list="departement.one" />
+        <div class="w-2 border-r"></div>
+        <Itemlist class="w-full" :list="departement.two" />
       </div>
     </div>
     <div class="w-full"></div>
@@ -25,6 +29,12 @@
 
 <script>
 export default {
+  props: {
+    departement: {
+      type: Object,
+      default: () => {},
+    },
+  },
   methods: {
     outlistingbig() {
       this.$store.commit('SET_LISTBIG_MOD', false)

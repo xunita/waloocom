@@ -14,11 +14,11 @@
         </div>
       </div>
     </div>
-    <div class="flex align-center self-start w-full flex-wrap">
+    <div class="flex self-start w-full flex-wrap">
       <div
         v-for="i in 6"
         :key="i"
-        class="h160 bg-white column is-one-third border"
+        class="h160 bg-white column is-one-third border-4"
       ></div>
     </div>
   </div>
