@@ -1,25 +1,30 @@
 <template>
   <div class="flex space-x-3 h320">
     <div class="flex align-center space-x-3">
-      <div v-for="j in nbrbig" :key="j" class="bg-white h320 w320">
-        <div class="flex align-center space-x-2 vertical-center w-fit m-0-auto">
-          <figure class="image is-40x40 rounded-full relative">
-            <img
-              class="is-40x40 rounded-full"
-              src="/t.jpg"
-              alt="Placeholder image"
-            />
-          </figure>
-          <span class="size-13 font-semibold">{{ name }}</span>
+      <div
+        v-for="(img, j) in nbrbig"
+        :key="j"
+        class="bg-white h320 w320 px-6 pt-5"
+      >
+        <div class="flex flex-col space-y-2">
+          <span class="size-15 font-semibold">{{ img.name }}</span>
+          <img class="w-full h-full" :src="img.img" alt="Placeholder image" />
         </div>
       </div>
     </div>
     <div class="flex self-start w-full flex-wrap">
       <div
-        v-for="i in 6"
+        v-for="(img, i) in nbr"
         :key="i"
-        class="h160 bg-white column is-one-third border-4"
-      ></div>
+        class="h160 bg-white column is-one-third relative border-4 px-6"
+      >
+        <div class="flex flex-col space-y-2 vertical-center">
+          <img class="w-full" :src="img.img" alt="Placeholder image" />
+          <span class="block size-14 h-fit font-semibold text-center">{{
+            img.name
+          }}</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -37,12 +42,52 @@ export default {
       return this.$store.state.size
     },
     nbr() {
-      if (this.size <= 1310) return 4
-      else return 6
+      return {
+        one: {
+          name: 'Phones & Accessories',
+          img: '/cover/toys.jpg',
+        },
+        two: {
+          name: 'Fashion styles',
+          img: '/cover/toys.jpg',
+        },
+        three: {
+          name: 'Phones & Accessories',
+          img: '/cover/toys.jpg',
+        },
+        four: {
+          name: 'Fashion styles',
+          img: '/cover/toys.jpg',
+        },
+        five: {
+          name: 'Phones & Accessories',
+          img: '/cover/toys.jpg',
+        },
+        six: {
+          name: 'Fashion styles',
+          img: '/cover/toys.jpg',
+        },
+      }
     },
     nbrbig() {
-      if (this.size <= 1310) return 1
-      else return 2
+      if (this.size <= 1310)
+        return {
+          one: {
+            name: 'Phones & Accessories',
+            img: '/cover/phone.jpg',
+          },
+        }
+      else
+        return {
+          one: {
+            name: 'Phones & Accessories',
+            img: '/cover/phone.jpg',
+          },
+          two: {
+            name: 'Fashion styles',
+            img: '/cover/fashion.jpg',
+          },
+        }
     },
   },
 }

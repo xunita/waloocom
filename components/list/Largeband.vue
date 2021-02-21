@@ -1,15 +1,10 @@
 <template>
   <div class="bg-white w-full h-24">
-    <div class="flex align-center space-x-2 vertical-center w-fit m-0-auto">
-      <figure class="image is-40x40 rounded-full relative">
-        <img
-          class="is-40x40 rounded-full"
-          src="/t.jpg"
-          alt="Placeholder image"
-        />
-      </figure>
-      <span class="size-125 font-semibold">{{ name }}</span>
-    </div>
+    <img
+      class="w-full h-full"
+      src="/cover/banner.jpg"
+      alt="Placeholder image"
+    />
   </div>
 </template>
 

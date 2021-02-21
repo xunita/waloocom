@@ -5,7 +5,7 @@
     @mouseover="inlistingbig"
   >
     <div class="w-full z-40x">
-      <a class="clickable pb-1">
+      <a class="clickable pb-1" :href="departement.link">
         <img
           class="h-12 w-full"
           :src="departement.image"

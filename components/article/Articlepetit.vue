@@ -19,7 +19,7 @@
         <button
           class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
         >
-          <span class="size-12 font-semibold color-363636f">Jumia</span>
+          <span class="size-11 font-semibold color-363636f">Jumia</span>
         </button>
       </div>
       <span class="size-13 logo-color font-semibold twoline"

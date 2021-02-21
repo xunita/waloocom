@@ -7,18 +7,16 @@
       <div
         v-for="i in 4"
         :key="i"
-        class="bg-white h320"
+        class="bg-white h320 px-6"
         :class="{ w320: size > 1310, 'w-full': size <= 1310 }"
       >
-        <div class="flex align-center space-x-2 vertical-center w-fit m-0-auto">
-          <figure class="image is-40x40 rounded-full relative">
-            <img
-              class="is-40x40 rounded-full"
-              src="/t.jpg"
-              alt="Placeholder image"
-            />
-          </figure>
-          <span class="size-13 font-semibold">{{ name }}</span>
+        <div class="flex flex-col space-y-2 py-5">
+          <span class="size-15 font-semibold">Fashion style</span>
+          <img
+            class="w-full h-full"
+            src="/cover/fashion.jpg"
+            alt="Placeholder image"
+          />
         </div>
       </div>
     </div>
