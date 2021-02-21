@@ -1,11 +1,10 @@
 <template>
   <div
-    id="listcateg"
-    class="h-full bg-white lbig absolute border-l top-0 z-20 overflow-y-auto overflow-x-auto asider scrollnonemoz"
+    class="h-full w-full z-40x bg-white border-l overflow-y-auto overflow-x-auto asider scrollnonemoz"
     @mouseleave="outlistingbig"
     @mouseover="inlistingbig"
   >
-    <div class="w-full">
+    <div class="w-full z-40x">
       <a class="clickable pb-1">
         <img
           class="h-12 w-full"

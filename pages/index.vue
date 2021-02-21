@@ -12,17 +12,17 @@
       <div class="p-1">
         <div>
           <div
-            class="mt-1"
+            class="mt-2"
             :class="{
               'px-0': size > 1500,
               'px-6': size <= 1500,
             }"
           >
-            <div class="w-full flex flex-col space-y-3">
+            <div class="w-full flex flex-col space-y-4">
               <div class="h449 w-full flex align-center">
                 <div class="h-full relative"><Welcomemenu /></div>
                 <div class="w-full h-full relative flex -ml-1">
-                  <div class="w-full pl-3 pr-2 h-full relative"><Bigads /></div>
+                  <div class="w-full pl-4 pr-3 h-full relative"><Bigads /></div>
                   <Listing
                     v-show="listing"
                     :departement="computer"
@@ -237,12 +237,6 @@
                 <Categorielist :size="size" />
               </div>
               <div>
-                <Brandlogo />
-              </div>
-              <div>
-                <Walootour />
-              </div>
-              <div>
                 <div
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
@@ -267,6 +261,12 @@
                   </button>
                 </div>
                 <Adspetit />
+              </div>
+              <div>
+                <Brandlogo />
+              </div>
+              <div>
+                <Walootour />
               </div>
               <div>
                 <Waloofo />

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full w-full fixed">
+  <div class="flex h-full w-full absolute">
     <div
       class="w180ee relative h-full bg-white overflow-y-auto asider scrollnonemoz"
     >
@@ -8,9 +8,8 @@
       </div>
       <Menucontent class="h-full" />
     </div>
-    <div class="w-full relative h-full">
-      <div class="w-full h-full bg-black-tr relative" @click="close"></div>
-
+    <div class="w-full relative h-full z-30">
+      <div class="w-full h-full bg-black-tr absolute z-0" @click="close"></div>
       <div class="absolute top-0 left-0 ml-4 mt-2 z-30x">
         <button class="bg-transparent no-outlines outline-none" @click="close">
           <svg
@@ -29,7 +28,7 @@
           </svg>
         </button>
       </div>
-      <div class="">
+      <div class="w-full relative h-full">
         <Listingbig v-show="listing" :departement="computer" />
       </div>
     </div>

@@ -13,6 +13,12 @@ body {
 .bglogo-color {
   background-color: #282828 !important;
 }
+.z-40x {
+  z-index: 40 !important;
+}
+.z-10x {
+  z-index: 10 !important;
+}
 .d-spec {
   min-width: min-content !important;
 }
