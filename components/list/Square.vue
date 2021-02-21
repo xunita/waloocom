@@ -10,7 +10,7 @@
         class="bg-white h320 px-6"
         :class="{ w320: size > 1310, 'w-full': size <= 1310 }"
       >
-        <div class="flex flex-col space-y-2 py-5">
+        <div class="flex flex-col space-y-2 vertical-center">
           <span class="size-15 font-semibold">Fashion style</span>
           <img
             class="w-full h-full"
