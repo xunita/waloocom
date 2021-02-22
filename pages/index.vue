@@ -321,7 +321,7 @@
                 </div>
                 <Brandlogo />
               </div>
-              <div>
+              <div class="z-10">
                 <div
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >

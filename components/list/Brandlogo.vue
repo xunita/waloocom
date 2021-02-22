@@ -6,7 +6,7 @@
         :key="i"
         class="column is-one-fifth h-full relative hover:shadow-md px-5"
       >
-        <a class="clickable"
+        <a class="clickable select-none"
           ><img
             class="vertical-center m-0-auto"
             :class="{
