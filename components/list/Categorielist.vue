@@ -14,12 +14,12 @@
               :class="{
                 'w-48': size > 1211,
               }"
-              src="/t.jpg"
+              src="/cover/gaming.jpg"
               alt="Placeholder image"
             />
             <span
               class="size-13 font-semibold relative top-03x block w-fit m-0-auto"
-              >{{ name }}
+              >Consoles gaming
             </span>
           </div></a
         >
