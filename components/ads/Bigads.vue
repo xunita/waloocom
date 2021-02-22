@@ -26,7 +26,7 @@ export default {
     return {
       hasimage: true,
       index: 1,
-      ads: ['/cover/gaming.jpg', '/cover/training.jpg', '/cover/home.jpg'],
+      ads: ['/ads/gaming.jpg', '/ads/training.jpg', '/ads/home.jpg'],
     }
   },
   computed: {

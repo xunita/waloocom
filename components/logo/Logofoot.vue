@@ -1,6 +1,6 @@
 <template>
   <div class="w-fit">
-    <nuxt-link class="flex align-center space-x-3" to="/"
+    <nuxt-link class="flex align-center space-x-3" to="/home"
       ><span class="b612 select-none text-white -mt-01 size-30">waloo</span>
       <svg
         class="scalebig"

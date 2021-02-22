@@ -40,7 +40,7 @@
           <a
             v-for="(element, i) in category"
             :key="i"
-            to="/"
+            to="/home"
             class="dropdown-item clickable flex align-center space-x-1"
             @click="setItem(element)"
           >
