@@ -23,7 +23,11 @@
     </div>
     <div
       :id="'adscroll' + id"
-      class="bg-white h-full w-full flex align-center space-x-2 absolute overflow-x-hidden xxx scrollnone pt-2"
+      class="bg-white h-full w-full flex align-center space-x-2 absolute xxx scrollnone pt-2"
+      :class="{
+        'overflow-x-hidden': size > 768,
+        'overflow-x-auto': size <= 768,
+      }"
     >
       <Articlepetit v-for="i in 20" :key="i" />
     </div>
@@ -65,6 +69,9 @@ export default {
     }
   },
   computed: {
+    size() {
+      return this.$store.state.size
+    },
     scrolling() {
       return this.scroll
     },
