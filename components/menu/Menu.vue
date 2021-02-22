@@ -33,10 +33,12 @@
         </button>
       </div>
       <div
-        class="w-full absolute h-full"
+        class="max1220 absolute h-full"
         :class="{ 'z-50': listing, 'z-30': !listing }"
       >
-        <Listingbig v-show="listing" :departement="computer" />
+        <div class="w-full h-full">
+          <Listingbig v-show="listing" :departement="computer" />
+        </div>
       </div>
     </div>
   </div>
