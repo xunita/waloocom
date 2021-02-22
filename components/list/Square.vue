@@ -5,18 +5,19 @@
       :class="{ 'w-fit': size > 1310 }"
     >
       <div
-        v-for="i in 4"
+        v-for="(item, i) in nbr"
         :key="i"
         class="bg-white h320 px-6"
         :class="{ w320: size > 1310, 'w-full': size <= 1310 }"
       >
         <div class="flex flex-col space-y-2 vertical-center">
-          <span class="size-15 font-semibold">Fashion style</span>
-          <img
-            class="w-full h-full"
-            src="/cover/fashion.jpg"
-            alt="Placeholder image"
-          />
+          <a class="clickable"
+            ><span class="size-15 font-semibold">{{ item.name }}</span>
+            <img
+              class="w-full h-full pt-1"
+              :src="item.img"
+              alt="Placeholder image"
+          /></a>
         </div>
       </div>
     </div>
@@ -36,12 +37,28 @@ export default {
       return this.$store.state.size
     },
     nbr() {
-      if (this.size <= 1310) return 4
-      else return 6
-    },
-    nbrbig() {
-      if (this.size <= 1310) return 1
-      else return 2
+      return {
+        one: {
+          link: '',
+          name: 'Phones & Accessories',
+          img: '/cover/phone.jpg',
+        },
+        two: {
+          link: '',
+          name: 'Fashion styles',
+          img: '/cover/fashion.jpg',
+        },
+        three: {
+          link: '',
+          name: 'Gaming',
+          img: '/cover/gamings.jpg',
+        },
+        four: {
+          link: '',
+          name: 'Offices & Books',
+          img: '/cover/office.jpg',
+        },
+      }
     },
   },
 }

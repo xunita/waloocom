@@ -29,7 +29,10 @@ body {
   color: #e6e6e6;
 }
 .bg-e6e6e6 {
-  background-color: #f0efef6b;
+  background-color: #eff0f06b;
+}
+.bg-trt {
+  background-color: #e2e8f0 !important;
 }
 .b612 {
   font-family: 'B612', Arial, Helvetica, sans-serif;

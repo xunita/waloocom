@@ -9,7 +9,11 @@
       <Menucontent class="h-full" />
     </div>
     <div class="w-full relative h-full z-30">
-      <div class="w-full h-full bg-black-tr absolute z-0" @click="close"></div>
+      <div
+        class="w-full h-full bg-black-tr absolute"
+        :class="{ 'z-50': !listing, 'z-30': listing }"
+        @click="close"
+      ></div>
       <div class="absolute top-0 left-0 ml-4 mt-2 z-30x">
         <button class="bg-transparent no-outlines outline-none" @click="close">
           <svg
@@ -28,7 +32,10 @@
           </svg>
         </button>
       </div>
-      <div class="w-full relative h-full">
+      <div
+        class="w-full absolute h-full"
+        :class="{ 'z-50': listing, 'z-30': !listing }"
+      >
         <Listingbig v-show="listing" :departement="computer" />
       </div>
     </div>

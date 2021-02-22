@@ -4,11 +4,16 @@
       <div
         v-for="(img, j) in nbrbig"
         :key="j"
-        class="bg-white h320 w320 px-6 pt-5"
+        class="bg-white h320 w320 px-6 py-5"
       >
         <div class="flex flex-col space-y-2">
-          <span class="size-15 font-semibold">{{ img.name }}</span>
-          <img class="w-full h-full" :src="img.img" alt="Placeholder image" />
+          <a class="clickable"
+            ><span class="size-15 font-semibold">{{ img.name }}</span>
+            <img
+              class="w-full h-full pt-1"
+              :src="img.img"
+              alt="Placeholder image"
+          /></a>
         </div>
       </div>
     </div>
@@ -19,10 +24,12 @@
         class="h160 bg-white column is-one-third relative border-4 px-6"
       >
         <div class="flex flex-col space-y-2 vertical-center">
-          <img class="w-full" :src="img.img" alt="Placeholder image" />
-          <span class="block size-14 h-fit font-semibold text-center">{{
-            img.name
-          }}</span>
+          <a class="clickable"
+            ><img class="w-full" :src="img.img" alt="Placeholder image" />
+            <span class="block size-14 h-fit font-semibold text-center">{{
+              img.name
+            }}</span></a
+          >
         </div>
       </div>
     </div>
@@ -44,28 +51,34 @@ export default {
     nbr() {
       return {
         one: {
-          name: 'Phones & Accessories',
-          img: '/cover/toys.jpg',
+          link: '',
+          name: 'Computers',
+          img: '/cover/computer.jpg',
         },
         two: {
-          name: 'Fashion styles',
+          link: '',
+          name: 'Toys',
           img: '/cover/toys.jpg',
         },
         three: {
-          name: 'Phones & Accessories',
-          img: '/cover/toys.jpg',
+          link: '',
+          name: 'Consoles gaming',
+          img: '/cover/gaming.jpg',
         },
         four: {
-          name: 'Fashion styles',
-          img: '/cover/toys.jpg',
+          link: '',
+          name: 'Training',
+          img: '/cover/training.jpg',
         },
         five: {
-          name: 'Phones & Accessories',
-          img: '/cover/toys.jpg',
+          link: '',
+          name: 'Home',
+          img: '/cover/home.jpg',
         },
         six: {
-          name: 'Fashion styles',
-          img: '/cover/toys.jpg',
+          link: '',
+          name: 'Tv',
+          img: '/cover/camera.jpg',
         },
       }
     },

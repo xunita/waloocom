@@ -34,7 +34,11 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['@/plugins/directive.js', '@/plugins/linkformat.js'],
+  plugins: [
+    '@/plugins/directive.js',
+    '@/plugins/linkformat.js',
+    '@/plugins/utilities.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

@@ -1,17 +1,18 @@
 <template>
   <div class="bg-white w-full h-24">
-    <img
-      class="w-full h-full"
-      src="/cover/banner.jpg"
-      alt="Placeholder image"
-    />
+    <a class="clickable"
+      ><img
+        class="w-full h-full"
+        src="/cover/banner.jpg"
+        alt="Placeholder image"
+    /></a>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    name: {
+    src: {
       type: String,
       default: 'Marketplace',
     },

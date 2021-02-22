@@ -56,7 +56,7 @@
             <a
               v-for="j in 5"
               :key="j"
-              class="clickable w-fit size-14 text-white"
+              class="clickable underline-hover w-fit size-14 text-white"
               >Contact us</a
             >
           </div>

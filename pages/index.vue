@@ -28,7 +28,6 @@
                     :departement="computer"
                     :size="size"
                   />
-                  <div class="h-full relative"><Adscateg /></div>
                 </div>
               </div>
               <div class="w-full">
@@ -39,7 +38,7 @@
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
-                    Our best deals
+                    Today's deals
                   </h4>
                   <button
                     class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
@@ -62,6 +61,30 @@
               </div>
               <div class="w-full">
                 <Largeband />
+              </div>
+              <div>
+                <div
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
+                >
+                  <h4 class="font-semibold size-16 logo-color">Featured</h4>
+                  <button
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
+                  >
+                    <svg
+                      class="w-6 h-6 color-363636f"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <Adspetit />
               </div>
               <div class="w-full">
                 <Square />
@@ -97,7 +120,7 @@
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
-                    Our trending products
+                    Our best deals
                   </h4>
                   <button
                     class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
@@ -117,9 +140,6 @@
                   </button>
                 </div>
                 <Adspetit />
-              </div>
-              <div class="w-full">
-                <Twoband />
               </div>
               <div class="w-full">
                 <Two />
@@ -189,6 +209,35 @@
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
+                    Trending products
+                  </h4>
+                  <button
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
+                  >
+                    <svg
+                      class="w-6 h-6 color-363636f"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <Adspetit />
+              </div>
+              <div class="w-full">
+                <Twoband />
+              </div>
+              <div>
+                <div
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
+                >
+                  <h4 class="font-semibold size-16 logo-color">
                     Our recommendations
                   </h4>
                   <button
@@ -241,7 +290,7 @@
                   class="bg-white px-4 pt-3 flex align-center justify-between"
                 >
                   <h4 class="font-semibold size-16 logo-color">
-                    Recently viewed
+                    New selected products
                   </h4>
                   <button
                     class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
@@ -263,7 +312,40 @@
                 <Adspetit />
               </div>
               <div>
+                <div
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
+                >
+                  <h4 class="font-semibold size-16 logo-color">
+                    Waloo Marketplace
+                  </h4>
+                </div>
                 <Brandlogo />
+              </div>
+              <div>
+                <div
+                  class="bg-white px-4 pt-3 flex align-center justify-between"
+                >
+                  <h4 class="font-semibold size-16 logo-color">
+                    Recently viewed
+                  </h4>
+                  <button
+                    class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
+                  >
+                    <svg
+                      class="w-6 h-6 color-363636f"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <Adspetit />
               </div>
               <div>
                 <Walootour />

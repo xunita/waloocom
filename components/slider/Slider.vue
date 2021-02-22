@@ -3,6 +3,7 @@
     <div class="h-full w-16 leftag z-10 relative left-0 px-3">
       <button
         class="button btn-004e66 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-center z-10 gotop hvme hvme-left border-2 border-transparent"
+        @click="go('left')"
       >
         <svg
           class="w-6 h-6 transform rotate-90 color-white me-white"
@@ -21,17 +22,22 @@
     <div
       class="d-dot block h-fit z-10 self-end mb-5 flex align-center space-x-3"
     >
-      <span class="ads-dot clickable block bg-004e66 rounded-full"></span>
       <span
-        v-for="i in 5"
+        v-for="i in adslength"
         :key="i"
-        class="ads-dot clickable block bg-dot rounded-full border-none"
+        class="ads-dot clickable block rounded-full bg-dot border-none"
+        :class="{
+          'bg-004e66': i === index,
+          ' bg-dot border-none': i !== index,
+        }"
+        @click="goindex(i)"
       ></span>
     </div>
-    <div class="bg-white h-full w-full absolute"><slot></slot></div>
+    <div class="bg-e6e6e6 h-full w-full absolute"><slot></slot></div>
     <div class="h-full relative w-16 rightag z-10 right-0">
       <button
         class="button btn-004e66 shadow-sm ml-1 h-11 w-11 rounded-full no-outlines outline-none vertical-center z-10 gotop hvme hvme-right border-2 border-transparent"
+        @click="go('right')"
       >
         <svg
           class="w-6 h-6 transform -rotate-90 color-white relative me-white"
@@ -51,7 +57,26 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    index: {
+      type: Number,
+      default: 1,
+    },
+    adslength: {
+      type: Number,
+      default: 1,
+    },
+  },
+  methods: {
+    go(value) {
+      this.$emit('gowhere', value)
+    },
+    goindex(i) {
+      this.$emit('goindex', i)
+    },
+  },
+}
 </script>
 
 <style scoped>
@@ -61,8 +86,8 @@ export default {}
 } */
 
 .ads-dot {
-  width: 10px !important;
-  height: 10px !important;
+  width: 9px !important;
+  height: 9px !important;
 }
 .leftag,
 .rightag {
