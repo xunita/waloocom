@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full w-full absolute">
+  <div class="flex h-full w-full fixed">
     <div
       class="w180ee relative h-full bg-white overflow-y-auto asider scrollnonemoz"
     >
