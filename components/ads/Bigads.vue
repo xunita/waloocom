@@ -7,14 +7,13 @@
       @goindex="goindex"
     >
       <figure class="image h-full w-full">
-        <img
+        <a
           v-for="(img, i) in ads"
           :key="i"
-          class="h-full hiddenmox w-full"
+          class="clickable h-full hiddenmox w-full"
           :class="{ slide: index === i + 1 }"
-          :src="img"
-          alt="Placeholder image"
-        /></figure
+          ><img class="h-full w-full" :src="img" alt="Placeholder image"
+        /></a></figure
     ></slider>
   </div>
 </template>
