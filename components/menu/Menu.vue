@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-full w-full fixed">
+  <div class="flex h-full max1260s fixed">
     <div
       class="w180ee z-5000 relative h-full bg-white overflow-y-auto asider scrollnonemoz"
     >
@@ -33,7 +33,7 @@
         </button>
       </div>
       <div
-        class="max1220 absolute h-full"
+        class="w-full absolute h-full"
         :class="{ 'z-50': listing, 'z-30': !listing }"
       >
         <div class="w-full h-full">

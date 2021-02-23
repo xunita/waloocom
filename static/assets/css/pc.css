@@ -219,6 +219,9 @@ input[type='search']::-webkit-search-cancel-button {
 .max1260 {
   max-width: 1500px !important;
 }
+.max1260s {
+  width: 1500px !important;
+}
 .max1220 {
   max-width: 1260px !important;
 }
@@ -518,7 +521,7 @@ input[type='search']::-webkit-search-cancel-button {
   min-width: 280px;
 }
 .w180ee {
-  width: 280px !important;
+  min-width: 280px !important;
 }
 .m-w180e {
   margin-left: 235px !important;
