@@ -97,17 +97,11 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
     window.removeEventListener('resize', this.large)
   },
-  created() {
-    this.redirecthome()
-  },
   mounted() {
     this.large()
     this.handleScroll()
   },
   methods: {
-    redirecthome() {
-      if (this.$route.path === '/') this.$router.push('/home')
-    },
     scrolltop() {
       window.scroll({
         top: 0,
