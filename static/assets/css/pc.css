@@ -220,10 +220,13 @@ input[type='search']::-webkit-search-cancel-button {
   max-width: 1500px !important;
 }
 .max1260s {
-  width: 1500px !important;
+  max-width: 1500px !important;
 }
 .max1220 {
-  max-width: 1260px !important;
+  max-width: 1220px !important;
+}
+.max1220s {
+  width: 1220px !important;
 }
 .ax-b0 {
   margin-right: 0.5rem !important;
