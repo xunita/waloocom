@@ -97,10 +97,12 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
     window.removeEventListener('resize', this.large)
   },
+  beforeCreate() {
+    this.redirecthome()
+  },
   mounted() {
     this.large()
     this.handleScroll()
-    this.redirecthome()
   },
   methods: {
     redirecthome() {
