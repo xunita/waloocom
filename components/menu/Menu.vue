@@ -1,7 +1,7 @@
 <template>
   <div class="flex h-full w-full fixed">
     <div
-      class="w180ee relative h-full bg-white overflow-y-auto asider scrollnonemoz"
+      class="w180ee z-5000 relative h-full bg-white overflow-y-auto asider scrollnonemoz"
     >
       <div class="h-12 w-full bg-004e66">
         <Logosmen class="vertical-center m-0-auto" />
