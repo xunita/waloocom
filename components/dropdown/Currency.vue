@@ -157,7 +157,7 @@ export default {
 .walele {
   animation: appear 0.2s;
   top: -15.91rem !important;
-  right: -12.08rem !important;
+  right: -12.02rem !important;
 }
 .dodo {
   right: 0.2rem !important;

@@ -2,7 +2,7 @@
   <div class="d-spec relative border-t pt-1 bg-white">
     <div
       v-show="listing"
-      class="absolute mt-8 left-0 px-8 z-20"
+      class="absolute w-full mt-8 left-0 px-8 z-20"
       @mouseleave="outlisting"
       @mouseover="inlistings"
     >

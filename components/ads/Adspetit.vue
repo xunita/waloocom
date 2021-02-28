@@ -25,8 +25,8 @@
       :id="'adscroll' + id"
       class="bg-white h-full w-full flex align-center space-x-2 absolute xxx scrollnone"
       :class="{
-        'overflow-x-hidden': size > 768,
-        'overflow-x-auto': size <= 768,
+        'overflow-x-hiddens': size > 768,
+        'overflow-x-autos': size <= 768,
       }"
     >
       <Articlepetit v-for="i in 20" :key="i" />

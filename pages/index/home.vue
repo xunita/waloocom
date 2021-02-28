@@ -17,7 +17,7 @@
       <Squaresix />
     </div>
     <!-- <Articlebig /> -->
-    <Carduct titles="Today's deals" />
+    <Carduct titles="Today's Deals" />
     <div class="w-full">
       <Largeband />
     </div>
@@ -25,19 +25,23 @@
     <div class="w-full">
       <Square />
     </div>
-    <Carduct titles="Our best deals" />
+    <Carduct titles="Best Deals" />
+    <div class="w-full">
+      <Twomix />
+    </div>
+    <Carduct titles="Most popular" />
     <div class="w-full">
       <Two />
     </div>
-    <Carduct titles="Trending products" />
+    <Carduct titles="Top Trending" />
     <div class="w-full">
       <Twoband />
     </div>
-    <Carduct titles="Our recommendations" />
+    <Carduct titles="Waloo Recommendations" />
     <Allcateg />
-    <Carduct titles="New selected products" />
+    <Carduct titles="New Selected" />
     <Marketplace />
-    <Carduct titles=">Recently viewed" />
+    <Carduct titles="Recently Viewed" />
     <div>
       <Walootour />
     </div>

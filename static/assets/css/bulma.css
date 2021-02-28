@@ -422,7 +422,7 @@
   width: 96px;
 }
 .image.is-240x200 {
-  width: 240px !important;
+  width: auto !important;
   height: 180px !important;
 }
 .is-240x200 {
@@ -440,8 +440,8 @@
 }
 
 .is-240x200s {
-  width: 380px !important;
-  height: 180px !important;
+  width: 420px !important;
+  height: auto !important;
 }
 .image.is-128x128 {
   height: 128px;
@@ -1725,6 +1725,15 @@ fieldset[disabled] .button {
   position: absolute;
   top: 100%;
   z-index: 20;
+}
+.is-small.delete,
+.is-small.modal-close {
+  height: 12px;
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
+  width: 12px;
 }
 .dropdown-content {
   background-color: #fff;

@@ -10,8 +10,8 @@
       transitioner
     </button>
     <div>
-      <Article v-show="transition" key="sddq" class="appearZ" />
-      <Articlebig v-show="!transition" key="sddqs" class="appearZ" />
+      <Article v-show="transition" key="sddq" class="appearZ appearxh" />
+      <Articlebig v-show="!transition" key="sddqs" class="appearZ appearxh" />
     </div>
   </div>
 </template>
