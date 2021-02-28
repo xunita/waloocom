@@ -1,7 +1,7 @@
 <template>
   <div class="h-full bg-white">
     <div
-      class="color-363636f relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
+      class="logo-color relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
     >
       <h4 class="font-semibold size-125 text-white">Best deals</h4>
       <button

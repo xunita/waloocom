@@ -18,7 +18,7 @@
             "
           >
             <svg
-              class="w-5 h-5 color-363636f mr-05"
+              class="w-5 h-5 logo-color mr-05"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -33,11 +33,11 @@
             </svg>
 
             <p class="flex align-center space-x-0">
-              <span class="size-125 font-semibold color-363636f block w-fit"
+              <span class="size-125 font-semibold logo-color block w-fit"
                 >{{ spoken }} - {{ currency }}</span
               >
               <svg
-                class="w-4 h-4 color-363636f relative top-01x"
+                class="w-4 h-4 logo-color relative top-01x"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,14 +55,12 @@
       <div id="dropdown-menu" class="dropdown-menu walele" role="menu">
         <div class="dropdown-content bg-white border">
           <a class="dropdown-items select-none">
-            <span class="size-12 pb-1 block color-363636ff"
-              >Current language</span
-            >
+            <span class="size-12 pb-1 block logo-colorf">Current language</span>
             <span class="size-125 block font-semibold">{{ spoken }}</span>
           </a>
           <hr class="dropdown-divider" />
           <a class="dropdown-items select-none">
-            <span class="size-12 pb-1 block color-363636ff"
+            <span class="size-12 pb-1 block logo-colorf"
               >Choose another language</span
             ></a
           >
@@ -80,7 +78,7 @@
           </a>
           <hr class="dropdown-divider" />
           <a class="dropdown-items w-fit select-none pb-2">
-            <span class="size-12 font-semibold block color-363636ff"
+            <span class="size-12 font-semibold block logo-colorf"
               >Currency setting</span
             ></a
           >

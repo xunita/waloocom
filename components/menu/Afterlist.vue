@@ -6,9 +6,17 @@
   >
     <div class="w-full h-full">
       <div class="flex space-x-10 py-3 w-full h-full">
-        <Itemlist class="w-full" :list="departement.one" />
-        <div class="w-2 border-r"></div>
-        <Itemlist class="w-full" :list="departement.two" />
+        <Itemlist
+          class="w-full"
+          :parttwo="departement.two ? true : false"
+          :list="departement.one"
+        />
+        <div v-if="departement.two" class="w-2 border-r"></div>
+        <Itemlist
+          v-if="departement.two"
+          class="w-full"
+          :list="departement.two"
+        />
       </div>
     </div>
   </div>

@@ -12,14 +12,28 @@
           alt="Placeholder image"
         />
 
-        <h4 class="font-semibold py-2 w-fit m-0-auto color-004e66 size-14">
-          Computers & Electronics
+        <h4 class="font-semibold pt-2 w-fit m-0-auto color-004e66 size-14">
+          {{ departement.name }}
         </h4>
       </a>
-      <div class="flex py-15 px-6 space-x-10 pt-3 w-full m-0-auto">
-        <Itemlist class="w-full" :list="departement.one" />
-        <div class="w-2 border-r"></div>
-        <Itemlist class="w-full" :list="departement.two" />
+      <div
+        v-if="departement === undefined"
+        class="flex py-15 px-6 space-x-10 pt-3 w-full m-0-auto"
+      >
+        Loading...
+      </div>
+      <div v-else class="flex py-15 px-6 space-x-10 pt-3 w-full m-0-auto">
+        <Itemlist
+          class="w-full"
+          :parttwo="departement.two ? true : false"
+          :list="departement.one"
+        />
+        <div v-if="departement.two" class="w-2 border-r"></div>
+        <Itemlist
+          v-if="departement.two"
+          class="w-full"
+          :list="departement.two"
+        />
       </div>
     </div>
     <div class="w-full"></div>

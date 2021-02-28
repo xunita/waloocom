@@ -5,12 +5,12 @@
         v-for="(item, i) in lang"
         :key="i"
         class="dropdown-item px-5 clickable flex align-center justify-between"
-        @mouseover="inlisting"
+        @mouseover="inlisting(i)"
         @mouseleave="outlisting"
       >
-        <span class="size-125 font-medium color-363636f">{{ item }}</span>
+        <span class="size-125 font-medium logo-color">{{ item }}</span>
         <svg
-          class="w-4 h-4 color-363636f relative top-01x"
+          class="w-4 h-4 logo-color relative top-01x"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@
         </svg>
       </a>
       <a class="dropdown-item px-5 clickable flex align-center justify-between">
-        <span class="size-13 font-medium color-363636f">Other categories</span>
+        <span class="size-13 font-medium logo-color">Other categories</span>
       </a>
     </div>
   </div>
@@ -86,8 +86,9 @@ export default {
       //   }
       //   console.log(el.getBoundingClientRect().width)
     },
-    inlisting() {
+    inlisting(i) {
       this.$store.commit('SET_LIST_MOD', true)
+      this.$store.commit('SET_LISTBIG_CATEG', i)
     },
     sleep(milliseconds) {
       const date = Date.now()

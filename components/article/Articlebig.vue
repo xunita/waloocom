@@ -3,7 +3,7 @@
     ><button
       class="absolute z-10 right-0 bg-black-trs p-1 mr-1 mt-1 h-10 w-10 rounded-full no-outlines outline-none"
     >
-      <i class="far fa-heart color-363636f size-20"></i>
+      <i class="far fa-heart logo-color size-20"></i>
     </button>
     <figure class="image is-240x200s">
       <img class="is-240x200s" src="/b.jpg" alt="Placeholder image" />
@@ -13,7 +13,7 @@
         <button
           class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
         >
-          <span class="size-12 font-semibold color-363636f">Jumia</span>
+          <span class="size-12 font-semibold logo-color">Jumia</span>
         </button>
       </div>
       <span class="size-13 logo-color font-semibold twoline"
@@ -31,7 +31,7 @@
             >$ 499,987.9</span
           >
         </p>
-        <span class="size-13 self-start color-363636f font-semibold twoline"
+        <span class="size-13 self-start logo-color font-semibold twoline"
           >87 in stock</span
         >
       </div>
@@ -51,7 +51,7 @@
         <div>
           <div class="flex align-center space-x-10 py-1">
             <div>
-              <span class="block size-13 font-semibold color-363636f"
+              <span class="block size-13 font-semibold logo-color"
                 >Size</span
               >
               <select
@@ -66,7 +66,7 @@
               </select>
             </div>
             <div>
-              <span class="block size-13 font-semibold color-363636f">Qte</span>
+              <span class="block size-13 font-semibold logo-color">Qte</span>
               <input
                 class="my-1 pl-1 w-12 size-13 no-outlines bg-e6e6e6 border font-semibold"
                 name="qte"

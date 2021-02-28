@@ -18,7 +18,7 @@
             "
           >
             <svg
-              class="w-6 h-6 color-363636f"
+              class="w-6 h-6 logo-color"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -38,11 +38,11 @@
               ></path>
             </svg>
 
-            <span class="size-125 color-363636f font-semibold block w-fit">{{
+            <span class="size-125 logo-color font-semibold block w-fit">{{
               ctry
             }}</span>
             <svg
-              class="w-4 h-4 color-363636f relative top-01x"
+              class="w-4 h-4 logo-color relative top-01x"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +64,14 @@
       >
         <div class="dropdown-content bg-white border">
           <a class="dropdown-items select-none">
-            <span class="size-12 pb-1 block color-363636f"
+            <span class="size-12 pb-1 block logo-color"
               >Country of delivery</span
             >
             <span class="size-125 block font-semibold">{{ ctry }}</span>
           </a>
           <hr class="dropdown-divider" />
           <a class="dropdown-items select-none">
-            <span class="size-12 pb-1 block color-363636f"
+            <span class="size-12 pb-1 block logo-color"
               >Choose another country</span
             ></a
           >

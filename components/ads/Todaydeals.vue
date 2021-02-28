@@ -1,7 +1,7 @@
 <template>
   <div class="h-full bg-white rounded">
     <div
-      class="color-363636f relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
+      class="logo-color relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
     >
       <h4 class="font-semibold size-125 text-white">Today's deals</h4>
       <button
@@ -26,7 +26,7 @@
         <div class="w180t h416 relative">
           <div class="flex flex-col h41x">
             <div class="px-5 pb-12 relative mt-2">
-              <a class="clickable font-semibold size-125 color-363636f">
+              <a class="clickable font-semibold size-125 logo-color">
                 <span class="block mb-3">Computers & Electronics</span>
               </a>
               <figure class="image is-240xauto">
@@ -53,7 +53,7 @@
               </button>
             </div>
             <div class="px-5 relative mt-3 pb-12">
-              <a class="clickable font-semibold size-125 color-363636f">
+              <a class="clickable font-semibold size-125 logo-color">
                 <span class="block mb-3">Computers & Electronics</span>
               </a>
               <figure class="image is-240xauto">

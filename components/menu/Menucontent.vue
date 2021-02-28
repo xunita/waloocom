@@ -5,18 +5,18 @@
     </div>
     <div class="w180ee border-b py-15">
       <a class="dropdown-item px-6 clickable flex align-center justify-between">
-        <span class="size-125 font-medium color-363636f">All categories</span>
+        <span class="size-125 font-medium logo-color">All categories</span>
       </a>
       <a
         v-for="(item, i) in lang"
         :key="i"
         class="dropdown-item px-6 clickable flex align-center justify-between"
         @mouseleave="outlistingbig"
-        @mouseover="inlistingbig"
+        @mouseover="inlistingbig(i)"
       >
-        <span class="size-125 font-medium color-363636f">{{ item }}</span>
+        <span class="size-125 font-medium logo-color">{{ item }}</span>
         <svg
-          class="w-4 h-4 color-363636f relative top-01x"
+          class="w-4 h-4 logo-color relative top-01x"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
         </svg>
       </a>
       <a class="dropdown-item px-6 clickable flex align-center justify-between">
-        <span class="size-125 font-medium color-363636f">Other categories</span>
+        <span class="size-125 font-medium logo-color">Other categories</span>
       </a>
     </div>
   </div>
@@ -87,8 +87,10 @@ export default {
     outlistingbig() {
       this.$store.commit('SET_LISTBIG_MOD', false)
     },
-    inlistingbig() {
+    inlistingbig(i) {
       this.$store.commit('SET_LISTBIG_MOD', true)
+      // this.$store.commit('SET_LISTBIG_CATEG', i)
+      this.$emit('categdex', i)
     },
   },
 }

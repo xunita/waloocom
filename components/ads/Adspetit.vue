@@ -23,7 +23,7 @@
     </div>
     <div
       :id="'adscroll' + id"
-      class="bg-white h-full w-full flex align-center space-x-2 absolute xxx scrollnone pt-2"
+      class="bg-white h-full w-full flex align-center space-x-2 absolute xxx scrollnone"
       :class="{
         'overflow-x-hidden': size > 768,
         'overflow-x-auto': size <= 768,

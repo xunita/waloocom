@@ -4,11 +4,11 @@
       v-show="listing"
       class="absolute mt-8 left-0 px-8 z-20"
       @mouseleave="outlisting"
-      @mouseover="inlisting"
+      @mouseover="inlistings"
     >
-      <Afterlist :departement="computer" />
+      <Afterlist :departement="categlist" />
     </div>
-    <div class="d-spec size-125 relative font-semibold color-363636f px-2">
+    <div class="d-spec size-125 relative font-semibold logo-color px-2">
       <nav>
         <ul
           class="nav-desc w-fit font-semibold flex align-center overflow-x-auto"
@@ -34,10 +34,11 @@
           </li>
           <li v-for="(categ, i) in category" :key="i">
             <nuxt-link
+              v-if="categ !== ''"
               to="#"
               class="text-center over ant"
               @mouseleave.native="outlisting"
-              @mouseover.native="inlisting"
+              @mouseover.native="inlisting(i)"
               >{{ categ }}</nuxt-link
             >
           </li>
@@ -52,12 +53,31 @@
 
 <script>
 export default {
+  data() {
+    return {
+      index: 0,
+      lan: [
+        'Computers & Electronics',
+        'Phones',
+        'Fashions',
+        'Beauty & Health',
+        '',
+        'Toys',
+        '',
+        'Sports',
+        '',
+        '',
+        'Automotive',
+        '',
+      ],
+    }
+  },
   computed: {
-    computer() {
-      return this.$store.state.computer
+    categlist() {
+      return this.$store.state.allcateg[this.index]
     },
     category() {
-      return this.$store.state.categ
+      return this.lan
     },
     listing() {
       return this.$store.state.afterlist === true
@@ -73,7 +93,11 @@ export default {
     outlisting() {
       this.$store.commit('SET_AFTERLIST_MOD', false)
     },
-    inlisting() {
+    inlisting(i) {
+      this.$store.commit('SET_AFTERLIST_MOD', true)
+      this.index = i
+    },
+    inlistings() {
       this.$store.commit('SET_AFTERLIST_MOD', true)
     },
   },

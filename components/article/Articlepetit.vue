@@ -11,18 +11,18 @@
       <button
         class="absolute z-10 right-0 top-0 bg-black-trs p-1 mr-1 mt-1 h-8 w-8 rounded-full no-outlines outline-none"
       >
-        <i class="far fa-heart color-363636f size-16"></i>
+        <i class="far fa-heart logo-color size-16"></i>
       </button>
     </figure>
     <div class="flex flex-col w180 px-4 mt-1">
-      <div>
+      <div class="py-08">
         <button
           class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
         >
-          <span class="size-11 font-semibold color-363636f">Jumia</span>
+          <span class="size-11 font-semibold logo-color">Jumia</span>
         </button>
       </div>
-      <span class="size-13 logo-color font-semibold twoline"
+      <span class="size-13 logo-color font-semibold twoline my-1"
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in
         bonus</span
       >
@@ -35,7 +35,7 @@
         </p>
       </div>
       <div class="flex align-center justify-between">
-        <div class="flex align-center space-x-2">
+        <div class="flex align-center space-x-2 py-08">
           <span class="size-11">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>

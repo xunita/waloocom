@@ -5,14 +5,14 @@
     <button
       class="button is-lights p-2 h-10 w-10 rounded-full no-outlines outline-none"
     >
-      <i class="far fa-heart color-363636f size-19"></i>
+      <i class="far fa-heart logo-color size-19"></i>
     </button>
     <Sign />
     <button
       class="button relative right-5px is-lights p-2 h-12 w-12 rounded-full no-outlines outline-none"
     >
       <svg
-        class="w-6 h-6 color-363636f"
+        class="w-6 h-6 logo-color"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"

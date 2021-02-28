@@ -17,13 +17,13 @@
               }
             "
           >
-            <i class="far fa-user color-363636f size-19"></i>
+            <i class="far fa-user logo-color size-19"></i>
             <div class="flex align-center">
-              <span class="size-125 font-semibold block w-fit color-363636f"
+              <span class="size-125 font-semibold block w-fit logo-color"
                 >Sign in</span
               >
               <svg
-                class="w-4 h-4 color-363636f relative top-01x"
+                class="w-4 h-4 logo-color relative top-01x"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
               Sign in
             </button></a
           >
-          <span class="size-12 pt-2 w-fit m-0-auto dropdown-item color-363636f"
+          <span class="size-12 pt-2 w-fit m-0-auto dropdown-item logo-color"
             >New to Waloo ?
             <a class="clickable color-004e66 underline-hover font-semibold"
               >Create an account</a

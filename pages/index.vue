@@ -9,18 +9,9 @@
     />
     <div class="d-spec">
       <Afterheader class="d-spec px-5" />
-      <div class="p-1">
-        <div
-          class="mt-2"
-          :class="{
-            'px-0': size > 1500,
-            'px-6': size <= 1500,
-          }"
-        >
-          <div class="w-full flex flex-col space-y-4">
-            <nuxt-child />
-          </div>
-        </div>
+
+      <div class="w-full flex flex-col space-y-4">
+        <nuxt-child />
       </div>
       <div
         v-show="scroll > 728"

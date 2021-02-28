@@ -14,18 +14,19 @@
           class="flex space-x-10 pt-3 w-full m-0-auto"
           :class="{ 'pl-5': size > 1366 }"
         >
-          <Itemlist class="w-full" :list="departement.one" />
-          <div class="w-2 border-r"></div>
-          <Itemlist class="w-full" :list="departement.two" />
+          <Itemlist
+            class="w-full"
+            :parttwo="departement.two ? true : false"
+            :list="departement.one"
+          />
+          <div v-if="departement.two" class="w-2 border-r"></div>
+          <Itemlist
+            v-if="departement.two"
+            class="w-full"
+            :list="departement.two"
+          />
         </div>
       </div>
-      <figure v-show="size > 1366" class="image h449 w180t">
-        <img
-          class="h-full w180t"
-          :src="departement.image"
-          alt="Placeholder image"
-        />
-      </figure>
     </div>
   </div>
 </template>

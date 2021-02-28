@@ -20,7 +20,9 @@
               ><button
                 class="btn-004e66 rounded h-full w-ful flex align-center no-outlines space-x-2 px-12 text-white"
               >
-                <span class="size-12 block font-medium">Subscribe</span>
+                <span class="size-12 block font-medium text-white"
+                  >Subscribe</span
+                >
               </button></span
             >
           </div>
@@ -65,9 +67,9 @@
       <div class="flex align-center mt-5 justify-between">
         <div class="w-full h-1 border-b"></div>
         <div class="w-fit mx-2 flex align-center space-x-1 size-14 text-white">
-          <span>{{ toyear }}</span>
-          <span>•</span>
-          <span>Waloo.com</span>
+          <span class="text-white">{{ toyear }}</span>
+          <span class="text-white">•</span>
+          <span class="text-white">Waloo.com</span>
         </div>
         <div class="w-full h-1 border-b"></div>
       </div>

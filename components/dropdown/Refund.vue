@@ -17,12 +17,12 @@
               }
             "
           >
-            <i class="far fa-question-circle color-363636f size-19"></i>
-            <span class="size-125 pl-1 color-363636f font-semibold block w-fit"
+            <i class="far fa-question-circle logo-color size-19"></i>
+            <span class="size-125 pl-1 logo-color font-semibold block w-fit"
               >Help</span
             >
             <svg
-              class="w-4 h-4 color-363636f relative top-01x"
+              class="w-4 h-4 logo-color relative top-01x"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

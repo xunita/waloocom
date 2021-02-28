@@ -3,7 +3,7 @@
     <button
       class="absolute z-10 right-0 bg-black-trs p-1 mr-1 mt-1 h-8 w-8 rounded-full no-outlines outline-none"
     >
-      <i class="far fa-heart color-363636f size-16"></i>
+      <i class="far fa-heart logo-color size-16"></i>
     </button>
     <figure class="image is-240x200 h-full w-full relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
@@ -19,7 +19,7 @@
         <button
           class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
         >
-          <span class="size-12 font-semibold color-363636f">Jumia</span>
+          <span class="size-12 font-semibold logo-color">Jumia</span>
         </button>
       </div>
       <span class="size-13 logo-color font-semibold twoline"
@@ -45,7 +45,7 @@
           </span>
           <span class="color-004e66 size-125 font-semibold">(8745)</span>
         </div>
-        <span class="size-13 color-363636f font-semibold twoline"
+        <span class="size-13 logo-color font-semibold twoline"
           >In stock</span
         >
       </div>

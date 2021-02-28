@@ -6,7 +6,7 @@
       <div class="h-12 w-full bg-004e66">
         <Logosmen class="vertical-center m-0-auto" />
       </div>
-      <Menucontent class="h-full" />
+      <Menucontent class="h-full" @categdex="categdex" />
     </div>
     <div class="w-full relative h-full z-30">
       <div class="absolute top-0 left-0 ml-4 mt-2 z-30x">
@@ -33,7 +33,7 @@
           class="bg-black-tr h-full max1220s"
           @click="close"
         ></div>
-        <Listingbig v-show="listing" :departement="computer" />
+        <Listingbig v-show="listing" :departement="categ" />
       </div>
     </div>
   </div>
@@ -41,9 +41,14 @@
 
 <script>
 export default {
+  data() {
+    return {
+      index: 0,
+    }
+  },
   computed: {
-    computer() {
-      return this.$store.state.computer
+    categ() {
+      return this.$store.state.allcateg[this.index]
     },
     listing() {
       return this.$store.state.listingbig === true
@@ -53,6 +58,9 @@ export default {
     close() {
       this.$store.commit('SET_MEN_MOD', false)
       document.body.style.overflow = 'visible'
+    },
+    categdex(i) {
+      this.index = i
     },
   },
 }

@@ -1735,7 +1735,6 @@ fieldset[disabled] .button {
   padding-top: 0.5rem;
 }
 .dropdown-item {
-  color: #4a4a4a;
   display: block;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1743,7 +1742,6 @@ fieldset[disabled] .button {
   position: relative;
 }
 .dropdown-items {
-  color: #4a4a4a;
   display: block;
   font-size: 0.875rem;
   line-height: 1.5;

@@ -5,7 +5,7 @@
         <h4 class="font-semibold pb-1">
           Waloo - More than an online shopping: The shopping site for Africans
         </h4>
-        <span class="ffto color-363636f size-13"
+        <span class="ffto logo-color size-13"
           >How to fix this ? Do you have any other tips ? How to fix this ? Do
           you have any other tips ? How to fix this ? Do you have any other tips
           ? How to fix this ? Do you have any other tips ? How to fix this ? Do
@@ -29,7 +29,7 @@
       </div>
       <div class="logo-color relative flex flex-col px-5 pb-2">
         <h4 class="font-semibold pb-1">Buying on Waloo</h4>
-        <span class="ffto color-363636f size-13"
+        <span class="ffto logo-color size-13"
           >How to fix this ? Do you have any other tips ? How to fix this ? Do
           you have any other tips ? How to fix this ? Do you have any other tips
           ? How to fix this ? Do you have any other tips ? How to fix this ? Do

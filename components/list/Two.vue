@@ -9,7 +9,7 @@
               class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
             >
               <svg
-                class="w-6 h-6 color-363636f"
+                class="w-6 h-6 logo-color"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@
           >
             <a class="dropdown-item clickable flex align-center">
               <svg
-                class="w-5 h-5 color-363636f mr-1"
+                class="w-5 h-5 logo-color mr-1"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -27,11 +27,11 @@
                 ></path>
               </svg>
 
-              <span class="size-125 color-4a font-semibold block w-fit">{{
+              <span class="size-125  font-semibold block w-fit">{{
                 spoken
               }}</span>
               <svg
-                class="w-4 h-4 color-363636f transform rotate-90 relative top-01x"
+                class="w-4 h-4 logo-color transform rotate-90 relative top-01x"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,12 +48,12 @@
       </div>
       <div v-show="focused" class="appearyh">
         <a class="dropdown-items select-none">
-          <span class="size-12 pb-1 block color-363636f">Current currency</span>
+          <span class="size-12 pb-1 block logo-color">Current currency</span>
           <span class="size-125 block font-semibold">{{ spoken }}</span>
         </a>
         <hr class="dropdown-divider" />
         <a class="dropdown-items select-none">
-          <span class="size-12 pb-1 block color-363636f"
+          <span class="size-12 pb-1 block logo-color"
             >Choose another currency</span
           ></a
         >

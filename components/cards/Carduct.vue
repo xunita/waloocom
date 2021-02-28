@@ -1,14 +1,12 @@
 <template>
-  <div class="h-full bg-white">
-    <div
-      class="logo-color w180t relative flex align-center justify-between bg-004e66 px-5 pb-2 py-15"
-    >
-      <h4 class="font-semibold size-125 text-white">All categories</h4>
+  <div>
+    <div class="bg-white px-4 pt-3 flex align-center justify-between">
+      <h4 class="font-semibold size-16 logo-color">{{ titles }}</h4>
       <button
-        class="z-10 absolute right-0 bg-black-trs p-1 rounded-full no-outlines outline-none mr-4"
+        class="z-10 bg-black-trs p-1 h-8 w-8-full no-outlines outline-none"
       >
         <svg
-          class="w-4 h-4 text-white"
+          class="w-6 h-6 logo-color"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -21,12 +19,19 @@
         </svg>
       </button>
     </div>
-    <div><Menulisthome /></div>
+    <Adspetit />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    titles: {
+      type: String,
+      default: 'Products',
+    },
+  },
+}
 </script>
 
 <style scoped></style>
