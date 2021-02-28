@@ -48,7 +48,7 @@
       }"
     >
       <div class="w180sst h-full">
-        <div class="bg-white w180sst px-6 h-fit">
+        <div class="bg-white w180sst px-6 h-fit pb-2">
           <div v-for="y in 4" :key="y" class="border-b py-3"><Categcard /></div>
         </div>
         <div
