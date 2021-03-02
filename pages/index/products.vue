@@ -78,13 +78,13 @@
           <span class="font-semibold size-14">Top Recommendations</span>
         </div>
         <div class="w180sst h-full flex flex-col space-y-4">
-          <div class="bg-white w-56 h-full both-centers rounded p-1">
+          <div class="bg-white w-56 h-fit both-centers rounded p-1">
             <Article />
           </div>
-          <div class="bg-white w-56 h-full both-centers rounded p-1">
+          <div class="bg-white w-56 h-fit both-centers rounded p-1">
             <Article />
           </div>
-          <div class="bg-white w-56 h-full both-centers rounded p-1">
+          <div class="bg-white w-56 h-fit both-centers rounded p-1">
             <Article />
           </div>
         </div>
