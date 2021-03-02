@@ -11,7 +11,9 @@
           v-for="(img, i) in ads"
           :key="i"
           class="clickable h-full hiddenmox w-full"
-          :class="{ slide: index === i + 1 }"
+          :class="{
+            slide: index === i + 1,
+          }"
           ><img class="h-full w-full" :src="img" alt="Placeholder image"
         /></a></figure
     ></slider>
@@ -25,6 +27,7 @@ export default {
   data() {
     return {
       hasimage: true,
+      left: false,
       index: 1,
       ads: ['/ads/gaming.jpg', '/ads/training.jpg', '/ads/home.jpg'],
     }
@@ -38,10 +41,12 @@ export default {
     goexact(where) {
       this.hasimage = false
       if (where === 'left') {
+        this.left = true
         if (this.index <= 1) {
           this.index = this.ads.length
         } else this.index = this.index - 1
       } else if (where === 'right') {
+        this.left = false
         if (this.index >= this.ads.length) {
           this.index = 1
         } else this.index = this.index + 1

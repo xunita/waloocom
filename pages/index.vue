@@ -22,7 +22,7 @@
           @click="scrolltop"
         >
           <svg
-            class="w-6 h-6 transform rotate-180 color-004e66 relative"
+            class="w-5 h-5 transform rotate-180 color-004e66 relative"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"

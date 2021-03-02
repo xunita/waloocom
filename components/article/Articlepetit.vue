@@ -1,6 +1,6 @@
 <template>
   <a class="clickable h-fit pb-2 w180 relative hover:shadow-lg">
-    <figure class="image is-240x200 relative">
+    <figure class="image is-240x200ss w180 relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div class="w-fit absolute top-0 left-0 py-08">
         <span class="px-2 py-1 block bg-004e66 text-white font-bold size-12"

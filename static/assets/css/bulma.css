@@ -425,6 +425,10 @@
   width: auto !important;
   height: 180px !important;
 }
+.image.is-240x200ss {
+  width: 240px !important;
+  height: 180px !important;
+}
 .is-240x200 {
   width: 240px !important;
   height: 180px !important;

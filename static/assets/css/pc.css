@@ -353,6 +353,9 @@ input[type='search']::-webkit-search-cancel-button {
 .-mt-01x {
   margin-top: -0.05rem !important;
 }
+.-mt-012x {
+  margin-top: -0.14rem !important;
+}
 .-mb-012 {
   margin-bottom: -0.04rem !important;
 }
@@ -541,7 +544,7 @@ input[type='search']::-webkit-search-cancel-button {
   background-color: rgb(0, 0, 0) !important;
 } */
 .w180 {
-  min-width: 240px !important;
+  width: 240px !important;
 }
 .w2x320 {
   width: 300px;
@@ -595,6 +598,9 @@ input[type='search']::-webkit-search-cancel-button {
 .m-w180e {
   margin-left: 235px !important;
 }
+.w-18 {
+  width: 4.5rem;
+}
 .h-fulls {
   height: 100% !important;
 }
@@ -608,7 +614,7 @@ input[type='search']::-webkit-search-cancel-button {
   min-width: 360px !important;
 }
 .w180sst {
-  min-width: 280px !important;
+  width: 280px !important;
 }
 .normalfont {
   font-weight: normal !important;
@@ -691,6 +697,12 @@ span {
   -ms-transform: translateX(-50%) !important;
   transform: translateX(-50%) !important;
 }
+.h-centers {
+  position: relative;
+  left: 50% !important;
+  -ms-transform: translateX(-50%) !important;
+  transform: translateX(-50%) !important;
+}
 .right-5px {
   right: 0.5rem !important;
 }
@@ -756,16 +768,16 @@ span {
   font-size: 14px !important;
 }
 .size-145 {
-  font-size: 14.5px;
+  font-size: 14.5px !important;
 }
 .size-15 {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 .size-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .size-17 {
-  font-size: 17px;
+  font-size: 17px !important;
 }
 .size-18 {
   font-size: 18px;
@@ -1070,6 +1082,9 @@ input::placeholder {
       display: none;
     }
   }
+}
+.h-40max {
+  max-height: 160px !important;
 }
 .appearzf {
   animation: 2s appearzf !important;

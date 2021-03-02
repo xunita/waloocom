@@ -39,7 +39,9 @@
         </div>
       </div>
     </div>
-    <Categoriesug />
+    <div class="relative w-full h-6">
+      <Categoriesug />
+    </div>
     <div
       class="w-full h-fit flex"
       :class="{
@@ -49,7 +51,17 @@
     >
       <div class="w180sst h-full">
         <div class="bg-white w180sst px-6 h-fit pb-2">
-          <div v-for="y in 4" :key="y" class="border-b py-3"><Categcard /></div>
+          <div class="border-b py-3"><Categcard /></div>
+          <div class="border-b py-3">
+            <Mixcategcard
+              :toremove="removed"
+              @choiced="choiced"
+              @welldone="welldone"
+            />
+          </div>
+          <div class="border-b py-3">
+            <Pricerangecateg />
+          </div>
         </div>
         <div
           class="bg-white px-2 py-1 text-center w-56 h-full mt-5 mb-2 both-centers rounded"
@@ -68,11 +80,20 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-full flex flex-col space-y-4 border-l-2">
+      <div
+        class="w-full h-full flex flex-col border-l-2"
+        :class="{ 'space-y-4': currentcateg.length !== 0 }"
+      >
         <Pricerange />
-        <Mixcateg />
+        <div v-if="currentcateg.length !== 0" class="relative h-5">
+          <Mixcateg
+            :current="currentcateg"
+            @removeall="removeall"
+            @remove="remove"
+          />
+        </div>
         <div
-          class="bg-white w-full h-full flex pt-1 pb-2"
+          class="bg-white w-full h-full flex pt-1 pb-2 border-t-2"
           :class="{ 'flex-wrap': normal, 'flex-col space-y-3': !normal }"
         >
           <Articles
@@ -97,10 +118,15 @@ export default {
       hiddensub: false,
       max: '',
       min: '',
+      removed: 'nothing',
       little: true,
+      current: [],
     }
   },
   computed: {
+    currentcateg() {
+      return this.current
+    },
     normal() {
       return this.little === true
     },
@@ -121,6 +147,18 @@ export default {
     },
   },
   methods: {
+    choiced(value) {
+      this.current = value
+    },
+    welldone() {
+      this.removed = 'nothing'
+    },
+    removeall() {
+      this.removed = 'all'
+    },
+    remove(value) {
+      this.removed = value
+    },
     extendme(i) {
       this.index = i
       this.hidden = true

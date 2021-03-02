@@ -18,7 +18,7 @@
       </div>
       <div class="w-fit d-bestp absolute top-0 right-0 p-2">
         <span
-          class="px-2 py-1 block rounded-full btn-004e66s color-004e66 font-bold size-12"
+          class="px-2 py-1 block rounded-full btn-004e66s text-orange-600 font-bold size-12"
           ><svg
             class="w-4 h-4"
             fill="none"
@@ -34,7 +34,7 @@
             ></path></svg
         ></span>
         <span
-          class="bg-trt ml-1 mt-1 absolute bestp w-16 rounded color-004e66 p-1 size-11 font-semibold text-center right-0"
+          class="bg-trt ml-1 mt-1 absolute bestp w-16 rounded text-orange-600 p-1 size-11 font-semibold text-center right-0"
           >Best deal</span
         >
       </div>

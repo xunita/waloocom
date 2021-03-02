@@ -29,7 +29,7 @@
         'overflow-x-autos': size <= 768,
       }"
     >
-      <Articlepetit v-for="i in 20" :key="i" />
+      <Articlepetit v-for="i in 18" :key="i" />
     </div>
     <div class="h-fit bg-transparent w-16 rightag z-10 relative">
       <button
@@ -60,17 +60,20 @@ export default {
     return {
       scroll: 0,
       tagscrol: false,
-      reachtotal: false,
+      reachtotal: true,
       totalscroll: 0,
       nbscroll: 0,
       clw: 0,
       scrw: 0,
-      id: null,
+      ids: null,
     }
   },
   computed: {
     size() {
       return this.$store.state.size
+    },
+    id() {
+      return this.ids
     },
     scrolling() {
       return this.scroll
@@ -85,15 +88,26 @@ export default {
   beforeMount() {
     window.addEventListener('wheel', this.handleScroll)
     window.addEventListener('resize', this.large)
+    document.addEventListener('DOMContentLoaded', this.fn, false)
+    // document.attachEvent('onreadystatechange', this.fn)
   },
   beforeDestroy() {
     window.removeEventListener('wheel', this.handleScroll)
-    window.addEventListener('resize', this.large)
+    window.removeEventListener('resize', this.large)
+    // document.adetachEvent('onreadystatechange', this.fn)
+    document.removeEventListener('DOMContentLoaded', this.fn, false)
   },
   mounted() {
-    this.id = this._uid
+    this.getId()
   },
   methods: {
+    async getId() {
+      this.ids = await this._uid
+    },
+    fn() {
+      this.handleScroll()
+      this.large()
+    },
     scrollLeft() {
       const scroll = document.getElementById('adscroll' + this.id).scrollLeft
       const scr = document.getElementById('adscroll' + this.id).scrollWidth
@@ -130,6 +144,7 @@ export default {
       }
     },
     handleScroll() {
+      // console.log(document.getElementById('adscroll' + this.id))
       const cl = document.getElementById('adscroll' + this.id).clientWidth
       const scroll = document.getElementById('adscroll' + this.id).scrollLeft
       const scr = document.getElementById('adscroll' + this.id).scrollWidth
@@ -137,6 +152,7 @@ export default {
       else this.reachtotal = false
       if (scroll <= 0) this.tagscrol = false
       else this.tagscrol = true
+      // console.log(document.getElementById(this.id))
     },
     large() {
       const scr = document.getElementById('adscroll' + this.id).scrollWidth
@@ -150,6 +166,7 @@ export default {
       this.totalscroll = Math.floor((scr - cl) / 1024) + 1
       if (this.nbscroll - Math.floor(this.clw / 1024) + 1) this.nbscroll = 0
       else this.nbscroll = this.nbscroll - Math.floor(this.clw / 1024) + 1
+      // console.log(document.getElementById(this.id))
     },
   },
 }
@@ -167,18 +184,5 @@ export default {
 ::-webkit-scrollbar {
   width: 0;
   background: transparent; /* make scrollbar transparent */
-}
-.leftag,
-.rightag {
-  visibility: hidden;
-  /* border-color: white; */
-}
-.adlines:hover .leftag {
-  visibility: visible !important;
-  animation: 0.2s appearxh !important;
-}
-.adlines:hover .rightag {
-  visibility: visible !important;
-  animation: 0.2s appearxhz !important;
 }
 </style>
