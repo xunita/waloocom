@@ -20,7 +20,7 @@
             <i class="far fa-user logo-color size-19"></i>
             <div class="flex align-center">
               <span class="size-125 font-semibold block w-fit logo-color"
-                >Sign in</span
+                >Hey, Sign in</span
               >
               <svg
                 class="w-4 h-4 logo-color relative top-01x"
