@@ -14,11 +14,21 @@ export default {
         content: 'Waloo, more than a onlineshop',
       },
     ],
-    script: [{ src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' }],
+    script: [
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js',
+      },
+      { src: 'https://use.fontawesome.com/releases/v5.14.0/js/all.js' },
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/assets/css/pc.css' },
       { rel: 'stylesheet', href: '/assets/css/bulma.css' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=B612',
+      },
       { rel: 'stylesheet', href: '/assets/css/global.css' },
     ],
   },
