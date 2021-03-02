@@ -18,9 +18,9 @@
       </div>
       <div class="w-fit d-bestp absolute top-0 right-0 p-2">
         <span
-          class="px-2 py-1 block rounded-full btn-004e66s text-orange-600 font-bold size-12"
+          class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
           ><svg
-            class="w-4 h-4"
+            class="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -34,8 +34,8 @@
             ></path></svg
         ></span>
         <span
-          class="bg-trt ml-1 mt-1 absolute bestp w-16 rounded text-orange-600 p-1 size-11 font-semibold text-center right-0"
-          >Best deal</span
+          class="bg-e6e6e6s ml-1 mt-1 absolute bestp w-16 rounded text-white p-1 size-11 font-semibold text-center left-0"
+          >Top Article</span
         >
       </div>
     </figure>

@@ -8,6 +8,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+  /* font-weight: 400 !important; */
 }
 .logo-color {
   color: #282828 !important;
@@ -36,18 +37,24 @@ body {
 .bg-e6e6e6 {
   background-color: #eff0f06b;
 }
+.bg-e6e6e6s {
+  background-color: #a0a0a0a8;
+}
 .bg-trt {
   background-color: #e2e8f0 !important;
 }
 .b612 {
   font-family: 'B612', Arial, Helvetica, sans-serif;
 }
+.mb4px {
+  margin-bottom: 2px;
+}
 /* The container */
 .container {
   display: block;
   position: relative;
   padding-left: 25px;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;

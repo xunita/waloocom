@@ -62,6 +62,15 @@
           <div class="border-b py-3">
             <Pricerangecateg />
           </div>
+          <div class="border-b py-3">
+            <Discount />
+          </div>
+          <div class="border-b py-3">
+            <Delivery />
+          </div>
+          <div class="border-b py-3">
+            <Customreview />
+          </div>
         </div>
         <div
           class="bg-white px-2 py-1 text-center w-56 h-full mt-5 mb-2 both-centers rounded"
@@ -97,10 +106,10 @@
           :class="{ 'flex-wrap': normal, 'flex-col space-y-3': !normal }"
         >
           <Articles
-            v-for="i in 24"
+            v-for="i in 23"
             :key="i"
             :little="normal"
-            :class="{ 'column is-one-quarter': normal }"
+            :class="{ 'column is-one-quarter px-0': normal }"
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <a class="clickable h-fit pb-2 article relative hover:shadow-lg">
+  <a class="clickable h-fit pb-2 article relative px-3 hover:shadow-lg">
     <figure class="image is-240x200 relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div class="w-fit absolute top-0 left-0 py-08">
@@ -9,9 +9,9 @@
       </div>
       <div class="w-fit d-bestp absolute left-0 bottom-0 pb-2 pl-2">
         <span
-          class="px-2 py-1 block rounded-full btn-004e66s text-orange-600 font-bold size-12"
+          class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
           ><svg
-            class="w-4 h-4"
+            class="w-5 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -25,8 +25,8 @@
             ></path></svg
         ></span>
         <span
-          class="bg-trt ml-1 mt-1 absolute bestp w-16 rounded text-orange-600 p-1 size-11 font-semibold text-center left-0"
-          >Best deal</span
+          class="bg-e6e6e6s ml-1 mt-1 absolute bestp w-16 rounded text-white p-1 size-11 font-semibold text-center left-0"
+          >Top Article</span
         >
       </div>
       <button
@@ -119,7 +119,7 @@ export default {}
     width: 25% !important;
   }
 }
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 1290px) {
   .article {
     width: 33.33% !important;
   }
