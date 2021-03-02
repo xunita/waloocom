@@ -161,7 +161,7 @@
             >
           </div>
         </div>
-        <div class="flex align-center space-x-5 mt-3">
+        <div class="flex align-center space-x-2 mt-3">
           <label for="maxpricecateg" class="size-13">
             <span class="block mb-1">Stars Number</span>
             <input
