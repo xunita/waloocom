@@ -25,7 +25,7 @@
             ></path></svg
         ></span>
         <span
-          class="bg-e6e6e6s ml-1 mt-1 absolute bestp w-16 rounded text-white p-1 size-11 font-semibold text-center left-0"
+          class="bg-e6e6e6s ml-1 mt-1 z-10 absolute bestp w-16 rounded text-white p-1 size-11 font-semibold text-center left-0"
           >Top Article</span
         >
       </div>
