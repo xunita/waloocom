@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex align-center justify-between">
-      <span class="font-semibold size-15">Mix Category</span>
+      <span class="font-semibold size-15">More Categories</span>
       <button
         class="border p-1 rounded bg-white no-outlines"
         @click="tryingexpand"

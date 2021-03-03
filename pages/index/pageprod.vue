@@ -8,12 +8,21 @@
               v-for="p in 4"
               :key="p"
               class="clickable flex align-center hover-004e66"
+              :class="{
+                clickable: p !== 4,
+                'cursor-default color-004e66': p === 4,
+              }"
             >
-              <span class="size-12 font-semibold makeme-004e66"
-                >Phones & Accessories</span
+              <span
+                class="size-12 font-semibold over maxwidth"
+                :class="{
+                  'makeme-004e66 ': p !== 4,
+                  'color-004e66': p === 4,
+                }"
+                >Bags, Cases, Cover & Sleeves</span
               ><svg
                 v-if="p !== 4"
-                class="w-3 h-3 logo-color mt-1 cursor-default mx-px"
+                class="w-4 h-4 logo-color mt-1 cursor-default mx-px"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -27,39 +36,6 @@
                 ></path></svg
             ></a>
           </div>
-          <span class="size-13 font-semibold logo-color"
-            >1-20 of 1 000 results</span
-          >
-          <span class="size-16 font-semibold pt-1"
-            >Computers & Electronics</span
-          >
-        </div>
-        <div class="flex align-center self-end rounded-full border px-2">
-          <div class="flex space-x-4 px-3">
-            <button
-              class="no-outlines"
-              :class="{ 'd-actlist': normal }"
-              @click="
-                {
-                  little = true
-                }
-              "
-            >
-              <span> <i class="fas fa-th-large color-bgs actlist"> </i></span>
-            </button>
-            <button
-              class="no-outlines"
-              :class="{ 'd-actlist': !normal }"
-              @click="
-                {
-                  little = false
-                }
-              "
-            >
-              <span> <i class="fas fa-th-list color-bgs actlist"> </i></span>
-            </button>
-          </div>
-          <Articlesort />
         </div>
       </div>
     </div>

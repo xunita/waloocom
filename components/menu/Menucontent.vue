@@ -39,8 +39,6 @@
 export default {
   data() {
     return {
-      oldwidth: 9999,
-      width: 9999,
       lan: [
         'Computers & Electronics',
         'Phones & Accessories',
@@ -62,28 +60,7 @@ export default {
       return this.lan
     },
   },
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.large)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.large)
-  },
-  mounted() {
-    this.large()
-  },
   methods: {
-    large() {
-      this.oldwidth = this.width
-    },
-    sleep(milliseconds) {
-      const date = Date.now()
-      let currentDate = null
-      do {
-        currentDate = Date.now()
-      } while (currentDate - date < milliseconds)
-    },
     outlistingbig() {
       this.$store.commit('SET_LISTBIG_MOD', false)
     },

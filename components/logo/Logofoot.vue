@@ -1,9 +1,9 @@
 <template>
   <div class="w-fit">
     <nuxt-link class="flex align-center space-x-3" to="/home"
-      ><span class="b612 select-none text-white -mt-01 size-30">waloo</span>
+      ><span class="b612 select-none text-white size-30">waloo</span>
       <svg
-        class="scalebig"
+        class="scalebig -mt-1"
         width="28"
         height="28"
         xmlns="http://www.w3.org/2000/svg"

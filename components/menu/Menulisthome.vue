@@ -33,8 +33,6 @@
 export default {
   data() {
     return {
-      oldwidth: 9999,
-      width: 9999,
       lan: [
         'Computers & Electronics',
         'Phones & Accessories',
@@ -56,46 +54,10 @@ export default {
       return this.lan
     },
   },
-  beforeMount() {
-    window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.large)
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.large)
-  },
-  mounted() {
-    this.large()
-  },
   methods: {
-    large() {
-      this.oldwidth = this.width
-      //   this.width = window.innerWidth
-      //   const el = document.getElementById('listcateg')
-      //   const elwidth = el.getBoundingClientRect().width
-      //   if (this.width < 1500 && this.width > 1160) {
-      //     if (this.oldwidth < this.width) {
-      //       el.style.width =
-      //         (elwidth + (this.width - this.oldwidth)).toString() + 'px'
-      //     } else if (this.oldwidth > this.width) {
-      //       el.style.width =
-      //         (elwidth - (this.oldwidth - this.width)).toString() + 'px'
-      //     }
-      //   } else if (this.width <= 1160) {
-      //     el.style.width = 847.84 + 'px'
-      //   }
-      //   console.log(el.getBoundingClientRect().width)
-    },
     inlisting(i) {
       this.$store.commit('SET_LIST_MOD', true)
       this.$store.commit('SET_LISTBIG_CATEG', i)
-    },
-    sleep(milliseconds) {
-      const date = Date.now()
-      let currentDate = null
-      do {
-        currentDate = Date.now()
-      } while (currentDate - date < milliseconds)
     },
     outlisting() {
       this.$store.commit('SET_LIST_MOD', false)

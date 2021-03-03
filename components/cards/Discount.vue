@@ -59,7 +59,7 @@
               d="M15 19l-7-7 7-7"
             ></path>
           </svg>
-          <span class="size-14 makeme-004e66">Any price</span>
+          <span class="size-14 makeme-004e66">Any discount</span>
         </div>
         <div>
           <a
