@@ -401,6 +401,38 @@
   height: 40px;
   width: 40px;
 }
+.is-max{
+  max-width: 128px;
+  height: auto;
+}
+.lineh {
+  line-height: 1.69rem;
+}
+.shadowing {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.fbcolor {
+  color: #3b5998 !important;
+}
+.twi {
+  color: #1DA1F2 !important;
+}
+.pinter {
+  color: #E60023 !important;
+}
+.mail {
+  color: #505050 !important;
+}
+.image.is-image {
+  width: 420px;
+  max-height: 420px;
+}
+.imagemax {
+  max-width: 420px;
+  max-height: 420px;
+}
 .is-40x40 {
   height: 40px;
   width: 40px;
@@ -428,6 +460,10 @@
 .image.is-240x200ss {
   width: 240px !important;
   height: 180px !important;
+}
+.image.is-240x200sse {
+  width: 128px !important;
+  height: auto !important;
 }
 .is-240x200 {
   width: 240px !important;
@@ -722,6 +758,11 @@ fieldset[disabled] .button.is-black.is-inverted.is-outlined {
 }
 .button.is-light {
   background-color: #f5f5f5;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+.button.has-light {
+  background-color: #bebebe;
   border-color: transparent;
   color: rgba(0, 0, 0, 0.7);
 }

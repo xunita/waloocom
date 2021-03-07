@@ -3,17 +3,26 @@
     <div class="bg-white px-8 w-full border-t border-b py-2">
       <div class="flex align-center justify-between">
         <div class="flex flex-col space-y-0">
-          <div class="flex align-center pb-1">
+          <div class="flex align-center pb-2">
             <a
               v-for="p in 4"
               :key="p"
               class="clickable flex align-center hover-004e66"
+              :class="{
+                clickable: p !== 4,
+                'cursor-default color-004e66': p === 4,
+              }"
             >
-              <span class="size-12 font-semibold makeme-004e66"
-                >Phones & Accessories</span
+              <span
+                class="size-12 font-semibold over maxwidth"
+                :class="{
+                  'makeme-004e66 ': p !== 4,
+                  'color-004e66': p === 4,
+                }"
+                >Bags, Cases, Cover & Sleeves</span
               ><svg
                 v-if="p !== 4"
-                class="w-3 h-3 logo-color mt-1 cursor-default mx-px"
+                class="w-3 h-3 mt-1 logo-color cursor-default mx-px"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -170,16 +179,12 @@
         </div>
         <div class="h-fit w-fit relative bottom-0">
           <div
-            class="bg-white px-2 py-1 text-center w-56 h-full mt-5 h-centers mb-2 rounded"
+            class="bg-white px-2 py-1 text-center w-64 h-full mt-5 mb-2 rounded"
           >
             <span class="font-semibold size-14">Top Recommendations</span>
           </div>
           <div class="w180sst h-full flex flex-col space-y-4">
-            <div
-              v-for="t in 4"
-              :key="t"
-              class="bg-white w-56 h-fit h-centers rounded px-1"
-            >
+            <div v-for="t in 4" :key="t" class="bg-white w-64 h-fit rounded">
               <Article />
             </div>
           </div>
@@ -202,7 +207,7 @@
           :class="{ 'flex-wrap': normal, 'flex-col space-y-3': !normal }"
         >
           <Articles
-            v-for="i in 48"
+            v-for="i in 52"
             :key="i"
             :little="normal"
             :class="{ 'column is-one-quarter px-0': normal }"
@@ -213,7 +218,13 @@
         </div>
       </div>
     </div>
-    <div class="px-8 flex flex-col space-y-5 pt-5">
+    <div
+      class="flex flex-col space-y-5 pt-5"
+      :class="{
+        'px-0': size > 1500,
+        'px-6': size <= 1500,
+      }"
+    >
       <Categfo />
       <Carduct titles="You may like" />
     </div>

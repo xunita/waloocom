@@ -1,17 +1,85 @@
 <template>
-  <a class="clickable h-fit pb-2 w180 relative hover:shadow-lg">
+  <a class="clickable article h-fit pb-2 w180 relative hover:shadow-lg">
     <figure class="image is-240x200ss w180 relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
-      <div class="w-fit absolute top-0 left-0 py-08">
-        <span class="px-2 py-1 block bg-004e66 text-white font-bold size-12"
+      <div class="w-fit absolute z-10 top-0 left-0">
+        <span
+          class="px-2 py-1 block bg-004e66 rounded-br text-white font-bold size-12"
           >72% OFF</span
         >
+        <!-- <span
+          class="px-2 py-1 block bg-004e66 rounded-br text-white font-semibold size-125"
+          >Out of stock</span
+        > -->
+      </div>
+      <div
+        class="absolute flex flex-center space-x-1 px-3 rounded-tl bottom-0 py-1 bg-004e66 bottom-0 right-0 z-10"
+      >
+        <span class="w-fit size-11 h-fit text-white">Waloo's selection</span>
+        <svg
+          class="w-4 h-4 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <!-- <svg
+          class="w-4 h-4 text-white"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+            clip-rule="evenodd"
+          ></path>
+        </svg> -->
+      </div>
+      <div
+        class="absolute preview hidden top-0 left-0 w-full h-full bg-black-tre"
+      >
+        <div
+          class="w-fit h-fit prev-d -mt-6 both-centers text-center flex flex-col"
+        >
+          <button class="p-2 bg-black-trs m-0-auto rounded-full no-outlines">
+            <svg
+              class="w-6 h-6 text-white eyes"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268
+2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              ></path>
+            </svg>
+          </button>
+          <span class="font-semibold size-13 text-white">Preview</span>
+        </div>
       </div>
       <div class="w-fit d-bestp absolute left-0 bottom-0 pb-2 pl-2">
         <span
           class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
           ><svg
-            class="w-5 h-5"
+            class="w-5 h-5 starss"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -47,10 +115,10 @@
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in
         bonus</span
       >
-      <div class="py-01 relative">
+      <div class="relative">
         <p class="flex align-center space-x-2">
-          <span class="font-bold size-125 color-004e66">$ 365,475.4</span>
-          <span class="line-through font-semibold size-125 color-363636"
+          <span class="font-bold size-14 color-004e66">$ 365,475.4</span>
+          <span class="line-through font-semibold size-13 color-363636"
             >$ 499,987.9</span
           >
         </p>
@@ -101,4 +169,27 @@
 export default {}
 </script>
 
-<style scoped></style>
+<style scoped>
+.article:hover .fa-heart {
+  color: white !important;
+}
+.article:hover .preview {
+  animation: 0.1s appearZ;
+  display: block;
+}
+.article:hover .cartadd {
+  animation: 0.1s appearZ;
+  visibility: visible;
+}
+.article:hover .starss {
+  color: #ffa807;
+}
+.bg-black-trs:hover {
+  animation: 0.1s appearZ;
+  background-color: #004e66 !important;
+}
+.prev-d:hover .bg-black-trs {
+  animation: 0.1s appearZ;
+  background-color: #004e66 !important;
+}
+</style>

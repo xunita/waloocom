@@ -7,6 +7,7 @@
           <div class="flex flex-col space-y-1 mt-2">
             <p class="text-white used-on size-14 mb-1">Connect with us</p>
             <p class="flex align-center space-x-3 color-363636">
+              <i class="fab fa-twitter size-20 clickable"></i>
               <i class="fab fa-facebook size-20 clickable"></i>
               <i class="fab fa-instagram size-20 clickable"></i>
               <i class="fab fa-tiktok size-20 clickable"></i>

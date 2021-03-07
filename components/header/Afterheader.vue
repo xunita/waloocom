@@ -1,49 +1,35 @@
 <template>
   <div class="d-spec relative border-t pt-1 bg-white">
-    <div
-      v-show="listing"
-      class="absolute w-full mt-8 left-0 px-8 z-20"
-      @mouseleave="outlisting"
-      @mouseover="inlistings"
-    >
-      <Afterlist :departement="categlist" />
-    </div>
     <div class="d-spec size-125 relative font-semibold logo-color px-2">
       <nav>
         <ul
           class="nav-desc w-fit font-semibold flex align-center overflow-x-auto"
         >
           <li>
-            <nuxt-link to="#" class="text-center anty">Today's deals</nuxt-link>
+            <nuxt-link to="#" class="text-center ant">Today's deals</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#" class="text-center anty">Best deals</nuxt-link>
+            <nuxt-link to="#" class="text-center ant">Best deals</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="#" class="text-center anty"
-              >Top categories</nuxt-link
-            >
+            <nuxt-link to="#" class="text-center ant">Top categories</nuxt-link>
           </li>
           <li class="h-full">
             <span class="text-center tiret">|</span>
           </li>
           <li>
-            <nuxt-link to="#" class="text-center anty"
-              >Food & Grocery</nuxt-link
-            >
+            <nuxt-link to="#" class="text-center ant">Food & Grocery</nuxt-link>
           </li>
           <li v-for="(categ, i) in category" :key="i">
             <nuxt-link
               v-if="categ !== ''"
               to="#"
               class="text-center over ant"
-              @mouseleave.native="outlisting"
-              @mouseover.native="inlisting(i)"
               >{{ categ }}</nuxt-link
             >
           </li>
           <li>
-            <nuxt-link to="#" class="text-center anty">DIY</nuxt-link>
+            <nuxt-link to="#" class="text-center ant">DIY</nuxt-link>
           </li>
         </ul>
       </nav>

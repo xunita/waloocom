@@ -65,6 +65,6 @@ export default {
 <style scoped>
 .slide {
   display: block !important;
-  animation: 1s appearZ;
+  animation: 0.7s appearZ;
 }
 </style>
