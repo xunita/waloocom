@@ -1,30 +1,63 @@
 <template>
-  <div>
-    <div class="w-fit flex flex-col space-y-2">
+  <div class="w-full">
+    <div class="w-fit flex flex-col space-y-1">
       <Attributdrop :title="'Ships to'" :left="true" :search="true" />
+      <div>
+        <figure class="image is-240x200sse relative">
+          <img
+            class="h-full w-full"
+            src="/jupress.png"
+            alt="Placeholder image"
+          />
+        </figure>
+        <div class="wordbreaking w180max pr-6">
+          <p class="size-12 leading-4">
+            Free delivery on all articles from $ 150 Free deliver on all
+            articles from $ 150.
+            <a
+              class="clickable ml-1 inline-block size-14 underline-hover color-004e66"
+              >Infos</a
+            >
+          </p>
+        </div>
+      </div>
       <!-- <span
               class="size-125 py-01 self-start text-red-800 font-semibold twoline"
               >This item can't be shipped to Ivory coast</span
             > -->
-      <div class="flex align-center space-x-1">
-        <i class="fas fa-shipping-fast text-gray-800"></i>
-        <div class="flex align-center space-x-2">
-          <span class="size-13">Shipping Fees:</span>
-          <span class="size-14 font-semibold">$ 45</span>
-          <a class="clickable size-14 underline-hover color-004e66">Infos</a>
-        </div>
+      <div class="w-full w180max pr-6 wordbreaking">
+        <p class="size-125">
+          <i class="fas fa-shipping-fast text-gray-800 mr-1"></i>
+          Shipping Fees:
+          <span class="size-14 font-semibold inline-block">$ 45.</span>
+          <a
+            class="clickable size-14 ml-1 underline-hover inline-block color-004e66"
+            >Infos</a
+          >
+        </p>
       </div>
-      <div class="flex w-full align-center space-x-2">
-        <span class="size-13 block">Expected arrival date:</span>
-        <span class="size-14 font-semibold block">September 14, 2016</span>
+      <div class="w-full w180max pr-6 wordbreaking">
+        <span class="size-125 inline-block">Expected arrival date:</span>
+        <span class="size-14 font-semibold inline-block"
+          >September 14, 2016</span
+        >
+      </div>
+      <div class="wordbreaking w180max pr-6">
+        <p class="size-125">
+          Ship from
+          <a
+            class="clickable ml-1 inline-block size-14 underline-hover color-004e66"
+            >jumia.com.tn</a
+          >
+        </p>
       </div>
     </div>
-    <div class="mt-2">
+    <div class="mt-2 w-full">
       <span
         class="size-16 py-01 self-start text-green-800 font-semibold twoline"
         >Available in stock</span
       >
-      <div class="flex flex-col space-y-4 mt-3">
+      <div class="flex flex-col space-y-4 mt-2">
         <Attributdrop class="self-start" :title="'Size'" :left="true" />
         <Attributdrop class="self-start" :title="'Color'" :left="true" />
         <div class="self-start"><Qtedrop /></div>
@@ -33,7 +66,7 @@
         <div class="flex flex-col space-y-4">
           <span class="w-full"
             ><button
-              class="btn-004e66 no-outlines w-full rounded flex align-center space-x-2 px-20 py-1 text-white"
+              class="btn-004e66 m-0-auto no-outlines w-full rounded flex align-center space-x-2 py-1 text-white"
             >
               <span class="m-0-auto"
                 ><i class="fas fa-cart-plus text-white"></i>
@@ -45,7 +78,7 @@
           >
           <span class="w-full"
             ><button
-              class="bg-gray-800 hover:bg-gray-700 no-outlines w-full rounded flex align-center space-x-2 px-20 py-1 text-white"
+              class="bg-gray-800 m-0-auto hover:bg-gray-700 no-outlines w-full rounded flex align-center space-x-2 py-1 text-white"
             >
               <span class="m-0-auto">
                 <span class="size-125 font-medium text-white"
@@ -56,7 +89,7 @@
           >
           <span class="w-full"
             ><button
-              class="bg-gray-800 hover:bg-gray-700 no-outlines w-full rounded flex align-center space-x-2 py-1"
+              class="bg-gray-800 m-0-auto hover:bg-gray-700 no-outlines w-full rounded flex align-center space-x-2 py-1"
             >
               <span class="m-0-auto flex align-center space-x-1 h-full py-08">
                 <!-- <svg
@@ -93,19 +126,21 @@
           >
         </div>
       </div>
-      <div class="pt-8 w-fit m-0-auto text-center">
-        <span class="size-14">Want to sell one ?</span>
-        <span class="w-full"
-          ><button
-            class="btn-004e66 no-outlines w-full rounded flex align-center space-x-2 px-2 py-1 text-white"
-          >
-            <span class="m-0-auto">
-              <span class="size-125 font-medium text-white"
-                >Sell on Waloo</span
-              ></span
+      <div class="h-32 w-full mt-5 text-center border rounded">
+        <div class="w-fit h-fit vertical-center m-0-auto">
+          <span class="size-14 block pb-1">Want to sell one ?</span>
+          <span class="w-fit"
+            ><button
+              class="btn-004e66 no-outlines w-full rounded flex align-center space-x-2 px-10 py-1 text-white"
             >
-          </button></span
-        >
+              <span class="m-0-auto">
+                <span class="size-125 font-medium text-white"
+                  >Sell on Waloo</span
+                ></span
+              >
+            </button></span
+          >
+        </div>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6">
+  <div class="px-5">
     <div class="border-b pb-3">
       <span class="size-20 block font-medium lineh"
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
@@ -14,7 +14,7 @@
           alt="Placeholder image"
       /></a>
       <a class="clickable w-fit h-fi select-none mt-2">
-        <span class="size-14 color-004e66 underline-hover"
+        <span class="size-13 color-004e66 font-semibold underline-hover"
           >Philips & Johnson</span
         ></a
       >
@@ -56,7 +56,7 @@
         >
       </div>
     </div>
-    <div class="pt-2 relative">
+    <div class="pt-3 relative border-b pb-4">
       <div class="flex align-center justify-between">
         <p class="flex pb-1 align-center space-x-2">
           <span class="font-semibold size-18 color-004e66">$ 365,475</span>
@@ -78,6 +78,14 @@
             >72% OFF</span
           >
         </div>
+      </div>
+    </div>
+    <div class="pt-3">
+      <h4 class="font-semibold size-14 logo-color">
+        This item is compared with
+      </h4>
+      <div class="pt-2">
+        <Articlebigcompare />
       </div>
     </div>
     <!-- <div class="mt-3"><Qtedrop /></div> -->

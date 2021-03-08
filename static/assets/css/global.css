@@ -3,6 +3,23 @@ html {
   width: 100%;
   background-color: #e2e8f0;
 }
+a,
+p,
+span {
+  font-size: 14px;
+}
+table td,
+table th {
+  border-width: 1px;
+  border-color: #004e662a;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+}
+tr > :first-child {
+  background-color: #e2e8f0;
+}
 body {
   height: 100%;
   width: 100%;

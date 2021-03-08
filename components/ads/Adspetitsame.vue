@@ -179,7 +179,7 @@ export default {
 } */
 
 .adlines {
-  height: 110px;
+  height: 128px;
 }
 ::-webkit-scrollbar {
   width: 0;

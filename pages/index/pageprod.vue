@@ -47,7 +47,7 @@
       }"
     >
       <div class="w-full h-fit bg-white px-6 py-4">
-        <div class="flex">
+        <div class="flex pb-4">
           <div class="w-full">
             <div class="flex space-x-2">
               <div>
@@ -59,83 +59,11 @@
               <Carductsame titles="From the same marketplace" />
             </div>
           </div>
-          <div class="border-l-2 px-4">
+          <div class="w180max border-l-2 pl-6">
             <Prodship />
           </div>
         </div>
-        <div class="pt-4">
-          <h4 class="font-semibold size-16 logo-color">Product Description</h4>
-          <div id=":mz" class="ii gt border-b pt-3 pb-5">
-            <div
-              id=":n0"
-              class="a3s aiL"
-              style="
-                overflow: hidden;
-                font: small / 1.5 Arial, Helvetica, sans-serif;
-              "
-            >
-              <div dir="auto">Quantities</div>
-              <div dir="auto"><br /></div>
-              <div dir="auto">
-                Maroon x 10
-                <div dir="auto">Baby blue x 20</div>
-                <div dir="auto">Orange x 10</div>
-                <div dir="auto">Grey x 10</div>
-                <div dir="auto">Beige x 10</div>
-              </div>
-              <div class="yj6qo"></div>
-              <div class="adL"></div>
-            </div>
-          </div>
-          <h4 class="font-semibold size-16 logo-color mt-3">
-            Product Information
-          </h4>
-          <div id=":mz" class="ii gt border-b pt-3 pb-5">
-            <div
-              id=":n0"
-              class="a3s aiL"
-              style="
-                overflow: hidden;
-                font: small / 1.5 Arial, Helvetica, sans-serif;
-              "
-            >
-              <div dir="auto">Quantities</div>
-              <div dir="auto"><br /></div>
-              <div dir="auto">
-                Maroon x 10
-                <div dir="auto">Baby blue x 20</div>
-                <div dir="auto">Orange x 10</div>
-                <div dir="auto">Grey x 10</div>
-                <div dir="auto">Beige x 10</div>
-              </div>
-              <div class="yj6qo"></div>
-              <div class="adL"></div>
-            </div>
-          </div>
-          <h4 class="font-semibold size-16 logo-color mt-3">Customer Review</h4>
-          <div id=":mz" class="ii gt border-b pt-3 pb-5">
-            <div
-              id=":n0"
-              class="a3s aiL"
-              style="
-                overflow: hidden;
-                font: small / 1.5 Arial, Helvetica, sans-serif;
-              "
-            >
-              <div dir="auto">Quantities</div>
-              <div dir="auto"><br /></div>
-              <div dir="auto">
-                Maroon x 10
-                <div dir="auto">Baby blue x 20</div>
-                <div dir="auto">Orange x 10</div>
-                <div dir="auto">Grey x 10</div>
-                <div dir="auto">Beige x 10</div>
-              </div>
-              <div class="yj6qo"></div>
-              <div class="adL"></div>
-            </div>
-          </div>
-        </div>
+        <Proddesc />
       </div>
     </div>
     <div class="px-6 flex flex-col space-y-5">

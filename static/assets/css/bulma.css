@@ -430,8 +430,8 @@
   max-height: 420px;
 }
 .imagemax {
-  max-width: 420px;
-  max-height: 420px;
+  max-width: 420px !important;
+  height: 420px !important;
 }
 .is-40x40 {
   height: 40px;
@@ -462,7 +462,7 @@
   height: 180px !important;
 }
 .image.is-240x200sse {
-  width: 128px !important;
+  width: 160px !important;
   height: auto !important;
 }
 .is-240x200 {
@@ -484,8 +484,8 @@
   height: auto !important;
 }
 .image.is-128x128 {
-  height: 128px;
-  width: 128px;
+  height: 128px !important;
+  min-width: 128px !important;
 }
 .button {
   background-color: #fff;

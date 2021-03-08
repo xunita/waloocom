@@ -75,7 +75,7 @@
           >Out of stock</span
         > -->
       </div>
-      <div class="w-fit d-bestp absolute left-0 bottom-0 pb-2 pl-2">
+      <div class="w-fit d-bestp absolute left-0 bottom-0 pl-2">
         <span
           class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
           ><svg

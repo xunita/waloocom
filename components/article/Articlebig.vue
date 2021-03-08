@@ -84,7 +84,7 @@
           <span class="font-semibold size-14 text-white">Preview</span>
         </div>
       </div>
-      <div class="w-fit d-bestp absolute top-0 right-0 p-2">
+      <div class="w-fit d-bestp absolute top-0 right-0">
         <span
           class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
           ><svg
