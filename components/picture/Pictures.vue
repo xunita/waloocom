@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       active: 0,
-      images: ['/ads/gaming.jpg', 'a.jpg', 'b.jpg', 't.jpg', '4.jpg'],
+      images: ['/ads/gaming.jpg', '/a.jpg', '/b.jpg', '/t.jpg', '/4.jpg'],
     }
   },
   computed: {
