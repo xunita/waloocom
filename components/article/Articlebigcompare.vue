@@ -78,7 +78,12 @@
         bonus</span
       >
       <div class="relative flex align-center space-x-10 py-01">
-        <p class="flex align-center self-start space-x-2">
+        <p
+          :class="{
+            'flex align-center space-x-2': size >= 1243,
+            'flex flex-col': size < 1243,
+          }"
+        >
           <span class="font-bold size-125 color-004e66">$ 365,475.4</span>
           <span class="line-through font-semibold size-125 color-363636"
             >$ 499,987.9</span
@@ -105,7 +110,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  computed: {
+    size() {
+      return this.$store.state.size
+    },
+  },
+}
 </script>
 
 <style scoped>

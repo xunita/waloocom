@@ -59,8 +59,10 @@
     <div class="pt-3 relative border-b pb-4">
       <div class="flex align-center justify-between">
         <p class="flex pb-1 align-center space-x-2">
-          <span class="font-semibold size-18 color-004e66">$ 365,475</span>
-          <span class="line-through font-semibold size-16 color-363636"
+          <span class="font-semibold block size-18 color-004e66"
+            >$ 365,475</span
+          >
+          <span class="line-through block font-semibold size-16 color-363636"
             >$ 499,987</span
           >
         </p>
