@@ -386,9 +386,20 @@
   height: 36px;
   width: 36px;
 }
+.w512max {
+  max-width: 600px !important;
+}
 .image.is-36x36 {
   height: 36px;
   width: 36px;
+}
+.is-34x34 {
+  height: 34px;
+  width: 34px;
+}
+.image.is-34x34 {
+  height: 34px;
+  width: 34px;
 }
 .image.is-content {
   width: 100%;
@@ -401,7 +412,7 @@
   height: 40px;
   width: 40px;
 }
-.is-max{
+.is-max {
   max-width: 128px;
   height: auto;
 }
@@ -417,10 +428,10 @@
   color: #3b5998 !important;
 }
 .twi {
-  color: #1DA1F2 !important;
+  color: #1da1f2 !important;
 }
 .pinter {
-  color: #E60023 !important;
+  color: #e60023 !important;
 }
 .mail {
   color: #505050 !important;

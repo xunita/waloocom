@@ -7,7 +7,42 @@ a,
 p,
 span {
   font-size: 14px;
+  /* color: #2d3748; */
 }
+.rate {
+  float: left;
+  height: 32px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 32px;
+  color: #e2e8f0;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ff9900;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #ffbb00e8;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #ffae00;
+}
+
 table td,
 table th {
   border-width: 1px;
@@ -28,7 +63,7 @@ body {
   /* font-weight: 400 !important; */
 }
 .logo-color {
-  color: #282828 !important;
+  color: #2d3748 !important;
 }
 .bglogo-color {
   background-color: #282828 !important;
@@ -46,7 +81,7 @@ body {
   color: #4a4a4a;
 }
 .color-bg {
-  color: #e2e8f0;
+  color: #e2e8f0 !important;
 }
 .color-bgs {
   color: #b5bbc4;

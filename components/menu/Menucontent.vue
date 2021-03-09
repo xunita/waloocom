@@ -1,7 +1,7 @@
 <template>
   <div class="py-15 relative">
     <div class="flex align-center justify-between px-6 py-1 border-b">
-      <h4 class="font-semibold size-14">Shop by category</h4>
+      <h4 class="font-semibold logo-color size-14">Shop by category</h4>
     </div>
     <div class="w180ee border-b py-15">
       <a class="dropdown-item px-6 clickable flex align-center justify-between">

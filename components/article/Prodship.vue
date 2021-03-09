@@ -11,7 +11,7 @@
           />
         </figure>
         <div class="wordbreaking w180max pr-6">
-          <p class="size-12 leading-4">
+          <p class="size-125 leading-4">
             Free delivery on all articles from $ 150 Free deliver on all
             articles from $ 150.
             <a
@@ -57,7 +57,7 @@
         class="size-16 py-01 self-start text-green-800 font-semibold twoline"
         >Available in stock</span
       >
-      <div class="flex flex-col space-y-4 mt-2">
+      <div class="flex flex-col space-y-3 mt-2">
         <Attributdrop class="self-start" :title="'Size'" :left="true" />
         <Attributdrop class="self-start" :title="'Color'" :left="true" />
         <div class="self-start"><Qtedrop /></div>

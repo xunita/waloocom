@@ -157,7 +157,10 @@ input[type='range']::-ms-fill-upper {
   padding-bottom: 0.375rem;
 }
 .checked {
-  color: #ffc700;
+  color: #ff9900;
+}
+.bg-checked {
+  background-color: #ff9900 !important;
 }
 .py-08 {
   padding-top: 0.15rem;
@@ -306,7 +309,10 @@ input[type='search']::-webkit-search-cancel-button {
   color: #ee3838;
 }
 .color-6d6d6d {
-  color: #acacac;
+  color: #e2e8f0;
+}
+.bg-6d6d6d {
+  background-color: #acacac !important;
 }
 .color-light {
   color: #a7a7a7;
@@ -561,6 +567,9 @@ input[type='search']::-webkit-search-cancel-button {
 }
 .w2x320 {
   width: 300px;
+}
+.w2x320s {
+  width: 310px;
 }
 .h2x320 {
   height: 420px;

@@ -47,7 +47,7 @@
       </div>
       <div class="w-fit d-bestp absolute bottom-0 left-0">
         <span
-          class="px-2 py-1 block rounded-full bg-transparent text-orange-600 font-bold size-12"
+          class="px-2 py-1 block rounded-full bg-transparent checked font-bold size-12"
           ><svg
             class="w-5 h-5 starss"
             fill="none"

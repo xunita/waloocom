@@ -163,6 +163,12 @@
           </div>
           <div class="border-b py-3">
             <Basecard
+              :category="['In stock', 'Coming Soon']"
+              :title="'Availability'"
+            />
+          </div>
+          <div class="border-b py-3">
+            <Basecard
               :category="[
                 '32 Inches',
                 '32 Inches',
