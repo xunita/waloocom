@@ -126,10 +126,15 @@
           <Sortreview />
         </div>
         <div class="mt-2 mb-4">
-          <!-- <div>
+          <div v-if="!review">
             <span class="w360 block"
               ><button
                 class="btn-004e66 m-0-auto no-outlines w-full rounded flex align-center space-x-2 py-1 text-white"
+                @click="
+                  {
+                    review = !review
+                  }
+                "
               >
                 <span class="m-0-auto">
                   <i class="fas fa-feather-alt text-white mr-1"></i>
@@ -139,8 +144,8 @@
                 >
               </button></span
             >
-          </div> -->
-          <div>
+          </div>
+          <div v-else class="appearZ">
             <div>
               <div class="w-55 the-rate">
                 <div class="leave-rate pb-5 border-b">
@@ -603,6 +608,7 @@ export default {
       fill1all: false,
       rep: false,
       subcom: false,
+      review: false,
     }
   },
   computed: {
