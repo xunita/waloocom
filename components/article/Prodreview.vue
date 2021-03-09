@@ -482,7 +482,7 @@
               >
                 <div class="relative trtr h-fit lg:w-4/5 md:w-4/5 sm:w-full">
                   <span class="block size-12 logo-color pb-1"
-                    >Replying to
+                    >Answering to
                     <a class="size-12 logo-color font-semibold"
                       >John Mackenzie</a
                     ></span
