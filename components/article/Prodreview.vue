@@ -492,7 +492,7 @@
                       id="coment2"
                       wrap="hard"
                       class="w-full aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
-                      placeholder="Add a answer"
+                      placeholder="Add an answer"
                       rows="2"
                     ></textarea>
                   </div>
