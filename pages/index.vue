@@ -41,7 +41,9 @@
           </button>
         </div>
       </div>
-      <Footer class="mt-16" />
+      <div class="pt-16">
+        <Footer />
+      </div>
     </div>
   </div>
 </template>

@@ -16,6 +16,10 @@ span {
   float: left;
   height: 32px;
 }
+.-mtdsd {
+  position: relative !important;
+  top: -2rem !important;
+}
 .rate:not(:checked) > input {
   position: absolute;
 }
@@ -64,6 +68,9 @@ body {
   margin: 0px;
   padding: 0px;
   /* font-weight: 400 !important; */
+}
+.bg-foot {
+  background-color: #202733 !important;
 }
 .logo-color {
   color: #2d3748 !important;

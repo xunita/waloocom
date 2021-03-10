@@ -3,7 +3,7 @@
     <div class="w-fit flex flex-col space-y-1">
       <Attributdrop :title="'Ships to'" :left="true" :search="true" />
       <div>
-        <figure class="image is-240x200sse relative">
+        <figure class="image is-240x200sse relative pb-1">
           <img
             class="h-full w-full"
             src="/jupress.png"

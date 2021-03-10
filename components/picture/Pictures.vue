@@ -34,12 +34,22 @@
           :class="{
             slide: active === ij,
           }"
+          @mouseover="nothing"
+          @mousemove="mouseover"
+          @mouseleave="hidediv"
         >
-          <img
-            class="imagemax vertical-centere"
-            :src="currentsrc"
-            alt="Placeholder image"
-          />
+          <div
+            v-show="imghovering"
+            id="followcursor"
+            class="bg-black-tree w-40 h-32 border absolute z-10"
+          ></div>
+          <div class="w-fit h-fit">
+            <img
+              class="imagemax vertical-centere"
+              :src="currentsrc"
+              alt="Placeholder image"
+            />
+          </div>
         </figure>
       </div>
       <div
@@ -64,6 +74,7 @@ export default {
   data() {
     return {
       active: 0,
+      hovered: false,
       images: ['/ads/gaming.jpg', '/a.jpg', '/b.jpg', '/t.jpg', '/4.jpg'],
     }
   },
@@ -73,6 +84,9 @@ export default {
     },
     loading() {
       return this.$store.state.pageload === true
+    },
+    imghovering() {
+      return this.hovered === true
     },
     currentsrc() {
       return this.images[this.active]
@@ -86,6 +100,24 @@ export default {
     },
   },
   methods: {
+    mouseover(e) {
+      // const rect = e.target.getBoundingClientRect()
+      const x = e.pageX
+      const y = e.pageY
+      if (x >= 97 && x <= 513 && y >= 165 && y <= 584) {
+        this.hovered = true
+        const myel = document.getElementById('followcursor')
+        const left = e.pageX - 176
+        const top = e.pageY - 229
+        myel.style.left = left + 'px'
+        myel.style.top = top + 'px'
+      } else this.hovered = false
+      console.log(x, y)
+    },
+    hidediv() {
+      this.hovered = false
+    },
+    nothing() {},
     hidecontent() {
       const el = document.querySelectorAll('[id ^= "pag"]')
       Array.prototype.forEach.call(el, callback)
