@@ -216,7 +216,7 @@
                       <span class="block pb-1 size-13 font-semibold"
                         >Commenting this product
                       </span>
-                      <div class="border rounded w-full" @click="focus">
+                      <div class="border rounded w360" @click="focus">
                         <textarea
                           id="coment2x"
                           wrap="hard"
@@ -260,7 +260,7 @@
                       <span class="block pb-1 size-13 font-semibold"
                         >Asking about this product
                       </span>
-                      <div class="border w-full" @click="focus">
+                      <div class="border w360" @click="focus">
                         <textarea
                           id="coment2x"
                           wrap="hard"
@@ -487,7 +487,7 @@
                       >John Mackenzie</a
                     ></span
                   >
-                  <div class="border w-full" @click="focus">
+                  <div class="border w360" @click="focus">
                     <textarea
                       id="coment2"
                       wrap="hard"
