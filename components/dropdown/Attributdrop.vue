@@ -18,9 +18,14 @@
             "
           >
             <span class="size-13 pr-1">{{ title }}: </span>
-            <span class="size-125 logo-color font-semibold block w-fit">{{
-              ctry
-            }}</span>
+            <div v-if="title !== 'Color'">
+              <span class="size-125 logo-color font-semibold block w-fit">{{
+                ctry
+              }}</span>
+            </div>
+            <div v-else>
+              <span id="colorit" class="block border w-4 h-4"></span>
+            </div>
             <svg
               class="w-4 h-4 logo-color relative top-01x"
               fill="currentColor"
@@ -70,7 +75,20 @@
               </label>
             </div>
           </div>
-          <div class="h-40max overflow-y-auto aside">
+          <div
+            v-if="title === 'Color'"
+            class="h-40max overflow-y-auto flex flex-wrap aside"
+          >
+            <a
+              v-for="(element, i) in contents"
+              :id="'colorsample' + element"
+              :key="i"
+              class="clickable border w-4 w-5 column is-one-fifth"
+              @click="setcolor(element)"
+            >
+            </a>
+          </div>
+          <div v-else class="h-40max overflow-y-auto aside">
             <a
               v-for="(element, i) in contents"
               :key="i"
@@ -112,6 +130,7 @@ export default {
   data() {
     return {
       focused: false,
+      currentcolor: '',
       searching: '',
       ctry: 'Abidjan',
       lan: [
@@ -132,16 +151,46 @@ export default {
     language() {
       return this.lan
     },
+    loading() {
+      return this.$store.state.pageload === true
+    },
     contents() {
       return this.content.filter((x) =>
         x.toLowerCase().includes(this.searching.toLowerCase())
       )
     },
   },
+  watch: {
+    loading(newval, oldval) {
+      if (newval === false) {
+        this.hidecontent()
+      }
+    },
+  },
   mounted() {
     this.sendcur()
+    this.ctry = this.content[0]
+    this.currentcolor = this.content[0]
   },
   methods: {
+    setcolor(element) {
+      const myel = document.getElementById('colorit')
+      myel.style.backgroundColor = '#' + element
+    },
+    hidecontent() {
+      console.log('dfdf')
+      const el = document.querySelectorAll('[id ^= "colorsample"]')
+      Array.prototype.forEach.call(el, callback)
+
+      function callback(element, iterator) {
+        const myel = document.getElementById(element.id)
+        const color = element.id.substr(
+          element.id.lastIndexOf(element.id) + element.id.length
+        )
+        console.log(color)
+        myel.style.backgroundColor = '#' + color
+      }
+    },
     sendcur() {
       const cur =
         this.ctry === 'Rand ZAR'

@@ -1,43 +1,48 @@
 <template>
-  <div v-if="loading"></div>
-  <div v-else class="h-full max1260 d-spec m-0-auto relative scroll-1400">
-    <Menu v-show="modaled" class="z-40 appearxhx" />
-    <Header
-      class="sticky d-spec px-5 top-0 z-30"
-      :class="{
-        'my-shadow': scroll > 37,
-      }"
-    />
-    <div class="d-spec">
-      <Afterheader class="d-spec px-5" />
+  <div>
+    <div v-show="loading"></div>
+    <div
+      v-show="!loading"
+      class="h-full max1260 d-spec m-0-auto relative scroll-1400"
+    >
+      <Menu v-show="modaled" class="z-40 appearxhx" />
+      <Header
+        class="sticky d-spec px-5 top-0 z-30"
+        :class="{
+          'my-shadow': scroll > 37,
+        }"
+      />
+      <div class="d-spec">
+        <Afterheader class="d-spec px-5" />
 
-      <div class="w-full flex flex-col space-y-4">
-        <nuxt-child />
-      </div>
-      <div
-        v-show="scroll > 728"
-        class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-16 pt-5"
-      >
-        <button
-          class="button bg-white rounded-full shadow h-11 w-11-full no-outlines outline-none gotop"
-          @click="scrolltop"
+        <div class="w-full flex flex-col space-y-4">
+          <nuxt-child />
+        </div>
+        <div
+          v-show="scroll > 728"
+          class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-16 pt-5"
         >
-          <svg
-            class="w-5 h-5 transform rotate-180 color-004e66 relative"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+          <button
+            class="button bg-white rounded-full shadow h-11 w-11-full no-outlines outline-none gotop"
+            @click="scrolltop"
           >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <svg
+              class="w-5 h-5 transform rotate-180 color-004e66 relative"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
+      <Footer class="mt-16" />
     </div>
-    <Footer class="mt-16" />
   </div>
 </template>
 
@@ -67,7 +72,7 @@ export default {
   },
   computed: {
     loading() {
-      return this.load === true
+      return this.$store.state.pageload === true
     },
     modaled() {
       return this.$store.state.modalmenu === true
@@ -95,7 +100,6 @@ export default {
   mounted() {
     this.large()
     this.handleScroll()
-    this.hidecontent()
   },
   methods: {
     scrolltop() {
@@ -106,7 +110,7 @@ export default {
       })
     },
     hidecontent() {
-      this.load = false
+      this.$store.commit('SET_LOAD', false)
     },
     large() {
       this.width = window.innerWidth

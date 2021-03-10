@@ -1,5 +1,6 @@
 export const state = () => ({
   size: 1499,
+  pageload: true,
   scroll: 0,
   categdex: 0,
   categ: [
@@ -1055,6 +1056,9 @@ export const mutations = {
   },
   SET_SCROLL(state, value) {
     state.scroll = value
+  },
+  SET_LOAD(state, value) {
+    state.pageload = value
   },
 }
 export const actions = {}

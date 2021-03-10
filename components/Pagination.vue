@@ -206,20 +206,19 @@ export default {
     page() {
       return this.current
     },
+    loading() {
+      return this.$store.state.pageload === true
+    },
     end() {
       return this.pagination[this.pagination.length - 1] - 6
     },
   },
-  beforeMount() {
-    document.addEventListener('DOMContentLoaded', this.hidecontent, false)
-    // document.attachEvent('onreadystatechange', this.fn)
-  },
-  beforeDestroy() {
-    // document.adetachEvent('onreadystatechange', this.fn)
-    document.removeEventListener('DOMContentLoaded', this.hidecontent, false)
-  },
-  updated() {
-    this.hidecontent()
+  watch: {
+    loading(newval, oldval) {
+      if (newval === false) {
+        this.hidecontent()
+      }
+    },
   },
   methods: {
     hidecontent() {

@@ -71,16 +71,19 @@ export default {
     now() {
       return this.active
     },
+    loading() {
+      return this.$store.state.pageload === true
+    },
     currentsrc() {
       return this.images[this.active]
     },
   },
-  beforeMount() {
-    document.addEventListener('DOMContentLoaded', this.fn, false)
-    // document.attachEvent('onreadystatechange', this.fn)
-  },
-  beforeDestroy() {
-    document.removeEventListener('DOMContentLoaded', this.fn, false)
+  watch: {
+    loading(newval, oldval) {
+      if (newval === false) {
+        this.hidecontent()
+      }
+    },
   },
   methods: {
     hidecontent() {

@@ -58,8 +58,18 @@
         >Available in stock</span
       >
       <div class="flex flex-col space-y-3 mt-2">
-        <Attributdrop class="self-start" :title="'Size'" :left="true" />
-        <Attributdrop class="self-start" :title="'Color'" :left="true" />
+        <Attributdrop
+          class="self-start"
+          :title="'Size'"
+          :content="['L', 'S', 'M', 'XL']"
+          :left="true"
+        />
+        <Attributdrop
+          class="self-start"
+          :title="'Color'"
+          :content="['fff', '004e66', '000', '041e95']"
+          :left="true"
+        />
         <div class="self-start"><Qtedrop /></div>
       </div>
       <div class="flex flex-col space-y-4 mt-5">

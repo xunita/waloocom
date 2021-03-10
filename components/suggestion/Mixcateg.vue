@@ -93,6 +93,9 @@ export default {
     size() {
       return this.$store.state.size
     },
+    loading() {
+      return this.$store.state.pageload === true
+    },
     scrolling() {
       return this.scroll
     },
@@ -109,27 +112,33 @@ export default {
       this.handleScroll()
       // this.large()
     },
+    loading(newval, oldval) {
+      if (newval === false) {
+        this.hidecontent()
+      }
+    },
   },
   beforeMount() {
     window.addEventListener('wheel', this.handleScroll)
     window.addEventListener('resize', this.large)
-    document.addEventListener('DOMContentLoaded', this.fn, false)
+    // document.addEventListener('checkedLoaded', this.fn, false)
     // document.attachEvent('onreadystatechange', this.fn)
   },
   beforeDestroy() {
     window.removeEventListener('wheel', this.handleScroll)
     window.removeEventListener('resize', this.large)
     // document.adetachEvent('onreadystatechange', this.fn)
-    document.removeEventListener('DOMContentLoaded', this.fn, false)
+    // document.removeEventListener('checkedLoaded', this.fn, false)
   },
   mounted() {
     this.getId()
+    if (this.loading === false) this.hidecontent()
   },
   methods: {
     async getId() {
       this.ids = await this._uid
     },
-    fn() {
+    hidecontent() {
       this.handleScroll()
       this.large()
     },

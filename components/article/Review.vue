@@ -99,14 +99,6 @@ export default {
       return this.subcom === true
     },
   },
-  beforeMount() {
-    document.addEventListener('DOMContentLoaded', this.setwidth, false)
-    // document.attachEvent('onreadystatechange', this.fn)
-  },
-  beforeDestroy() {
-    // document.adetachEvent('onreadystatechange', this.fn)
-    document.removeEventListener('DOMContentLoaded', this.setwidth, false)
-  },
   mounted() {
     this.setwidth()
   },

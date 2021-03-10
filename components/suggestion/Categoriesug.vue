@@ -2,7 +2,7 @@
   <div class="w-full absolute adlines flex align-center px-6">
     <div class="h-fit absolute bg-transparent w-16 leftag z-10 px-2">
       <button
-        class="button bg-transparent shadow-sm h-8 w-8 -ml-5 -mt-1 rounded-full no-outlines outline-none z-10 gotop btn-004e66 appearxh border-2 border-transparent"
+        class="button bg-transparent shadow-sm h-8 w-8 -ml-3 -mt-1 rounded-full no-outlines outline-none z-10 gotop btn-004e66 appearxh border-2 border-transparent"
         :class="{ hidden: !scrollxl }"
         @click="scrollLeft"
       >
@@ -40,7 +40,7 @@
     </div>
     <div class="h-fit absolute bg-transparent w-16 right-0 rightag z-10">
       <button
-        class="button bg-transparent shadow-sm h-8 w-8 -mt-1 rounded-full no-outlines outline-none ml-5 z-10 gotop btn-004e66 appearxhz border-2 border-transparent"
+        class="button bg-transparent shadow-sm h-8 w-8 -mt-1 rounded-full no-outlines outline-none ml-3 z-10 gotop btn-004e66 appearxhz border-2 border-transparent"
         :class="{ hidden: scrollxr }"
         @click="scrollRight"
       >
@@ -79,6 +79,9 @@ export default {
     size() {
       return this.$store.state.size
     },
+    loading() {
+      return this.$store.state.pageload === true
+    },
     scrolling() {
       return this.scroll
     },
@@ -89,26 +92,34 @@ export default {
       return this.reachtotal === true
     },
   },
+  watch: {
+    loading(newval, oldval) {
+      if (newval === false) {
+        this.hidecontent()
+      }
+    },
+  },
   beforeMount() {
     window.addEventListener('wheel', this.handleScroll)
     window.addEventListener('resize', this.large)
-    document.addEventListener('DOMContentLoaded', this.fn, false)
+    // document.addEventListener('checkedLoaded', this.fn, false)
     // document.attachEvent('onreadystatechange', this.fn)
   },
   beforeDestroy() {
     window.removeEventListener('wheel', this.handleScroll)
     window.removeEventListener('resize', this.large)
     // document.adetachEvent('onreadystatechange', this.fn)
-    document.removeEventListener('DOMContentLoaded', this.fn, false)
+    // document.removeEventListener('checkedLoaded', this.fn, false)
   },
   mounted() {
     this.getId()
+    if (this.loading === false) this.hidecontent()
   },
   methods: {
     async getId() {
       this.ids = await this._uid
     },
-    fn() {
+    hidecontent() {
       this.handleScroll()
       this.large()
     },
