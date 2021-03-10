@@ -106,7 +106,7 @@
       </div>
       <div
         v-show="replying"
-        class="appearyh flex space-x-2 pl-5 py-2 -mt-2 mb-4 border-b"
+        class="appearyh flex space-x-2 pl-5 py-2 -mt-2 mb-2"
       >
         <div class="relative trtr h-fit lg:w-4/5 md:w-4/5 sm:w-full">
           <span class="block size-125 logo-color pb-1"
@@ -137,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div v-show="subcoming" class="pl-5 appearZ pb-2">
+      <div v-show="subcoming" class="pl-5 pt-1 appearZ pb-2">
         <div class="flex align-center space-x-2">
           <figure class="image is-32x32 rounded-full">
             <img class="rounded-full" src="/user.png" />

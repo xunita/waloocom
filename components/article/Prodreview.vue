@@ -81,12 +81,14 @@
             <Revquestfill />
           </div>
         </div>
-        <div class="w512max wordbreaking flex flex-col space-y-5 clear-both">
-          <Onereview v-for="i in 4" :key="i" />
-          <Onequest />
+        <div class="border-b pb-4">
+          <div class="w512max wordbreaking flex flex-col space-y-5 clear-both">
+            <Onereview v-for="i in 4" :key="i" />
+            <Onequest />
+          </div>
         </div>
         <a
-          class="clickable block relative top-08x w-fit underline-hover color-004e66 font-semibold"
+          class="clickable block relative top-05x w-fit underline-hover color-004e66 font-semibold"
           >See all comments and questions</a
         >
       </div>

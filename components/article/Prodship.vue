@@ -67,7 +67,32 @@
         <Attributdrop
           class="self-start"
           :title="'Color'"
-          :content="['fff', '004e66', '000', '041e95']"
+          :content="[
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+            'ccc',
+            '004e66',
+            '000',
+            '041e95',
+          ]"
           :left="true"
         />
         <div class="self-start"><Qtedrop /></div>

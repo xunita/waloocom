@@ -77,13 +77,13 @@
           </div>
           <div
             v-if="title === 'Color'"
-            class="h-40max overflow-y-auto flex flex-wrap aside"
+            class="h-40max m-0-auto px-2 overflow-y-auto flex flex-wrap aside"
           >
             <a
               v-for="(element, i) in contents"
               :id="'colorsample' + element"
               :key="i"
-              class="clickable border w-4 w-5 column is-one-fifth"
+              class="clickable hover:shadow block border column is-one-fifth mx-1 my-1"
               @click="setcolor(element)"
             >
             </a>
@@ -164,30 +164,31 @@ export default {
     loading(newval, oldval) {
       if (newval === false) {
         this.hidecontent()
+        this.curcolor()
       }
     },
   },
   mounted() {
     this.sendcur()
     this.ctry = this.content[0]
-    this.currentcolor = this.content[0]
   },
   methods: {
     setcolor(element) {
       const myel = document.getElementById('colorit')
       myel.style.backgroundColor = '#' + element
+      this.focused = false
+    },
+    curcolor() {
+      const myel = document.getElementById('colorit')
+      myel.style.backgroundColor = '#' + this.content[0]
     },
     hidecontent() {
-      console.log('dfdf')
       const el = document.querySelectorAll('[id ^= "colorsample"]')
       Array.prototype.forEach.call(el, callback)
 
       function callback(element, iterator) {
         const myel = document.getElementById(element.id)
-        const color = element.id.substr(
-          element.id.lastIndexOf(element.id) + element.id.length
-        )
-        console.log(color)
+        const color = element.id.replace('colorsample', '')
         myel.style.backgroundColor = '#' + color
       }
     },
