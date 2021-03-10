@@ -3,7 +3,7 @@
     <div class="d-spec size-125 relative font-semibold logo-color px-2">
       <nav>
         <ul
-          class="nav-desc w-fit font-semibold flex align-center overflow-x-auto"
+          class="nav-desc w-fit font-semibold flex align-center overflow-x-auto -mt-2"
         >
           <li>
             <nuxt-link to="#" class="text-center ant">Today's deals</nuxt-link>

@@ -50,7 +50,7 @@
 export default {
   data() {
     return {
-      width: 99999,
+      width: 1500,
       scrollsize: 0,
       load: true,
       brand: [

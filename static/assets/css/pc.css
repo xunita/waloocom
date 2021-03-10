@@ -657,12 +657,13 @@ span {
 }
 .nav-desc .tiret {
   display: block;
-  padding: 4.5px 5px 7px 5px;
+  padding: 11px 8px 6px 8px;
   border-bottom: 2px solid transparent;
 }
 .nav-desc a:not(.tiret) {
   display: block;
-  padding: 5px 10px 7px 10px;
+  font-size: 12.5px !important;
+  padding: 11px 8px 6px 8px;
   border-bottom: 2px solid transparent;
 }
 .color-gray {
