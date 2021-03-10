@@ -73,7 +73,7 @@
 export default {
   data() {
     return {
-      active: 0,
+      active: 1,
       hovered: false,
       images: ['/ads/gaming.jpg', '/a.jpg', '/b.jpg', '/t.jpg', '/4.jpg'],
     }
