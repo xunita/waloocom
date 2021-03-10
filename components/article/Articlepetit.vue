@@ -1,5 +1,8 @@
 <template>
-  <a class="clickable article h-fit pb-2 w180 relative hover:shadow-lg">
+  <a
+    href="/pageprod"
+    class="clickable article h-fit pb-2 w180 relative hover:shadow-lg"
+  >
     <figure class="image is-240x200ss w180 relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div class="w-fit absolute z-10 top-0 left-0">
@@ -117,7 +120,7 @@
       >
       <div class="relative">
         <p class="flex align-center space-x-2">
-          <span class="font-bold size-14 color-004e66">$ 365,475.4</span>
+          <span class="font-semibold size-14 color-004e66">$ 365,475.4</span>
           <span class="line-through font-semibold size-13 color-363636"
             >$ 499,987.9</span
           >

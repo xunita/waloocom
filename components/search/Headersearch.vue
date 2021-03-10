@@ -19,6 +19,7 @@
     />
     <button
       class="btn-004e66 no-outlines rounded-tr rounded-br btn-search flex align-center space-x-2 h-10 px-3"
+      @click="goprod"
     >
       <span class="w-fit h-fit"
         ><svg
@@ -51,6 +52,9 @@ export default {
     }
   },
   methods: {
+    goprod() {
+      location.assign('/products')
+    },
     manageleave() {
       if (this.inputfoc !== true) this.focused = false
     },

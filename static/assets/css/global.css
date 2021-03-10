@@ -9,6 +9,9 @@ span {
   font-size: 14px;
   /* color: #2d3748; */
 }
+.parent_hover_under:hover span {
+  text-decoration: underline;
+}
 .rate {
   float: left;
   height: 32px;
@@ -22,7 +25,7 @@ span {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 32px;
+  font-size: 30px;
   color: #e2e8f0;
 }
 .rate:not(:checked) > label:before {

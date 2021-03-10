@@ -117,7 +117,7 @@
       >
       <div class="py-01 relative">
         <p class="flex pb-1 align-center space-x-2">
-          <span class="font-bold size-14 color-004e66">$ 365,475.4</span>
+          <span class="font-semibold size-14 color-004e66">$ 365,475.4</span>
           <span class="line-through font-semibold size-13 color-363636"
             >$ 499,987.9</span
           >

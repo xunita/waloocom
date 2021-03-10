@@ -125,8 +125,8 @@
       >
       <div class="relative flex align-center space-x-10 py-1">
         <p class="flex align-center self-start space-x-2">
-          <span class="font-bold size-125 color-004e66">$ 365,475.4</span>
-          <span class="line-through font-semibold size-125 color-363636"
+          <span class="font-semibold size-145 color-004e66">$ 365,475.4</span>
+          <span class="line-through font-semibold size-135 color-363636"
             >$ 499,987.9</span
           >
         </p>
@@ -144,13 +144,13 @@
         > 
         -->
         <span
-          class="size-14 block w-fit -mt-1 text-red-600 font-semibold twoline"
+          class="size-145 block w-fit -mt-1 text-red-600 font-semibold twoline"
           >Out of stock</span
         >
       </div>
       <div class="flex align-center justify-between">
         <span
-          class="px-2 py-1 block w-fit rounded btn-004e66s color-004e66 font-semibold size-11 my-1"
+          class="px-2 py-1 block w-fit rounded btn-004e66s color-004e66 font-semibold size-12 my-1"
           >Free shipping</span
         >
         <div class="flex align-center space-x-10">
@@ -161,7 +161,7 @@
         </div>
       </div>
       <div class="flex align-center hover-underchild justify-between">
-        <div class="flex align-center space-x-2 py-08">
+        <div class="flex align-center space-x-2 py-1">
           <span class="size-13">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
