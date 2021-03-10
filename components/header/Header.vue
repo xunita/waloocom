@@ -1,4 +1,5 @@
 <template>
+  <!-- <div v-if="loading"></div> -->
   <div class="header bg-white py-15">
     <nav class="flex align-center space-x-5">
       <div class="flex align-center space-x-3">

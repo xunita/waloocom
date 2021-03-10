@@ -1,5 +1,6 @@
 <template>
-  <div class="h-full max1260 d-spec m-0-auto relative scroll-1400">
+  <div v-if="loading"></div>
+  <div v-else class="h-full max1260 d-spec m-0-auto relative scroll-1400">
     <Menu v-show="modaled" class="z-40 appearxhx" />
     <Header
       class="sticky d-spec px-5 top-0 z-30"
@@ -46,6 +47,7 @@ export default {
     return {
       width: 99999,
       scrollsize: 0,
+      load: true,
       brand: [
         'Waloo Pay',
         'Waloo help',
@@ -64,8 +66,8 @@ export default {
     }
   },
   computed: {
-    computer() {
-      return this.$store.state.computer
+    loading() {
+      return this.load === true
     },
     modaled() {
       return this.$store.state.modalmenu === true
@@ -83,14 +85,17 @@ export default {
   beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('resize', this.large)
+    document.addEventListener('DOMContentLoaded', this.hidecontent, false)
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
     window.removeEventListener('resize', this.large)
+    document.removeEventListener('DOMContentLoaded', this.hidecontent, false)
   },
   mounted() {
     this.large()
     this.handleScroll()
+    this.hidecontent()
   },
   methods: {
     scrolltop() {
@@ -99,6 +104,9 @@ export default {
         left: 0,
         behavior: 'smooth',
       })
+    },
+    hidecontent() {
+      this.load = false
     },
     large() {
       this.width = window.innerWidth

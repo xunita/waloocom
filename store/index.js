@@ -1,5 +1,5 @@
 export const state = () => ({
-  size: 99999,
+  size: 1499,
   scroll: 0,
   categdex: 0,
   categ: [
