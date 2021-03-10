@@ -220,7 +220,7 @@
                         <textarea
                           id="coment2x"
                           wrap="hard"
-                          class="w-full aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
+                          class="w360 aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
                           placeholder="Add a comment"
                           rows="2"
                         ></textarea>
@@ -264,7 +264,7 @@
                         <textarea
                           id="coment2x"
                           wrap="hard"
-                          class="w-full aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
+                          class="w360 aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
                           placeholder="Add your question"
                           rows="2"
                         ></textarea>
@@ -491,7 +491,7 @@
                     <textarea
                       id="coment2"
                       wrap="hard"
-                      class="w-full aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
+                      class="w360 aside noscroll toyo size-15 p-2 text-gray-700 focus:outline-none mt-1"
                       placeholder="Add an answer"
                       rows="2"
                     ></textarea>
