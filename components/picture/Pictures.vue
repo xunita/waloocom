@@ -83,7 +83,16 @@ export default {
     return {
       active: 1,
       hovered: false,
-      images: ['/ads/gaming.jpg', '/a.jpg', '/b.jpg', '/t.jpg', '/4.jpg'],
+      images: [
+        '/ads/gaming.jpg',
+        '/a.jpg',
+        '/b.jpg',
+        '/t.jpg',
+        '/4.jpg',
+        '/ads/gaming.jpg',
+        '/a.jpg',
+        '/b.jpg',
+      ],
     }
   },
   computed: {
