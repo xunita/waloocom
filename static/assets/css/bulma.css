@@ -440,6 +440,16 @@
   width: 420px;
   max-height: 420px;
 }
+.zoomin {
+  cursor: zoom-in;
+}
+.w480 {
+  width: 600px;
+  right: -610px !important;
+}
+.h384 {
+  height: 480px;
+}
 .imagemax {
   max-width: 420px !important;
   height: 420px !important;

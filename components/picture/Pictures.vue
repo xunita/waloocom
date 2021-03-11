@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-2">
+  <div class="flex space-x-2 relative">
     <div class="flex flex-col space-y-2">
       <a
         v-for="(i, j) in images"
@@ -25,27 +25,27 @@
       </a>
     </div>
     <div>
-      <div class="clickable relative image is-image">
+      <div class="clickable zoomin relative image is-image">
         <figure
           v-for="(img, ij) in images"
           id="currentimage"
           :key="ij"
-          class="w-fit h-fit h-centers hiddenmox"
+          class="w-fit h-fit h-centers image is-image hiddenmox"
           :class="{
             slide: active === ij,
           }"
-          @mouseover="nothing"
-          @mousemove="mouseover"
+          @mousemove="imageZoom('normalimg' + ij, 'hoverimg', ij, $event)"
           @mouseleave="hidediv"
         >
           <div
             v-show="imghovering"
-            id="followcursor"
+            :id="'followcursor' + ij"
             class="bg-black-tree w-40 h-32 border absolute z-10"
           ></div>
-          <div class="w-fit h-fit">
+          <div class="w-fit h-fit h-centers">
             <img
-              class="imagemax vertical-centere"
+              :id="'normalimg' + ij"
+              class="imagemax"
               :src="currentsrc"
               alt="Placeholder image"
             />
@@ -65,6 +65,12 @@
           </p>
         </div>
       </div>
+    </div>
+    <div
+      v-show="imghovering"
+      class="shadow-md absolute w480 z-20 h384 bg-white right-0"
+    >
+      <img id="hoverimg" class="w-full h-full" />
     </div>
   </div>
 </template>
@@ -100,24 +106,71 @@ export default {
     },
   },
   methods: {
-    mouseover(e) {
-      // const rect = e.target.getBoundingClientRect()
-      const x = e.pageX
-      const y = e.pageY
-      if (x >= 97 && x <= 513 && y >= 165 && y <= 584) {
-        this.hovered = true
-        const myel = document.getElementById('followcursor')
-        const left = e.pageX - 176
-        const top = e.pageY - 229
-        myel.style.left = left + 'px'
-        myel.style.top = top + 'px'
-      } else this.hovered = false
-      console.log(x, y)
+    imageZoom(imgID, resultID, ij, e) {
+      this.hovered = true
+      const img = document.getElementById(imgID)
+      const result = document.getElementById(resultID)
+      /* create lens: */
+      const lens = document.getElementById('followcursor' + ij)
+      // lens.setAttribute('class', 'img-zoom-lens')
+      /* insert lens: */
+      img.parentElement.insertBefore(lens, img)
+      /* calculate the ratio between result DIV and lens: */
+      const cx = result.offsetWidth / lens.offsetWidth
+      const cy = result.offsetHeight / lens.offsetHeight
+      /* set background properties for the result DIV: */
+      result.style.backgroundImage = "url('" + img.src + "')"
+      result.style.backgroundSize =
+        img.width * cx + 'px ' + img.height * cy + 'px'
+      /* execute a function when someone moves the cursor over the image, or the lens: */
+      // lens.addEventListener('mousemove', moveLens)
+      // img.addEventListener('mousemove', moveLens)
+      // function moveLens(e) {
+      let x, y
+      /* prevent any other actions that may occur when moving over the image: */
+      e.preventDefault()
+      /* get the cursor's x and y positions: */
+      const pos = getCursorPos(e)
+      /* calculate the position of the lens: */
+      x = pos.x - lens.offsetWidth / 2
+      y = pos.y - lens.offsetHeight / 2
+      /* prevent the lens from being positioned outside the image: */
+      if (x > img.width - lens.offsetWidth) {
+        x = img.width - lens.offsetWidth
+      }
+      if (x < 0) {
+        x = 0
+      }
+      if (y > img.height - lens.offsetHeight) {
+        y = img.height - lens.offsetHeight
+      }
+      if (y < 0) {
+        y = 0
+      }
+      /* set the position of the lens: */
+      lens.style.left = x + 'px'
+      lens.style.top = y + 'px'
+      /* display what the lens "sees": */
+      result.style.backgroundPosition = '-' + x * cx + 'px -' + y * cy + 'px'
+      // }
+      function getCursorPos(e) {
+        let x = 0
+        let y = 0
+        e = e || window.event
+        /* get the x and y positions of the image: */
+        const a = img.getBoundingClientRect()
+        /* calculate the cursor's x and y coordinates, relative to the image: */
+        x = e.pageX - a.left
+        y = e.pageY - a.top
+        /* consider any page scrolling: */
+        x = x - window.pageXOffset
+        y = y - window.pageYOffset
+        return { x, y }
+      }
     },
     hidediv() {
       this.hovered = false
     },
-    nothing() {},
     hidecontent() {
       const el = document.querySelectorAll('[id ^= "pag"]')
       Array.prototype.forEach.call(el, callback)
@@ -143,8 +196,8 @@ export default {
 .border-bluee {
   border-color: #006280;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: const(--tw-ring-offset-shadow, 0 0 #0000),
+    const(--tw-ring-shadow, 0 0 #0000), const(--tw-shadow);
 }
 .minimageborder:hover {
   border-color: #006280;

@@ -636,6 +636,14 @@ input[type='search']::-webkit-search-cancel-button {
 .bg-black-tre {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /* background-color: rgba(0, 0, 0, 0.253) !important; */
+  /*set the size of the lens:*/
+  width: 160px;
+  height: 128px;
+}
 .bg-black-tree {
   background-color: rgba(0, 0, 0, 0.253) !important;
 }
