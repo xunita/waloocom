@@ -34,15 +34,17 @@
           :class="{
             slide: active === ij,
           }"
-          @mousemove="imageZoom('normalimg' + ij, 'hoverimg', ij, $event)"
-          @mouseleave="hidediv"
         >
           <div
             v-show="imghovering"
             :id="'followcursor' + ij"
             class="bg-black-tree w-40 h-32 border absolute z-10"
           ></div>
-          <div class="w-fit h-fit h-centers">
+          <div
+            class="w-fit h-fit h-centers"
+            @mousemove="imageZoom('normalimg' + ij, 'hoverimg', ij, $event)"
+            @mouseleave="hidediv"
+          >
             <img
               :id="'normalimg' + ij"
               class="imagemax"
