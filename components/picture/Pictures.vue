@@ -38,7 +38,7 @@
           <div
             v-show="imghovering"
             :id="'followcursor' + ij"
-            class="bg-black-tree w-40 h-32 border absolute z-10"
+            class="bg-black-tree w-40 h-24 border absolute z-10"
           ></div>
           <div
             class="w-fit h-fit h-centers"
@@ -70,9 +70,9 @@
     </div>
     <div
       v-show="imghovering"
-      class="shadow-md absolute w480 z-20 h384 bg-white right-0"
+      class="shadow-md border-none absolute w480 z-20 h384 bg-white right-0"
     >
-      <img id="hoverimg" class="w-full h-full" />
+      <img id="hoverimg" class="w-full h-full border-none" />
     </div>
   </div>
 </template>
