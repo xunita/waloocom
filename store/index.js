@@ -1,6 +1,11 @@
 export const state = () => ({
   size: 1499,
   pageload: true,
+  imgs: {
+    current: 0,
+    allimgs: [],
+  },
+  imgmodal: false,
   scroll: 0,
   categdex: 0,
   categ: [
@@ -1059,6 +1064,16 @@ export const mutations = {
   },
   SET_LOAD(state, value) {
     state.pageload = value
+  },
+  SHOW_IMGMODAL(state, value) {
+    state.imgmodal = value
+  },
+  SET_IMGMODAL(state, value) {
+    state.imgs.current = value.current
+    state.imgs.allimgs = value.imgs
+  },
+  SET_IMGMODAL_CURRENT(state, value) {
+    state.imgs.current = value
   },
 }
 export const actions = {}

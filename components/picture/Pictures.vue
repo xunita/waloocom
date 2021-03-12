@@ -5,8 +5,8 @@
         v-for="(i, j) in images"
         :key="j"
         class="clickable w-fit h-fit hover:shadow"
-        :class="{ 'focus:shadow': now === j }"
-        @click="
+        :class="{ shadow: now === j }"
+        @mouseover="
           {
             active = j
           }
@@ -44,6 +44,7 @@
             class="w-fit h-fit h-centers"
             @mousemove="imageZoom('normalimg' + ij, 'hoverimg', ij, $event)"
             @mouseleave="hidediv"
+            @click="open"
           >
             <img
               :id="'normalimg' + ij"
@@ -91,7 +92,6 @@ export default {
         '/4.jpg',
         '/ads/gaming.jpg',
         '/a.jpg',
-        '/b.jpg',
       ],
     }
   },
@@ -106,7 +106,7 @@ export default {
       return this.hovered === true
     },
     currentsrc() {
-      return this.images[this.active]
+      return this.images[this.now]
     },
   },
   watch: {
@@ -183,6 +183,14 @@ export default {
     },
     hidediv() {
       this.hovered = false
+    },
+    open() {
+      this.$store.commit('SHOW_IMGMODAL', true)
+      this.$store.commit('SET_IMGMODAL', {
+        current: this.now,
+        imgs: this.images,
+      })
+      document.body.style.overflow = 'hidden'
     },
     hidecontent() {
       const el = document.querySelectorAll('[id ^= "pag"]')

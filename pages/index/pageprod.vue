@@ -49,7 +49,7 @@
       <div class="w-full h-fit bg-white px-6 py-4">
         <div class="flex pb-4">
           <div class="w-full">
-            <div class="flex space-x-3">
+            <div class="flex">
               <div>
                 <Pictures />
               </div>

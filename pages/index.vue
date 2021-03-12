@@ -5,6 +5,7 @@
       v-show="!loading"
       class="h-full max1260 d-spec m-0-auto relative scroll-1400"
     >
+      <Imgmodal v-if="imgmod" :imgs="imgs" />
       <Menu v-show="modaled" class="z-40 appearxhx" />
       <Header
         class="sticky d-spec px-5 top-0 z-30"
@@ -73,6 +74,12 @@ export default {
     }
   },
   computed: {
+    imgs() {
+      return this.$store.state.imgs
+    },
+    imgmod() {
+      return this.$store.state.imgmodal === true
+    },
     loading() {
       return this.$store.state.pageload === true
     },

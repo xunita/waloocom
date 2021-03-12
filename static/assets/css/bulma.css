@@ -440,6 +440,10 @@
   width: 420px;
   max-height: 420px;
 }
+.image.is-images {
+  width: 100%;
+  height: 510px;
+}
 .zoomin {
   cursor: zoom-in;
 }
@@ -454,6 +458,10 @@
   max-width: 420px !important;
   height: 420px !important;
 }
+.imagemaxes {
+  min-width: 100% !important;
+  height: 510px !important;
+}
 .is-40x40 {
   height: 40px;
   width: 40px;
@@ -462,9 +470,16 @@
   height: 44px;
   width: 44px;
 }
+.image.is-max600 {
+  max-width: 600px;
+}
 .image.is-48x48 {
   height: 48px;
   width: 48px;
+}
+.image.is-52x52 {
+  height: 52px;
+  width: 52px;
 }
 .image.is-64x64 {
   height: 64px;
@@ -1834,7 +1849,7 @@ fieldset[disabled] .button {
 .modal-close {
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-color: rgba(10, 10, 10, 0.2);
+  background-color: rgba(156, 156, 156, 0.062);
   border: none;
   border-radius: 290486px;
   cursor: pointer;
@@ -1843,21 +1858,21 @@ fieldset[disabled] .button {
   flex-grow: 0;
   flex-shrink: 0;
   font-size: 0;
-  height: 20px;
-  max-height: 20px;
-  max-width: 20px;
-  min-height: 20px;
-  min-width: 20px;
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
   outline: 0;
   position: relative;
   vertical-align: top;
-  width: 20px;
+  width: 24px;
 }
 .delete::after,
 .delete::before,
 .modal-close::after,
 .modal-close::before {
-  background-color: #fff;
+  background-color: rgb(48, 48, 48);
   content: '';
   display: block;
   left: 50%;
@@ -1939,11 +1954,11 @@ fieldset[disabled] .button {
 .delete:hover,
 .modal-close:focus,
 .modal-close:hover {
-  background-color: rgba(10, 10, 10, 0.3);
+  background-color: rgba(10, 10, 10, 0.082);
 }
 .delete:active,
 .modal-close:active {
-  background-color: rgba(10, 10, 10, 0.4);
+  background-color: rgba(10, 10, 10, 0.082);
 }
 a.dropdown-item,
 button.dropdown-item {

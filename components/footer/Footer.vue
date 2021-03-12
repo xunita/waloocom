@@ -9,7 +9,7 @@
               >Need Help ?</span
             >
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col pt-1">
             <a class="clickable underline-hover w-fit size-14 text-white"
               >Need assistance ?</a
             >
@@ -20,7 +20,7 @@
               >Returns and refunds</a
             >
             <a class="clickable underline-hover w-fit size-14 text-white"
-              >Order's cancellation & payment</a
+              >Order's cancellation</a
             >
           </div>
         </div>
@@ -34,14 +34,12 @@
         >
         <div class="mt-2 h-10 w-fit flex align-center space-x-2">
           <input
-            class="w512 rounded h-10 size-16 outline-none px-2 bg-white font-normal"
+            class="w512 rounded h-8 size-16 outline-none px-2 bg-white font-normal"
             type="text"
             placeholder="Email adress"
           />
-          <span class="h-full"
-            ><button
-              class="btn-004e66 rounded h-full no-outlines px-12 text-white"
-            >
+          <span class="h-8"
+            ><button class="btn-004e66 rounded h-8 no-outlines px-8 text-white">
               <span class="size-12 block font-medium text-white"
                 >Subscribe</span
               >
@@ -120,15 +118,24 @@
             >Promotions Deals</a
           >
           <a class="clickable underline-hover w-fit size-14 text-white"
-            >Language & Currency</a
+            >Top Categories</a
+          >
+          <a class="clickable underline-hover w-fit size-14 text-white"
+            >Languages & Currencies</a
+          >
+          <a class="clickable underline-hover w-fit size-14 text-white"
+            >Delivery's countries</a
           >
         </div>
       </div>
       <div class="column is-one-fifth">
         <span class="block size-17 text-white font-semibold py-2"
-          >Payment Methods</span
+          >Payments</span
         >
         <div class="flex flex-col">
+          <a class="clickable underline-hover w-fit size-14 text-white"
+            >How to pay ?</a
+          >
           <a class="clickable underline-hover w-fit size-14 text-white">Visa</a>
           <a class="clickable underline-hover w-fit size-14 text-white"
             >Mastercard</a
@@ -138,6 +145,9 @@
           >
           <a class="clickable underline-hover w-fit size-14 text-white"
             >Cryptocurrency</a
+          >
+          <a class="clickable underline-hover w-fit size-14 text-white"
+            >Other payments methods</a
           >
         </div>
       </div>
