@@ -3,7 +3,7 @@
   <div v-else class="adlines relative flex align-center justify-between">
     <div class="h-fit bg-transparent w-16 leftag z-10 px-2">
       <button
-        class="button bg-transparent mt-8 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers z-10 gotop btn-004e66 appearxh border-2 border-transparent"
+        class="button bg-transparent mt-8 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers z-10 gotop btn-004e66 appearZborder-2 border-transparent"
         :class="{ hidden: !scrollxl }"
         @click="scrollLeft"
       >
@@ -33,7 +33,7 @@
     </div>
     <div class="h-fit bg-transparent w-16 rightag z-10 relative">
       <button
-        class="button bg-transparent mt-8 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers ml-2 z-10 gotop btn-004e66 appearxhz border-2 border-transparent"
+        class="button bg-transparent mt-8 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers ml-2 z-10 gotop btn-004e66 appearZ border-2 border-transparent"
         :class="{ hidden: scrollxr }"
         @click="scrollRight"
       >

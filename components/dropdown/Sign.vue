@@ -40,14 +40,16 @@
       </div>
       <div id="dropdown-menu" class="dropdown-menu w180s walele" role="menu">
         <div class="dropdown-content bg-white border">
-          <a class="block w-fit m-0-auto"
+          <a href="/login" class="block w-fit m-0-auto"
             ><button class="btn-004e66 rounded px-20 py-1 text-white size-14">
               Sign in
             </button></a
           >
           <span class="size-12 pt-2 w-fit m-0-auto dropdown-item logo-color"
             >New to Waloo ?
-            <a class="clickable color-004e66 underline-hover font-semibold"
+            <a
+              href="/register"
+              class="clickable color-004e66 underline-hover font-semibold"
               >Create an account</a
             ></span
           >
@@ -55,15 +57,10 @@
 
           <span class="size-135 font-semibold dropdown-item">My account</span>
           <div>
-            <a class="dropdown-item w-fit hover-004e66 clickable size-125"
-              >Profile</a
-            >
-            <a class="dropdown-item w-fit hover-004e66 clickable size-125"
-              >Notifications</a
-            >
-            <a class="dropdown-item w-fit hover-004e66 clickable size-125"
-              >Orders</a
-            ><a class="dropdown-item w-fit hover-004e66 clickable size-125"
+            <a class="dropdown-item w-fit clickable size-125">Profile</a>
+            <a class="dropdown-item w-fit clickable size-125">Notifications</a>
+            <a class="dropdown-item w-fit clickable size-125">Orders</a
+            ><a class="dropdown-item w-fit clickable size-125"
               >Favorites list</a
             >
           </div>

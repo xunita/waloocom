@@ -3,12 +3,12 @@
   <div v-else class="adlines relative flex align-center justify-between">
     <div class="h-fit bg-transparent w-16 leftag z-10 px-2">
       <button
-        class="button bg-transparent shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers z-10 gotop btn-004e66 appearxh border-2 border-transparent"
+        class="button bg-transparent shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers z-10 gotop btn-004e66 appearZborder-2 border-transparent"
         :class="{ hidden: !scrollxl }"
         @click="scrollLeft"
       >
         <svg
-          class="w-6 h-6 transform rotate-90 color-white me-white"
+          class="w-5 h-5 transform rotate-90 color-white me-white"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,12 +33,12 @@
     </div>
     <div class="h-fit bg-transparent w-16 rightag z-10 relative">
       <button
-        class="button bg-transparent shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers ml-2 z-10 gotop btn-004e66 appearxhz border-2 border-transparent"
+        class="button bg-transparent shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-centers ml-3 z-10 btn-004e66 appearZ border-2 border-transparent"
         :class="{ hidden: scrollxr }"
         @click="scrollRight"
       >
         <svg
-          class="w-6 h-6 transform -rotate-90 color-white relative me-white"
+          class="w-5 h-5 transform -rotate-90 color-white relative me-white"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

@@ -2,11 +2,11 @@
   <div class="relative slider flex justify-between h-full w-full">
     <div class="h-full w-16 leftag z-10 relative left-0 px-3">
       <button
-        class="button btn-004e66 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-center z-10 gotop hvme hvme-left border-2 border-transparent"
+        class="button btn-004e66 ml-2 shadow-sm h-11 w-11 rounded-full no-outlines outline-none vertical-center z-10 gotop hvme hvme-left border-2 border-transparent"
         @click="go('left')"
       >
         <svg
-          class="w-6 h-6 transform rotate-90 color-white me-white"
+          class="w-5 h-5 transform rotate-90 color-white me-white"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
         @click="go('right')"
       >
         <svg
-          class="w-6 h-6 transform -rotate-90 color-white relative me-white"
+          class="w-5 h-5 transform -rotate-90 color-white relative me-white"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"

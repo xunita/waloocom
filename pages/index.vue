@@ -6,25 +6,22 @@
       class="h-full max1260 d-spec m-0-auto relative scroll-1400"
     >
       <Imgmodal v-if="imgmod" :imgs="imgs" />
-      <Menu v-show="modaled" class="z-40 appearxhx" />
+      <Menu v-show="modaled" class="z-50 appearxhx" />
       <Header
-        class="sticky d-spec px-5 top-0 z-30"
+        class="sticky d-spec px-5 top-0 z-40"
         :class="{
           'my-shadow': scroll > 37,
         }"
       />
       <div class="d-spec">
         <Afterheader class="d-spec px-5" />
-
-        <div class="w-full flex flex-col space-y-4">
-          <nuxt-child />
-        </div>
+        <nuxt-child />
         <div
           v-show="scroll > 728"
-          class="sticky appearyh pos-right right-0 bottom-0 h-fit w-fit z-30 goright pr-2 pb-16 pt-5"
+          class="sticky h-fits w-fit appearyh bottom-0x z-30 pb-16 pt-2 pr-4 pos-right"
         >
           <button
-            class="button bg-white rounded-full shadow h-11 w-11-full no-outlines outline-none gotop"
+            class="button bg-white absolute rounded-full shadow h-11 w-11 no-outlines relative right-0 gotop"
             @click="scrolltop"
           >
             <svg
@@ -42,9 +39,7 @@
           </button>
         </div>
       </div>
-      <div class="pt-16">
-        <Footer />
-      </div>
+      <div class="clear-both"><Footer /></div>
     </div>
   </div>
 </template>

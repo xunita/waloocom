@@ -59,29 +59,55 @@
         class="dropdown-menu walele"
         role="menu"
       >
-        <div class="dropdown-content bg-white border">
-          <a class="dropdown-items select-none">
+        <div class="dropdown-content bg-white relative border h292 w120">
+          <a class="dropdown-items h-fit select-none">
             <span class="size-12 pb-1 block logo-color">Current currency</span>
             <span class="size-125 block font-semibold">{{ spoken }}</span>
           </a>
           <hr class="dropdown-divider" />
-          <a class="dropdown-items select-none">
+          <a class="dropdown-items h-fit select-none">
             <span class="size-12 pb-1 block logo-color"
               >Choose another currency</span
             ></a
           >
-          <a
-            v-for="(element, i) in language"
-            :key="i"
-            class="dropdown-item clickable flex align-center space-x-1"
-            @click="setLang(element)"
-          >
-            <span
-              class="size-125"
-              :class="{ 'font-semibold': spoken === element }"
-              >{{ element }}</span
+          <div class="overflow-y-auto aside h200">
+            <div class="mb-2 mt-1 px-1">
+              <label class="relative flex align-center">
+                <input
+                  v-model="searching"
+                  type="search"
+                  placeholder="Search a currency"
+                  class="border border-gray-400 w-full no-outlines pl-2 pr-6 py-08 rounded size-145"
+                />
+                <svg
+                  class="w-4 h-4 absolute right-0 mr-1 text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+            <a
+              v-for="(element, i) in language"
+              :key="i"
+              class="dropdown-item clickable flex align-center space-x-1"
+              @click="setLang(element)"
             >
-          </a>
+              <span
+                class="size-125"
+                :class="{ 'font-semibold': spoken === element }"
+                >{{ element }}</span
+              >
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -92,6 +118,7 @@ export default {
   data() {
     return {
       focused: false,
+      searching: '',
       spoken: 'US Dollar',
       lan: [
         'Rand ZAR',
@@ -110,7 +137,9 @@ export default {
   },
   computed: {
     language() {
-      return this.lan
+      return this.lan.filter((x) =>
+        x.toLowerCase().includes(this.searching.toLowerCase())
+      )
     },
   },
   mounted() {

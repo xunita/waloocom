@@ -4,7 +4,9 @@
 [v-cloak]::before {
   content: 'loading...';
 }
-
+.h-fits {
+  height: fit-content !important;
+}
 .bg-drop {
   background-color: #e6e6e6;
 }
@@ -572,6 +574,9 @@ input[type='search']::-webkit-search-cancel-button {
 .w180 {
   width: 240px !important;
 }
+.w120 {
+  width: 180px !important;
+}
 .w180min {
   min-width: 240px !important;
 }
@@ -904,11 +909,26 @@ textarea {
   animation: 0.2s appear;
   background: transparent; /* Optional: just make scrollbar invisible */
 }
+.h292 {
+  max-height: 289px;
+}
+.h200 {
+  max-height: 200px;
+}
+.h31px {
+  height: 31px !important;
+}
 .size-128 {
   font-size: 128px;
 }
 .size-11 {
   font-size: 11px !important;
+}
+.bg-fb {
+  background-color: #4267B2 !important;
+}
+.bottom-0x {
+  bottom: 0.5rem !important;
 }
 .w-fits {
   width: fit-content !important;

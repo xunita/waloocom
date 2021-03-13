@@ -1,8 +1,8 @@
 <template>
-  <div class="pb-5 bg-foot">
-    <nav class="flex w-full justify-between -mtdsd border-b pb-5 px-8">
-      <div class="w-fit flex space-x-12">
-        <div>
+  <div class="pb-5 w-full pt-5 h-fit bg-foot">
+    <div class="w-full">
+      <div class="flex w-full justify-between border-b pb-5 px-8">
+        <div class="w-fit">
           <div class="flex align-center space-x-1">
             <i class="far fa-question-circle text-white size-20"></i>
             <span class="size-17 pl-1 text-white font-semibold block w-fit"
@@ -24,31 +24,34 @@
             >
           </div>
         </div>
-      </div>
-      <div class="w-fits self-end">
-        <span class="text-white block w-fit font-semibold size-15"
-          >Subscribe to our Newsletter</span
-        >
-        <span class="text-white block w-fit size-125 mt-1"
-          >Keep me updated on new products and the best offers from Waloo.</span
-        >
-        <div class="mt-2 h-10 w-fit flex align-center space-x-2">
-          <input
-            class="w512 rounded h-8 size-16 outline-none px-2 bg-white font-normal"
-            type="text"
-            placeholder="Email adress"
-          />
-          <span class="h-8"
-            ><button class="btn-004e66 rounded h-8 no-outlines px-8 text-white">
-              <span class="size-12 block font-medium text-white"
-                >Subscribe</span
-              >
-            </button></span
+        <div class="self-end w-fit">
+          <span class="text-white block w-fit font-semibold size-15"
+            >Subscribe to our Newsletter</span
           >
+          <span class="text-white block w-fit size-125 mt-1"
+            >Keep me updated on new products and the best offers from
+            Waloo.</span
+          >
+          <div class="mt-2 h-10 w-fit flex align-center space-x-2">
+            <input
+              class="w512 rounded h-8 size-16 outline-none px-2 bg-white font-normal"
+              type="text"
+              placeholder="Email adress"
+            />
+            <span class="h-8"
+              ><button
+                class="btn-004e66 rounded h-8 no-outlines px-8 text-white"
+              >
+                <span class="size-12 block font-medium text-white"
+                  >Subscribe</span
+                >
+              </button></span
+            >
+          </div>
         </div>
       </div>
-    </nav>
-    <nav class="flex px-5">
+    </div>
+    <div class="flex px-5">
       <div class="column is-one-fifth">
         <div class="flex flex-col">
           <Logofoot />
@@ -176,7 +179,7 @@
           >
         </div>
       </div>
-    </nav>
+    </div>
     <div class="flex align-center mt-5 justify-between">
       <div class="w-full h-1 border-b"></div>
       <div class="w-fit mx-2 flex align-center space-x-1 size-14 text-white">
