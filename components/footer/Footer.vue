@@ -127,7 +127,7 @@
             >Languages & Currencies</a
           >
           <a class="clickable underline-hover w-fit size-14 text-white"
-            >Delivery's countries</a
+            >Countries of Delivery</a
           >
         </div>
       </div>
