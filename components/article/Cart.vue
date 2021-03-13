@@ -5,7 +5,7 @@
       <div>
         <div class="flex flex-col space-y-5 border-b pb-4 mb-4">
           <Articlecart
-            v-for="i in 10"
+            v-for="i in 1"
             :key="i"
             class="border w-full rounded w-fit"
           />

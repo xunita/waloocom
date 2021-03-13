@@ -585,7 +585,7 @@ input[type='search']::-webkit-search-cancel-button {
 }
 .border-red-700s {
   --tw-border-opacity: 1;
-border-color: rgba(185, 28, 28, var(--tw-border-opacity)) !important;
+  border-color: rgba(185, 28, 28, var(--tw-border-opacity)) !important;
 }
 .w120 {
   width: 180px !important;
@@ -938,7 +938,7 @@ textarea {
   font-size: 11px !important;
 }
 .bg-fb {
-  background-color: #4267B2 !important;
+  background-color: #4267b2 !important;
 }
 .bottom-0x {
   bottom: 0.5rem !important;
@@ -1148,6 +1148,9 @@ textarea::placeholder {
   overflow-x: hidden !important;
 }
 @-moz-document url-prefix() {
+  .h-fit {
+    height: -moz-max-content !important;
+  }
   .overflow-x-autos {
     overflow-x: auto !important;
   }
