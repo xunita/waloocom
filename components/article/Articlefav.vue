@@ -108,14 +108,7 @@
       </div>
     </figure>
     <div class="flex w-full flex-col pl-4 pr-12 pt-3 pb-3">
-      <div class="pb-1">
-        <button
-          class="bg-white px-3 py-01 rounded-full border flex align-center space-x-1 no-outlines outline-none"
-        >
-          <span class="size-12 font-semibold logo-color">Jumia</span>
-        </button>
-      </div>
-      <span class="size-13 pb-1 logo-color font-semibold twoline"
+      <span class="size-125 pb-1 logo-color font-semibold twoline"
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
@@ -123,10 +116,10 @@
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in
         bonus</span
       >
-      <div class="relative flex align-center space-x-10 py-1">
+      <div class="relative flex align-center space-x-10 py-08">
         <p class="flex align-center self-start space-x-2">
-          <span class="font-semibold size-145 color-004e66">$ 365,475.4</span>
-          <span class="line-through font-semibold size-135 color-363636"
+          <span class="font-semibold size-14 color-004e66">$ 365,475.4</span>
+          <span class="line-through font-semibold size-13 color-363636"
             >$ 499,987.9</span
           >
         </p>
@@ -143,8 +136,7 @@
           >106 in stock</span
         > 
         -->
-        <span
-          class="size-145 block w-fit -mt-1 text-red-600 font-semibold twoline"
+        <span class="size-14 block w-fit text-red-600 font-semibold twoline"
           >Out of stock</span
         >
         <!-- <span
@@ -178,8 +170,8 @@
         </div>
       </div>
       <div class="flex w-fit align-center hover-underchild justify-between">
-        <div class="flex w-fit align-center space-x-2 py-1">
-          <span class="size-13">
+        <div class="flex w-fit align-center space-x-2 py-08">
+          <span class="size-12">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -194,17 +186,49 @@
       </div>
       <!-- <span class="size-12 py-01 self-start twoline">Ships to Ivory Coast</span> -->
       <!-- <span class="size-12 py-01 self-start twoline">Available in 4 color</span> -->
-      <div class="w-fit flex align-center space-x-10 self-end">
+      <div class="w-fit flex align-center space-x-5 pt-3 self-end">
         <div class="self-start"><Qtedrop /></div>
-        <div class="self-end">
-          <span class="w-full"
-            ><button
-              class="btn-004e66 w-full rounded flex align-center space-x-2 px-20 py-1 text-white"
+        <span class="self-end"
+          ><button
+            class="btn-004e66 m-0-auto no-outlines rounded flex align-center space-x-2 px-10 py-1 text-white"
+          >
+            <span
+              ><i class="fas fa-cart-plus text-white"></i>
+              <span class="size-125 font-medium text-white"
+                >Add to cart</span
+              ></span
             >
-              <span class="m-0-auto"
-                ><i class="fas fa-cart-plus text-white"></i>
-                <span class="size-125 font-medium text-white"
-                  >Add to cart</span
+          </button></span
+        >
+        <span class="self-end"
+          ><button
+            class="bg-gray-800 m-0-auto hover:bg-gray-700 no-outlines px-10 rounded flex align-center space-x-2 px-5 py-1 text-white"
+          >
+            <span class="m-0-auto">
+              <span class="size-125 font-medium text-white">Buy NOW</span></span
+            >
+          </button></span
+        >
+        <div class="self-end">
+          <span
+            ><button
+              class="button dfds is-light rounded flex align-center space-x-2 px-4 py-1 text-white"
+            >
+              <span class="m-0-auto flex align-center space-x-1"
+                ><svg
+                  class="w-4 h-4 logo-color"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span class="size-125 font-medium logo-color"
+                  >Remove</span
                 ></span
               >
             </button></span
@@ -220,6 +244,10 @@ export default {}
 </script>
 
 <style scoped>
+.dfds:hover svg,
+.dfds:hover span {
+  color: #c53030 !important;
+}
 .wselmin {
   min-width: 64px !important;
 }

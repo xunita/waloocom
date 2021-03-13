@@ -52,7 +52,7 @@
             <span class="size-14 text-white">Sign up in with Facebook</span></a
           >
         </div>
-        <div class="border mt-10 rounded-md px-12 py-5 flex flex-col space-y-2">
+        <div class="border mt-10 rounded-md px-8 py-5 flex flex-col space-y-2">
           <!-- <div class="w-full">
             <label for="firstn" class="size-14">First Name</label>
             <br />
@@ -76,9 +76,20 @@
             <br />
             <input
               id="email"
+              v-model="email"
               type="email"
               class="border w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
+              :class="{
+                'border-red-700': mailerror,
+                'border-green-700': $linker.emailValidated(email),
+              }"
             />
+            <p
+              v-show="mailerror"
+              class="size-12 appearZ text-red-700 leading-1 pt-1"
+            >
+              Please, enter a valid email
+            </p>
           </div>
           <div class="w-full">
             <label for="username" class="size-14">Username (Optionnal)</label>
@@ -95,9 +106,20 @@
             </div>
             <input
               id="pwd"
-              type="password"
-              class="border w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
+              v-model="pwd"
+              :type="'password'"
+              class="border pr-8 w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
+              :class="{
+                'border-red-700': passerror,
+                'border-green-700': $linker.pwdValidated(pwd),
+              }"
             />
+            <p
+              v-show="passerror"
+              class="size-12 appearZ text-red-700 leading-1 pt-1"
+            >
+              Password must be at least 8 characters including letters & numbers
+            </p>
           </div>
           <div class="w-full">
             <div class="flex align-center justify-between">
@@ -105,27 +127,64 @@
             </div>
             <input
               id="pwdx"
-              type="password"
-              class="border w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
+              v-model="pwdcf"
+              :type="'password'"
+              class="border pr-8 w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
+              :class="{
+                'border-red-700s':
+                  didpwdunmatch ||
+                  ($linker.pwdValidated(pwd) &&
+                    pwdcf.length >= pwd.length &&
+                    !samepwd),
+                'border-green-700': samepwd,
+              }"
             />
+            <p
+              v-show="
+                ($linker.pwdValidated(pwd) &&
+                  pwdcf.length >= pwd.length &&
+                  !samepwd) ||
+                didpwdunmatch
+              "
+              class="size-12 appearZ text-red-700 leading-1 pt-1"
+            >
+              Passwords and its confirmation do not match.
+            </p>
           </div>
           <div class="w-full">
-            <div class="flex align-center justify-between">
-              <label for="tell" class="size-14">Mobile Phone (Optionnal)</label>
-            </div>
             <div class="flex align-center space-x-2">
-              <input
-                id="tell"
-                type="text"
-                placeholder="Code"
-                class="border w-16 text-center py-1 h-7 size-145 rounded no-outlines outline-none px-2"
-              />
-              <input
-                id="tellnum"
-                type="text"
-                placeholder="Mobile Number"
-                class="border w-full py-1 h-7 size-145 rounded no-outlines outline-none px-2"
-              />
+              <div>
+                <div class="flex align-center justify-between">
+                  <label for="city" class="size-14">Code</label>
+                </div>
+                <Country
+                  title="code"
+                  :left="true"
+                  :content="[
+                    '+216 - Tunisia',
+                    '+225 - Ivory Coast',
+                    '+229 - Nigeria',
+                    '+221 - Mali',
+                    '+226 - Niger',
+                    '+229 - Nigeria',
+                    '+221 - Mali',
+                    '+226 - Niger',
+                  ]"
+                />
+              </div>
+              <div class="w-full">
+                <div class="flex align-center justify-between">
+                  <label for="city" class="size-14"
+                    >Phone Number (Optionnal)</label
+                  >
+                </div>
+                <input
+                  id="tellnum"
+                  v-model="phone"
+                  type="tel"
+                  class="border w-full py-1 h-7 size-14 rounded no-outlines outline-none px-2"
+                />
+              </div>
             </div>
           </div>
           <!-- <div class="w-full">
@@ -209,8 +268,8 @@
             >
           </div>
           <a
-            href="#"
             class="button btn-004e66 relative top-05x border rounded-md flex align-center space-x-2"
+            @click="signup"
           >
             <span class="size-14 text-white font-semibold">Sign up </span></a
           >
@@ -234,5 +293,94 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      pwd: '',
+      pwdcf: '',
+      pwdandcf: false,
+      user: '',
+      email: '',
+      pwderr: false,
+      pwdcferr: false,
+      maierror: false,
+      pwdhid: true,
+      notpwdok: false,
+      phone: '',
+    }
+  },
+  computed: {
+    didpwdunmatch() {
+      return this.notpwdok === true
+    },
+    samepwd() {
+      return (
+        this.$linker.pwdValidated(this.pwd) &&
+        this.$linker.pwdValidated(this.pwdcf) &&
+        this.pwd === this.pwdcf
+      )
+    },
+    pwdhidden() {
+      return this.pwdhid === true
+    },
+    passcferror() {
+      return this.pwdcferr === true
+    },
+    passerror() {
+      return this.pwderr === true
+    },
+    mailerror() {
+      return this.maierror === true
+    },
+  },
+  watch: {
+    email() {
+      if (this.mailerror) {
+        this.maierror = false
+      }
+    },
+    pwd() {
+      if (this.passerror) {
+        this.pwderr = false
+      }
+      this.notpwdok = false
+    },
+    phone(newval, oldval) {
+      if (isNaN(newval) || newval.toString().includes('.')) {
+        this.phone = oldval
+      } else this.phone = newval
+    },
+    pwdcf(newval, oldval) {
+      if (newval.length < this.pwd.length && this.didpwdunmatch) {
+        this.notpwdok = false
+      }
+    },
+  },
+  methods: {
+    infosValidated() {
+      if (this.$linker.emailValidated(this.email)) {
+        this.maierror = false
+      } else this.maierror = true
+
+      if (this.$linker.pwdValidated(this.pwd)) {
+        this.pwderr = false
+      } else this.pwderr = true
+
+      if (this.$linker.pwdValidated(this.pwd) && this.samepwd) {
+        this.notpwdok = false
+      } else if (this.$linker.pwdValidated(this.pwd) && !this.samepwd)
+        this.notpwdok = true
+
+      return (
+        this.mailerror === false &&
+        this.passerror === false &&
+        this.passcferror === false &&
+        this.samepwd === true
+      )
+    },
+    signup() {
+      if (this.infosValidated());
+    },
+  },
+}
 </script>

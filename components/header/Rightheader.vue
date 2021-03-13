@@ -4,12 +4,14 @@
     <Refund />
     <button
       class="button is-lights p-2 h-10 w-10 rounded-full no-outlines outline-none"
+      @click="gofav"
     >
       <i class="far fa-heart logo-color size-19"></i>
     </button>
     <Sign />
     <button
       class="button relative right-5px is-lights p-2 h-12 w-12 rounded-full no-outlines outline-none"
+      @click="gocart"
     >
       <svg
         class="w-6 h-6 logo-color"
@@ -39,6 +41,14 @@ export default {
     size: {
       type: Number,
       default: 99999,
+    },
+  },
+  methods: {
+    gocart() {
+      location.assign('/cart')
+    },
+    gofav() {
+      location.assign('/favlist')
     },
   },
 }

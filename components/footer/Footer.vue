@@ -185,7 +185,7 @@
       <div class="w-fit mx-2 flex align-center space-x-1 size-14 text-white">
         <span class="text-white">{{ toyear }}</span>
         <span class="text-white">•</span>
-        <span class="text-white">Waloo.com</span>
+        <span class="text-white">Waloo</span>
         <span class="text-white inline-block whitespace-no-wrap"
           >- All rights reserved</span
         >

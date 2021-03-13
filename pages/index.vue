@@ -1,10 +1,7 @@
 <template>
   <div>
     <div v-show="loading"></div>
-    <div
-      v-show="!loading"
-      class="h-full max1260 d-spec m-0-auto relative scroll-1400"
-    >
+    <div v-show="!loading" class="h-full max1260 d-spec m-0-auto relative">
       <Imgmodal v-if="imgmod" :imgs="imgs" />
       <Menu v-show="modaled" class="z-50 appearxhx" />
       <Header

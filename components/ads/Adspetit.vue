@@ -29,7 +29,7 @@
         'overflow-x-autos': size <= 768,
       }"
     >
-      <Articlepetit v-for="i in 18" :key="i" />
+      <Articlepetit v-for="i in 18" :key="i" class="mx-1" />
     </div>
     <div class="h-fit bg-transparent w-16 rightag z-10 relative">
       <button

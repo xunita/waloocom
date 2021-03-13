@@ -21,7 +21,7 @@
     <div
       class="bg-white h-full w-full flex align-center space-x-2 absolute overflow-x-auto xxx scrollnone"
     >
-      <Articleunsearch v-for="i in 8" :key="i" />
+      <Articleunsearch v-for="i in 8" :key="i" class="mx-1" />
     </div>
     <div class="h-fit bg-transparent w-16 rightag z-10 relative">
       <button

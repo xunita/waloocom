@@ -76,7 +76,7 @@
       <Categoriesug />
     </div>
     <div
-      class="w-full h-fit flex"
+      class="w-full h-fit flex space-x-4 pt-1"
       :class="{
         'px-0': size > 1500,
         'px-6': size <= 1500,
@@ -185,42 +185,51 @@
         </div>
         <div class="h-fit w-fit relative bottom-0">
           <div
-            class="bg-white px-2 py-1 text-center w-64 h-full mt-5 mb-2 rounded"
+            class="bg-white px-2 py-1 h-centers text-center w-64 h-full mt-10 mb-2 rounded"
           >
             <span class="font-semibold size-14">Top Recommendations</span>
           </div>
           <div class="w180sst h-full flex flex-col space-y-4">
-            <div v-for="t in 4" :key="t" class="bg-white w-64 h-fit rounded">
-              <Article />
+            <div
+              v-for="t in 5"
+              :key="t"
+              class="bg-white h-centers w-64xse h-fit rounded"
+            >
+              <Article class="w-64xs" />
             </div>
           </div>
         </div>
       </div>
       <div
-        class="w-full h-full flex flex-col border-l-2"
+        class="w-full h-full flex flex-col space-y-5"
         :class="{ 'space-y-4': currentcateg.length !== 0 }"
       >
-        <Pricerange />
-        <div v-if="currentcateg.length !== 0" class="relative h-5">
-          <Mixcateg
-            :current="currentcateg"
-            @removeall="removeall"
-            @remove="remove"
-          />
+        <div class="h-64">
+          <Bigads class="h-full" />
         </div>
-        <div
-          class="bg-white w-full h-full flex pt-1 pb-2 border-t-2"
-          :class="{ 'flex-wrap': normal, 'flex-col space-y-3': !normal }"
-        >
-          <Articles
-            v-for="i in 52"
-            :key="i"
-            :little="normal"
-            :class="{ 'column is-one-quarter px-0': normal }"
-          />
-        </div>
-        <div class="mt-2 relative w-full">
-          <Pagination />
+        <div class="flex flex-col">
+          <Pricerange />
+          <div v-if="currentcateg.length !== 0" class="relative h-8 mt-3">
+            <Mixcateg
+              :current="currentcateg"
+              @removeall="removeall"
+              @remove="remove"
+            />
+          </div>
+          <div
+            class="bg-white w-full h-full flex pt-1 pb-2 border-t-2"
+            :class="{ 'flex-wrap': normal, 'flex-col space-y-3': !normal }"
+          >
+            <Articles
+              v-for="i in 52"
+              :key="i"
+              :little="normal"
+              :class="{ 'column is-one-quarter px-0': normal }"
+            />
+          </div>
+          <div class="mt-2 relative w-full">
+            <Pagination />
+          </div>
         </div>
       </div>
     </div>
