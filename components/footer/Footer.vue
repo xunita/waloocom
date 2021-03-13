@@ -99,7 +99,7 @@
             >Favorites List</a
           >
           <a class="clickable underline-hover w-fit size-14 text-white"
-            >How to register</a
+            >How to register ?</a
           >
           <a class="clickable underline-hover w-fit size-14 text-white"
             >Password Forgotten ?</a
