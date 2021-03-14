@@ -12,7 +12,8 @@
       />
       <div class="d-spec">
         <Afterheader class="d-spec px-5" />
-        <nuxt-child />
+        <nuxt-child v-if="curoute !=='/'" />
+        <Home v-else />
         <div
           v-show="scroll > 728"
           class="sticky h-fits w-fit appearyh bottom-0x z-30 pb-16 pt-2 pr-4 pos-right"
@@ -74,6 +75,9 @@ export default {
     },
     loading() {
       return this.$store.state.pageload === true
+    },
+    curoute () {
+      return this.$route.path
     },
     modaled() {
       return this.$store.state.modalmenu === true
