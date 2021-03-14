@@ -76,6 +76,17 @@
       <Categoriesug />
     </div>
     <div
+      class="flex flex-col space-y-4 pt-1"
+      :class="{
+        'px-0': size > 1500,
+        'px-6': size <= 1500,
+      }"
+    >
+      <Carduct titles="Featured" />
+      <Carduct titles="Best deals" />
+    </div>
+    <!-- <Carduct titles="Featured" /> -->
+    <div
       class="w-full h-fit flex space-x-4 pt-1"
       :class="{
         'px-0': size > 1500,

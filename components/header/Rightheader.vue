@@ -3,10 +3,13 @@
     <Delcountry />
     <Refund />
     <button
-      class="button is-lights p-2 h-10 w-10 rounded-full no-outlines outline-none"
+      class="button is-lights relative p-2 h-10 w-10 rounded-full no-outlines outline-none"
       @click="gofav"
     >
       <i class="far fa-heart logo-color size-19"></i>
+      <span class="absolute top-0 right-0 mr-1">
+        <i class="fas fa-circle color-004e66 size-11"></i>
+      </span>
     </button>
     <Sign />
     <button
