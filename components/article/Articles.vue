@@ -1,6 +1,6 @@
 <template>
-  <Article v-if="normal" class="appearZ" />
-  <Articlebig v-else class="appearZ appearyb" />
+  <Articlebig v-if="!normal" class="appearZ" />
+  <Article v-else class="appearZ" />
 </template>
 
 <script>

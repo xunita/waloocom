@@ -48,7 +48,7 @@
             <button
               class="no-outlines"
               :class="{ 'd-actlist': normal }"
-              @click="
+              @mousedown="
                 {
                   little = true
                 }
@@ -59,7 +59,7 @@
             <button
               class="no-outlines"
               :class="{ 'd-actlist': !normal }"
-              @click="
+              @mousedown="
                 {
                   little = false
                 }

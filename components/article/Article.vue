@@ -1,5 +1,5 @@
 <template>
-  <div class="clickable pb-2 article relative hover:shadow-lg">
+  <div class="clickable w-full pb-2 article relative hover:shadow-lg">
     <figure class="image is-240x200 relative">
       <img class="h-full w-full" src="/b.jpg" alt="Placeholder image" />
       <div
@@ -34,7 +34,7 @@
         </svg> -->
       </div>
       <div
-        class="absolute preview hidden top-0 left-0 w-full h-full bg-black-tre"
+        class="absolute appearZ preview hidden top-0 left-0 w-full h-full bg-black-tre"
       >
         <div
           class="w-fit h-fit prev-d -mt-6 both-centers text-center flex flex-col"
@@ -213,7 +213,7 @@ export default {
   color: white !important;
 }
 .article:hover .preview {
-  animation: 0.1s appearZ;
+  animation: 0.3s appearZ;
   display: block;
 }
 .article:hover .cartadd {
@@ -260,14 +260,9 @@ export default {
   transform: skew(0deg, -6deg);
 }
 
-@media screen and (max-width: 1500px) {
-  .article {
-    width: 25% !important;
-  }
-}
 @media screen and (max-width: 1230px) {
   .article {
-    width: 33.33% !important;
+    width: 33.33%;
   }
 }
 </style>

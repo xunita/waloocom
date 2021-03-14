@@ -232,7 +232,7 @@ export default {
   min-width: 64px !important;
 }
 .article:hover .preview {
-  animation: 0.1s appearZ;
+  animation: 0.3s appearZ;
   display: block;
 }
 .article:hover .cartadd {

@@ -199,7 +199,7 @@ export default {
   display: block;
 }
 .article:hover .cartadd {
-  animation: 0.1s appearZ;
+  animation: 0.3s appearZ;
   visibility: visible;
 }
 .article:hover .starss {
