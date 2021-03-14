@@ -3,6 +3,8 @@
     <div v-show="loading"></div>
     <div v-show="!loading" class="h-full max1260 d-spec m-0-auto relative">
       <Imgmodal v-if="imgmod" :imgs="imgs" />
+      <Cartmodal v-if="cartmod" />
+      <Articlemodal v-if="articlemod" />
       <Menu v-show="modaled" class="z-50 appearxhx" />
       <Header
         class="sticky d-spec px-5 top-0 z-40"
@@ -76,6 +78,12 @@ export default {
     },
     imgmod() {
       return this.$store.state.imgmodal === true
+    },
+    cartmod() {
+      return this.$store.state.cartmodal === true
+    },
+    articlemod() {
+      return this.$store.state.articlemodal === true
     },
     loading() {
       return this.$store.state.pageload === true

@@ -1,16 +1,17 @@
 <template>
   <div class="modal is-active">
     <div class="modal-background" @mousedown="close"></div>
-    <div class="modal-content w-full h-full m-5 px-4">
+    <div class="modal-content w-full h-full m-5 px-12 py-8">
+      <div class="modal-background bg-transparent" @mousedown="close"></div>
       <div
-        class="box relative overflow-y-auto bg-white wmin-900 h-full px-10 aside"
+        class="box relative overflow-y-auto bg-white wmin-900 m-0-auto h-full px-10 aside"
       >
         <button
           class="modal-close z-20 is-large logo-color absolute top-0 right-0 mt-2 mr-2"
           aria-label="close"
           @click="close"
         ></button>
-        <div class="flex bg-white w-full h-fit space-x-8 relative pt-10 -mt-2">
+        <div class="flex bg-white w-full h-fit space-x-8 relative pt-8 -mt-2">
           <div class="w-full h-full">
             <div class="clickable w-full h500">
               <figure

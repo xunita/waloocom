@@ -7,6 +7,10 @@
     }"
   >
     <Favorites />
+    <div class="flex flex-col space-y-5 mt-5">
+      <Carduct titles="You may like" />
+      <Carduct titles="Recently Viewed" />
+    </div>
   </div>
 </template>
 <script>

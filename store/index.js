@@ -6,6 +6,8 @@ export const state = () => ({
     allimgs: [],
   },
   imgmodal: false,
+  cartmodal: false,
+  articlemodal: false,
   scroll: 0,
   categdex: 0,
   categ: [
@@ -1071,6 +1073,12 @@ export const mutations = {
   SET_IMGMODAL(state, value) {
     state.imgs.current = value.current
     state.imgs.allimgs = value.imgs
+  },
+  SET_CARTMODAL(state, value) {
+    state.cartmodal = value
+  },
+  SET_ARTICLEMODAL(state, value) {
+    state.articlemodal = value
   },
   SET_IMGMODAL_CURRENT(state, value) {
     state.imgs.current = value

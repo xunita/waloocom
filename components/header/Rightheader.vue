@@ -11,7 +11,7 @@
     <Sign />
     <button
       class="button relative right-5px is-lights p-2 h-12 w-12 rounded-full no-outlines outline-none"
-      @click="gocart"
+      @mousedown="gocart"
     >
       <svg
         class="w-6 h-6 logo-color"
@@ -43,9 +43,18 @@ export default {
       default: 99999,
     },
   },
+  computed: {
+    curoute() {
+      return this.$route.path
+    },
+  },
   methods: {
     gocart() {
-      location.assign('/cart')
+      // location.assign('/cart')
+      if (this.curoute !== '/cart') {
+        this.$store.commit('SET_CARTMODAL', true)
+        document.body.style.overflow = 'hidden'
+      } else location.reload()
     },
     gofav() {
       location.assign('/favlist')

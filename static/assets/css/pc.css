@@ -603,10 +603,12 @@ input[type='search']::-webkit-search-cancel-button {
   width: 360px !important;
 }
 .wmin-900 {
-  min-width: 1250px;
+  min-width: 1050px;
+  max-width: 1181px;
 }
+
 .h500 {
-  height: 512px !important;
+  height: 460px !important;
 }
 
 .w600 {
@@ -1148,6 +1150,10 @@ textarea::placeholder {
   overflow-x: hidden !important;
 }
 @-moz-document url-prefix() {
+  .wmin-900s {
+    min-width: 1050px;
+    max-width: 1220px;
+  }
   .h-fit {
     height: -moz-max-content !important;
   }

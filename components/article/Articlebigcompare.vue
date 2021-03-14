@@ -18,6 +18,7 @@
       >
         <div
           class="w-fit h-fit prev-d -mt-6 both-centers text-center flex flex-col"
+          @mousedown="prevarticle"
         >
           <button class="p-2 bg-black-trs m-0-auto rounded-full no-outlines">
             <svg
@@ -114,6 +115,12 @@ export default {
   computed: {
     size() {
       return this.$store.state.size
+    },
+  },
+  methods: {
+    prevarticle() {
+      this.$store.commit('SET_ARTICLEMODAL', true)
+      document.body.style.overflow = 'hidden'
     },
   },
 }
