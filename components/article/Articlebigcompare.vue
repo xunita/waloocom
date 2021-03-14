@@ -1,5 +1,5 @@
 <template>
-  <a class="clickable article bg-white h-fit flex relative"
+  <a class="clickable article bg-white h-fit flex relative hover:shadow"
     ><button
       class="absolute z-10 right-0 bg-black-trs p-1 mr-1 mt-1 h-8 w-8 rounded-full no-outlines outline-none"
     >
@@ -12,39 +12,6 @@
           class="px-2 py-1 block bg-004e66 rounded-br text-white font-semibold size-10"
           >72% OFF</span
         >
-      </div>
-      <div
-        class="absolute z-0 preview hidden top-0 left-0 w-full h-full bg-black-tre"
-      >
-        <div
-          class="w-fit h-fit prev-d -mt-6 both-centers text-center flex flex-col"
-          @mousedown="prevarticle"
-        >
-          <button class="p-2 bg-black-trs m-0-auto rounded-full no-outlines">
-            <svg
-              class="w-6 h-6 text-white eyes"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268
-2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-              ></path>
-            </svg>
-          </button>
-          <span class="font-semibold size-14 text-white">Preview</span>
-        </div>
       </div>
       <div class="w-fit d-bestp absolute bottom-0 left-0">
         <span

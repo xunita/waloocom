@@ -46,39 +46,6 @@
           ></path>
         </svg> -->
       </div>
-      <div
-        class="absolute preview hidden top-0 left-0 w-full h-full bg-black-tre"
-      >
-        <div
-          class="w-fit h-fit prev-d -mt-6 both-centers text-center flex flex-col"
-          @mousedown="prevarticle"
-        >
-          <button class="p-2 bg-black-trs m-0-auto rounded-full no-outlines">
-            <svg
-              class="w-6 h-6 text-white eyes"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268
-2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-              ></path>
-            </svg>
-          </button>
-          <span class="font-semibold size-13 text-white">Preview</span>
-        </div>
-      </div>
       <div class="w-fit d-bestp absolute left-0 bottom-0 pl-2">
         <span
           class="px-2 py-1 block rounded-full bg-transparent checked font-bold size-12"
@@ -102,7 +69,7 @@
         >
       </div>
       <button
-        class="absolute z-10 right-0 top-0 bg-black-trs p-1 mr-1 mt-1 h-8 w-8 rounded-full no-outlines outline-none"
+        class="button absolute z-10 is-lights right-0 top-0 p-1 mr-1 mt-1 h-8 w-8 rounded-full no-outlines outline-none"
       >
         <i class="far fa-heart logo-color size-16"></i>
       </button>
@@ -181,9 +148,6 @@ export default {
 </script>
 
 <style scoped>
-.article:hover .fa-heart {
-  color: white !important;
-}
 .article:hover .preview {
   animation: 0.1s appearZ;
   display: block;
