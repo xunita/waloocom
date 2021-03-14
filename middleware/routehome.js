@@ -1,4 +1,4 @@
 export default function ({ route, redirect }) { 
 // If the user is not authenticated 
-if (route.path === '/') { return redirect('/wait') }
+if (route.path === '/') { return redirect('/redirect') }
 }
