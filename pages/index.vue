@@ -12,7 +12,11 @@
       />
       <div class="d-spec">
         <Afterheader class="d-spec px-5" />
-        <nuxt-child v-if="curoute !== '/'" />
+        <nuxt-child
+          v-if="curoute !== '/'"
+          keep-alive
+          :keep-alive-props="{ max: 10 }"
+        />
         <Home v-else />
         <div
           v-show="scroll > 728"
