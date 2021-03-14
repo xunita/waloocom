@@ -606,6 +606,10 @@ input[type='search']::-webkit-search-cancel-button {
   min-width: 1050px;
   max-width: 1181px;
 }
+.wmin-900z {
+  min-width: 1050px;
+  max-width: 1050px;
+}
 
 .h500 {
   height: 460px !important;

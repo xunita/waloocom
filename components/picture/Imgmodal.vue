@@ -1,38 +1,38 @@
 <template>
   <div class="modal is-active">
     <div class="modal-background" @mousedown="close"></div>
-    <div class="modal-content w-full h-full m-5 px-12 py-8">
+    <div class="modal-content w-full h-full m-5 px-12 py-4">
       <div class="modal-background bg-transparent" @mousedown="close"></div>
       <div
-        class="box relative overflow-y-auto bg-white wmin-900 m-0-auto h-full px-10 aside"
+        class="box relative overflow-y-auto bg-white wmin-900z m-0-auto h-full px-10 aside"
       >
         <button
           class="modal-close z-20 is-large logo-color absolute top-0 right-0 mt-2 mr-2"
           aria-label="close"
           @click="close"
         ></button>
-        <div class="flex bg-white w-full h-fit space-x-8 relative pt-8 -mt-2">
-          <div class="w-full h-full">
-            <div class="clickable w-full h500">
-              <figure
-                v-for="(img, ij) in images"
-                id="currentimage"
-                :key="ij"
-                class="image is-images hiddenmox overflow-hidden"
-                :class="{
-                  slide: active === ij,
-                }"
-              >
-                <img
-                  :id="'normalimg' + ij"
-                  class="imagemaxes zoomimg"
-                  :class="{ haszoomed: zoomed }"
-                  :src="currentsrc"
-                  alt="Placeholder image"
-                  @click="zoominout"
-                />
-              </figure>
-            </div>
+        <div
+          class="flex bg-white w-full h-fit space-x-10 justify-center relative pt-6 -mt-2"
+        >
+          <div class="clickable image is-images">
+            <figure
+              v-for="(img, ij) in images"
+              id="currentimage"
+              :key="ij"
+              class="image is-images hiddenmox overflow-hidden"
+              :class="{
+                slide: active === ij,
+              }"
+            >
+              <img
+                :id="'normalimg' + ij"
+                class="imagemaxes zoomimg m-0-auto"
+                :class="{ haszoomed: zoomed }"
+                :src="currentsrc"
+                alt="Placeholder image"
+                @click="zoominout"
+              />
+            </figure>
           </div>
           <div class="flex flex-col space-y-3 h-full w180maxs">
             <h4 class="font-semibold m-0-auto fourline size-16 logo-color pb-4">
