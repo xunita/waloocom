@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white w-full px-6 pt-4 pb-4">
     <h4 class="font-semibold size-16 logo-color">Shopping Cart (5 items)</h4>
-    <div class="flex space-x-5 pt-4">
+    <div class="flex max1452 space-x-5 pt-4 justify-center">
       <div>
         <div class="flex flex-col space-y-5 border-b pb-4 mb-4">
           <Articlecart
@@ -71,3 +71,8 @@
 <script>
 export default {}
 </script>
+<style scoped>
+.max1452 {
+  max-width: 1452px !important;
+}
+</style>

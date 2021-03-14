@@ -108,7 +108,7 @@
       </div>
     </figure>
     <div class="flex w-full flex-col pl-4 pr-12 pt-3 pb-3">
-      <span class="size-125 pb-1 logo-color font-semibold twoline"
+      <span class="size-14 pb-1 logo-color font-semibold twoline"
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus

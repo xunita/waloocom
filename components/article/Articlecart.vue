@@ -1,5 +1,7 @@
 <template>
-  <div class="clickable article bg-white h-fit flex relative hover:shadow-xs">
+  <div
+    class="clickable article cartart bg-white h-fit flex relative hover:shadow-xs"
+  >
     <button
       class="absolute z-10 right-0 bg-black-trs p-1 mr-1 mt-1 h-10 w-10 rounded-full no-outlines outline-none"
     >
@@ -108,7 +110,7 @@
       </div>
     </figure>
     <div class="flex w-full flex-col pl-4 pr-12 pt-3 pb-3">
-      <span class="size-125 pb-1 logo-color font-semibold twoline"
+      <span class="size-14 pb-1 logo-color font-semibold twoline"
         >Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
         Samsung Galaxy S20+ (2020 Edition + 5G) with galaxy airpods in bonus
@@ -207,6 +209,9 @@ export default {}
 </script>
 
 <style scoped>
+.cartart {
+  max-width: 931px !important;
+}
 .dfds:hover svg,
 .dfds:hover span {
   color: #c53030 !important;

@@ -2,10 +2,10 @@
   <div class="bg-white w-full px-12 py-6">
     <h4 class="font-semibold size-16 logo-color">Favorites List (5 items)</h4>
     <div class="flex space-x-5 pt-5">
-      <div>
+      <div class="h-centers">
         <div class="flex flex-col space-y-5 border-b pb-4 mb-4">
           <Articlefav
-            v-for="i in 10"
+            v-for="i in 2"
             :key="i"
             class="border w-full rounded w-fit"
           />
