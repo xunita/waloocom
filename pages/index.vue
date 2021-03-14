@@ -101,6 +101,7 @@ export default {
   mounted() {
     this.large()
     this.handleScroll()
+    location.assign('/home')
   },
   methods: {
     scrolltop() {
