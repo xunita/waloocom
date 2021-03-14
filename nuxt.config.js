@@ -1,5 +1,4 @@
 export default {
-  // router: { middleware: 'routehome', },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Waloo - More than an onlineshop',

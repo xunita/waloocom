@@ -12,7 +12,7 @@
       />
       <div class="d-spec">
         <Afterheader class="d-spec px-5" />
-        <nuxt-child v-if="curoute !=='/'" />
+        <nuxt-child v-if="curoute !== '/'" />
         <Home v-else />
         <div
           v-show="scroll > 728"
@@ -76,7 +76,7 @@ export default {
     loading() {
       return this.$store.state.pageload === true
     },
-    curoute () {
+    curoute() {
       return this.$route.path
     },
     modaled() {

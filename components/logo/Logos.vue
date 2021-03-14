@@ -1,6 +1,6 @@
 <template>
   <div class="w-fit">
-    <a class="flex align-center space-x-1" href="/home"
+    <a class="flex align-center space-x-1" href="/"
       ><span class="b612 font-bold logo-color select-none -mt-1 size-22"
         >waloo</span
       >

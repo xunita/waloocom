@@ -29,7 +29,7 @@ export default {
       hasimage: true,
       left: false,
       index: 1,
-      ads: ['/ads/gaming.jpg', '/ads/training.jpg', '/ads/home.jpg'],
+      ads: ['/ads/gaming.jpg', '/ads/training.jpg', '/ads/.jpg'],
     }
   },
   computed: {

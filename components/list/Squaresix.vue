@@ -73,7 +73,7 @@ export default {
         five: {
           link: '',
           name: 'Home',
-          img: '/cover/home.jpg',
+          img: '/cover/.jpg',
         },
         six: {
           link: '',
