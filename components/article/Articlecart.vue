@@ -116,11 +116,13 @@
           class="px-2 py-1 block w-fit rounded btn-004e66s color-004e66 font-semibold size-11 my-1"
           >Free shipping</span
         >
-        <div class="flex align-center space-x-10">
-          <div class="flex align-center space-x-5">
-            <Attributdrop :title="'Color'" />
-            <Attributdrop :title="'Size'" />
-          </div>
+        <div class="flex align-center space-x-3">
+          <Attributdrop
+            :title="'Color'"
+            :content="['ccc', '004e66', '000', '041e95']"
+          />
+          <Attributdrop :title="'Size'" />
+          <a href="#" class="underline-hover hover-004e66">+3 More options</a>
         </div>
       </div>
       <div class="flex w-fit align-center hover-underchild justify-between">
@@ -185,7 +187,7 @@ export default {
 
 <style scoped>
 .cartart {
-  max-width: 931px !important;
+  max-width: 800px !important;
 }
 .dfds:hover svg,
 .dfds:hover span {

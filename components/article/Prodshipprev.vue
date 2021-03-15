@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <div class="w-fit flex flex-col space-y-1">
-      <Attributdrop :title="'Ships to'" :search="true" />
+      <Attributdrop :title="'Ships to'" :left="true" :search="true" />
       <div>
         <figure class="image is-240x200sse relative pb-1">
           <img
@@ -57,34 +57,21 @@
         class="size-16 py-01 self-start text-green-800 font-semibold twoline"
         >Available in stock</span
       >
-      <div class="flex flex-wrap mt-2">
-        <Attributdrop
-          class="mx-2 my-2"
+      <div class="flex flex-col space-y-3 mt-2">
+        <Attributdropprev
+          class="self-start"
           :title="'Size'"
           :content="['L', 'S', 'M', 'XL']"
+          :left="true"
         />
-        <Attributdrop
-          class="mx-2 my-2"
-          :title="'Size'"
-          :content="['L', 'S', 'M', 'XL']"
-        />
-        <Attributdrop
-          class="mx-2 my-2"
+        <Attributdropprev
+          class="self-start"
           :title="'Color'"
           :content="['ccc', '004e66', '000', '041e95']"
+          :left="true"
         />
-        <Attributdrop
-          class="mx-2 my-2"
-          :title="'Color'"
-          :content="['ccc', '004e66', '000', '041e95']"
-        />
-        <Attributdrop
-          class="mx-2 my-2"
-          :title="'Color'"
-          :content="['ccc', '004e66', '000', '041e95']"
-        />
+        <div class="self-start"><Qtedrop /></div>
       </div>
-      <div class="self-start mt-3"><Qtedrop /></div>
       <div class="flex flex-col space-y-4 mt-5">
         <div class="flex flex-col space-y-4">
           <span class="w-full"

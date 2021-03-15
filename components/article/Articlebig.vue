@@ -150,11 +150,15 @@
           class="px-2 py-1 block w-fit rounded btn-004e66s color-004e66 font-semibold size-11 my-1"
           >Free shipping</span
         >
-        <div class="flex align-center space-x-10">
-          <div class="flex align-center space-x-5">
-            <Attributdrop :title="'Color'" />
-            <Attributdrop :title="'Size'" />
-          </div>
+        <div class="flex align-center space-x-4">
+          <Attributdrop
+            class="self-start"
+            :title="'Color'"
+            :content="['ccc', '004e66', '000', '041e95']"
+            :left="true"
+          />
+          <Attributdrop :title="'Size'" />
+          <a href="#" class="underline-hover hover-004e66">+3 More options</a>
         </div>
       </div>
       <div class="flex w-fit align-center hover-underchild justify-between">

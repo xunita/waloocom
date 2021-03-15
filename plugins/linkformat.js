@@ -5,6 +5,7 @@ const linker = {
     str = str.replace(/&/g, 'and')
     str = str.replace(/"/g, '')
     str = str.replace(/,/g, '')
+    str = str.replace(/'/g, '')
     return str.toLowerCase()
   },
   emailValidated(value) {

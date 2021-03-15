@@ -7,8 +7,10 @@
       @click="gofav"
     >
       <i class="far fa-heart logo-color size-19"></i>
-      <span class="absolute top-0 right-0 mr-1">
-        <i class="fas fa-circle color-004e66 size-11"></i>
+      <span class="absolute top-0 right-0">
+        <i
+          class="fas fa-circle color-004e66 size-14 rounded-full border-2 border-white"
+        ></i>
       </span>
     </button>
     <Sign />

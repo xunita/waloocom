@@ -1,5 +1,7 @@
 <template>
-  <div class="clickable article bg-white h-fit flex relative hover:shadow-xs">
+  <div
+    class="clickable article cartart bg-white h-fit flex relative hover:shadow-xs"
+  >
     <button
       class="absolute z-10 right-0 bg-black-trs p-1 mr-1 mt-1 h-10 w-10 rounded-full no-outlines outline-none"
     >
@@ -142,11 +144,15 @@
           class="px-2 py-1 block w-fit rounded btn-004e66s color-004e66 font-semibold size-11 my-1"
           >Free shipping</span
         >
-        <div class="flex align-center space-x-10">
-          <div class="flex align-center space-x-5">
-            <Attributdrop :title="'Color'" />
-            <Attributdrop :title="'Size'" />
-          </div>
+        <div class="flex align-center space-x-4">
+          <Attributdrop
+            class="self-start"
+            :title="'Color'"
+            :content="['ccc', '004e66', '000', '041e95']"
+            :left="true"
+          />
+          <Attributdrop :title="'Size'" />
+          <a href="#" class="underline-hover hover-004e66">+3 More options</a>
         </div>
       </div>
       <div class="flex w-fit align-center hover-underchild justify-between">
@@ -231,6 +237,9 @@ export default {
 </script>
 
 <style scoped>
+.cartart {
+  max-width: 1150px !important;
+}
 .dfds:hover svg,
 .dfds:hover span {
   color: #c53030 !important;

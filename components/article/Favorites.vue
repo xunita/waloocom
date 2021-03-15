@@ -5,7 +5,7 @@
       <div class="h-centers">
         <div class="flex flex-col space-y-5 border-b pb-4 mb-4">
           <Articlefav
-            v-for="i in 2"
+            v-for="i in 4"
             :key="i"
             class="border w-full rounded w-fit"
           />

@@ -12,7 +12,7 @@
     </div>
     <div class="w-full"><Squaresix /></div>
     <!-- <Articlebig /> -->
-    <Carduct titles="Today's Deals" />
+    <Carduct titles="Today Deals" />
     <div class="w-full"><Largeband /></div>
     <Carduct titles="Featured" />
     <div class="w-full"><Square /></div>
@@ -23,7 +23,7 @@
     <Carduct titles="Top Trending" />
     <div class="w-full"><Twoband /></div>
     <Carduct titles="Waloo Recommendations" /> <Allcateg />
-    <Carduct titles="New Selected" /> <Marketplace />
+    <Carduct titles="New Selection" /> <Marketplace />
     <Carduct titles="Recently Viewed" />
     <div><Walootour /></div>
     <div><Waloofo /></div>

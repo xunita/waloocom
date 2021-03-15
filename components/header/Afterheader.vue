@@ -1,19 +1,53 @@
 <template>
   <div class="d-spec relative border-t pt-1 bg-white">
     <div class="d-spec size-125 relative font-semibold logo-color px-2">
-      <nav>
-        <ul
-          class="nav-desc w-fit font-semibold flex align-center overflow-x-auto -mt-2"
-        >
+      <nav class="m-0-auto">
+        <ul class="nav-desc w-fit font-semibold flex align-center">
           <li>
-            <nuxt-link to="#" class="text-center ant">Today's deals</nuxt-link>
+            <nuxt-link
+              to="#"
+              class="text-center ant"
+              :class="{
+                'list-active':
+                  curoute.includes('Today Deals') ||
+                  curoute.includes('Today%20Deals'),
+              }"
+              >Today Deals</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="#" class="text-center ant">Best deals</nuxt-link>
+            <nuxt-link
+              to="#"
+              class="text-center ant"
+              :class="{
+                'list-active':
+                  curoute.includes('Best Deals') ||
+                  curoute.includes('Best%20Deals'),
+              }"
+              >Best Deals</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="#" class="text-center ant">Top categories</nuxt-link>
+            <nuxt-link
+              to="#"
+              class="text-center ant"
+              :class="{ 'list-active': curoute.includes('Featured') }"
+              >Featured</nuxt-link
+            >
           </li>
+          <li>
+            <nuxt-link
+              to="#"
+              class="text-center ant"
+              :class="{
+                'list-active':
+                  curoute.includes('Top Categories') ||
+                  curoute.includes('Top%20Categories'),
+              }"
+              >Top Categories</nuxt-link
+            >
+          </li>
+
           <li class="h-full">
             <span class="text-center tiret">|</span>
           </li>
@@ -67,6 +101,9 @@ export default {
     },
     listing() {
       return this.$store.state.afterlist === true
+    },
+    curoute() {
+      return this.$route.path
     },
     size() {
       return this.$store.state.size

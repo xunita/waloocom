@@ -4,7 +4,7 @@
     <div class="modal-content w-full h-full m-5 px-6 py-6">
       <div class="modal-background bg-transparent" @mousedown="close"></div>
       <div
-        class="box relative overflow-y-auto bg-white wmin-900 wmin-900s m-0-auto h-full px-10 aside"
+        class="box relative overflow-y-auto bg-white wmin-900 wmin-900s m-0-auto h-full px-5 aside"
       >
         <button
           class="modal-close z-20 is-large logo-color absolute top-0 right-0 mt-2 mr-2"

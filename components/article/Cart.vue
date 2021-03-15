@@ -1,5 +1,20 @@
 <template>
   <div class="bg-white w-full px-6 pt-4 pb-4">
+    <span
+      v-show="cartupdated === false"
+      class="block h-8 mb-3 relative w-full border text-center bg-green-100 border-green-500 text-green-600"
+      ><span class="block mt-1 text-green-700"
+        >Your cart has been updated !</span
+      ><button
+        class="modal-close z-20 is-large logo-color absolute top-0 mt-1 right-0 mr-2"
+        aria-label="close"
+        @mousedown="
+          {
+            cartupdated = !cartupdated
+          }
+        "
+      ></button
+    ></span>
     <h4 class="font-semibold size-16 logo-color">Shopping Cart (5 items)</h4>
     <div class="flex max1452 space-x-5 pt-4 justify-center">
       <div>
@@ -28,7 +43,7 @@
         <div class="clear-both"></div>
       </div>
       <div class="border w180e rounded h-fit sticky top-12xs px-3 pt-3 pb-5">
-        <h4 class="font-semibold size-16 logo-color">Summary (5)</h4>
+        <h4 class="font-semibold size-16 logo-color">Summary (5 items)</h4>
         <div>
           <div class="flex space-x-1 align-center">
             <h4 class="size-16 logo-color">Total Price:</h4>
@@ -69,7 +84,13 @@
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      cartupdated: false,
+    }
+  },
+}
 </script>
 <style scoped>
 .max1452 {

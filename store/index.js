@@ -5,6 +5,7 @@ export const state = () => ({
     current: 0,
     allimgs: [],
   },
+  vuex: 'notchanged',
   imgmodal: false,
   cartmodal: false,
   articlemodal: false,
@@ -1048,6 +1049,9 @@ export const mutations = {
   },
   SET_LIST_MOD(state, value) {
     state.listing = value
+  },
+  SET_VUEX(state, value) {
+    state.vuex = value
   },
   SET_AFTERLIST_MOD(state, value) {
     state.afterlist = value

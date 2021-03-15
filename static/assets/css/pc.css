@@ -710,16 +710,18 @@ span {
 .nav-desc {
   margin: 0px;
   padding: 0px;
+  /* position: relative;
+  top: -1rem; */
 }
 .nav-desc .tiret {
   display: block;
-  padding: 11px 8px 6px 8px;
+  padding: 4px 8px 6px 8px;
   border-bottom: 2px solid transparent;
 }
 .nav-desc a:not(.tiret) {
   display: block;
   font-size: 12.5px !important;
-  padding: 11px 8px 6px 8px;
+  padding: 4px 8px 6px 8px;
   border-bottom: 2px solid transparent;
 }
 .color-gray {
@@ -744,8 +746,8 @@ span {
   transition: 0.3s ease;
 }
 .nav-desc .list-active {
-  color: #008489;
-  border-color: #008489;
+  color: #004e66 !important;
+  border-color: #004e66 !important;
 }
 .current-desc {
   color: #008489;
