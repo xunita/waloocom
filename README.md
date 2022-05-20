@@ -1,7 +1,7 @@
 # waloo
 
 Waloo is an idea that bring together all africa ecommerce in one place.
-It just the UI of how I have seen things
+It just the UI of how I have seen things.
 
 ## Build Setup
 
