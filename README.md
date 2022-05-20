@@ -3,6 +3,10 @@
 Waloo is an idea that bring together all africa ecommerce in one place.
 It just the UI of how I have seen things.
 
+# demo site
+
+[Demo here](https://waloocom.netlify.app/favlist/).
+
 ## Build Setup
 
 ```bash
