@@ -187,7 +187,7 @@
         <span class="text-white">•</span>
         <span class="text-white">Waloo</span>
         <span class="text-white inline-block whitespace-no-wrap"
-          >- All rights reserved</span
+          >- All rights reserved, by Xunita</span
         >
       </div>
       <div class="w-full h-1 border-b"></div>
